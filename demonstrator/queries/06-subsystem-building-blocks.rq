@@ -4,5 +4,5 @@ PREFIX : <http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#>
 
 select ?buildingBlock
 where {
-:Handling :hasBuildingBlock ?buildingBlock .
+?buildingBlock a :BuildingBlock .
 }

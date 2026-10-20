@@ -2,14 +2,47 @@
 import json
 from pathlib import Path
 from urllib.parse import unquote
-from rdflib import Graph, Literal, RDF, RDFS
+from rdflib import Graph, Literal, RDF, RDFS, OWL
 
 ROOT = Path(__file__).resolve().parent
+
+def export_webvowl(ontology):
+    """Export the supplied named classes and domain/range properties to VOWL JSON."""
+    classes = sorted(ontology.subjects(RDF.type, OWL.Class), key=str)
+    properties = sorted(set(ontology.subjects(RDF.type, OWL.ObjectProperty)) |
+                        set(ontology.subjects(RDF.type, OWL.DatatypeProperty)), key=str)
+    datatypes = sorted({r for p in properties for r in ontology.objects(p, RDFS.range)
+                        if (p, RDF.type, OWL.DatatypeProperty) in ontology}, key=str)
+    ids = {term: str(i) for i, term in enumerate(classes + datatypes + properties)}
+    def attributes(term):
+        return {'id': ids[term], 'iri': str(term), 'baseIri': str(term).rsplit('#', 1)[0],
+                'label': {'IRI-based': str(term).rsplit('#', 1)[-1]}}
+    result = {
+        'header': {'languages': ['en'], 'iri': str(next(ontology.subjects(RDF.type, OWL.Ontology))),
+                   'title': {'en': 'ZORRO demonstrator ontology'},
+                   'description': {'en': 'Classes and properties from the supplied WP5 demonstrator ontology.'}},
+        'namespace': [],
+        'class': [{'id': ids[c], 'type': 'owl:Class'} for c in classes] +
+                 [{'id': ids[d], 'type': 'rdfs:Datatype'} for d in datatypes],
+        'classAttribute': [dict(attributes(c), instances=0) for c in classes + datatypes],
+        'property': [], 'propertyAttribute': []}
+    for prop in properties:
+        datatype = (prop, RDF.type, OWL.DatatypeProperty) in ontology
+        domain = ontology.value(prop, RDFS.domain)
+        range_ = ontology.value(prop, RDFS.range)
+        result['property'].append({'id': ids[prop], 'type': 'owl:datatypeProperty' if datatype else 'owl:objectProperty'})
+        result['propertyAttribute'].append(dict(attributes(prop), domain=ids[domain], range=ids[range_],
+                                                attributes=['datatype' if datatype else 'object']))
+    directory = ROOT / 'webvowl' / 'data'
+    directory.mkdir(parents=True, exist_ok=True)
+    (directory / 'ontology.json').write_text(json.dumps(result, indent=2) + '\n')
+
 
 def build():
     graph = Graph().parse(ROOT / 'WP5KG.ttl')
     ontology = Graph().parse(ROOT / 'Zorro_ontology.owl', format='xml')
     ontology.serialize(ROOT / 'ontology.ttl', format='turtle')
+    export_webvowl(ontology)
     graph += ontology
     def label(term):
         return str(next(graph.objects(term, RDFS.label), unquote(str(term).rsplit('#', 1)[-1]).replace('_', ' ')))

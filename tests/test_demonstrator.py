@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-from rdflib import Graph, Literal
+from rdflib import Graph, Literal, RDF, RDFS, OWL
 from rdflib.compare import isomorphic
 
 ROOT = Path(__file__).resolve().parents[1] / 'demonstrator'
@@ -25,7 +25,7 @@ def test_supplied_query_examples_return_expected_results():
     graph.parse(ROOT / 'Zorro_ontology.owl', format='xml')
     examples = json.loads((ROOT / 'examples.json').read_text())
     assert len(examples) == 8
-    for example, count in zip(examples, [1, 49, 1, 6, 1, 1, 49, 1]):
+    for example, count in zip(examples, [1, 49, 1, 6, 1, 8, 49, 1]):
         assert len(list(graph.query((ROOT / example['file']).read_text()))) == count
 
 
@@ -34,3 +34,15 @@ def test_browser_ontology_matches_original():
         Graph().parse(ROOT / "Zorro_ontology.owl", format="xml"),
         Graph().parse(ROOT / "ontology.ttl"),
     )
+
+
+def test_webvowl_export_matches_supplied_schema():
+    ontology = Graph().parse(ROOT / 'Zorro_ontology.owl', format='xml')
+    export = json.loads((ROOT / 'webvowl/data/ontology.json').read_text())
+    ids = {item['id']: item['iri'] for item in export['classAttribute']}
+    classes = {item['id'] for item in export['class'] if item['type'] == 'owl:Class'}
+    assert {ids[id_] for id_ in classes} == {str(c) for c in ontology.subjects(RDF.type, OWL.Class)}
+    expected = {(str(p), str(ontology.value(p, RDFS.domain)), str(ontology.value(p, RDFS.range)))
+                for kind in (OWL.ObjectProperty, OWL.DatatypeProperty)
+                for p in ontology.subjects(RDF.type, kind)}
+    assert {(p['iri'], ids[p['domain']], ids[p['range']]) for p in export['propertyAttribute']} == expected

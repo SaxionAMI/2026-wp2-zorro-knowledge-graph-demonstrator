@@ -15,6 +15,9 @@ Open the pages through HTTP rather than directly as local files.
 - **SPARQL queries:** eight examples extracted from `Example_query.docx`, editable queries,
   SELECT tables with CSV downloads, ASK results, and CONSTRUCT/DESCRIBE output as Turtle.
   Ctrl/Cmd+Enter runs a query. Resource links open that resource in the graph explorer.
+- **Ontology:** embedded WebVOWL using the same bundled viewer as the original ZORRO
+  documentation, with a full-screen option. Displays the supplied demonstrator OWL
+  schema; its VOWL JSON is rebuilt by `build_data.py`.
 - **Knowledge graph:** every resource and resource relationship in `WP5KG.ttl` and
   `Zorro_ontology.owl`; literal values appear in the resource details. Search and type
   filters include immediate neighbours to preserve context. Ontology/type links can

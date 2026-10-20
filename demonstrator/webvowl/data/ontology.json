@@ -1,0 +1,323 @@
+{
+  "header": {
+    "languages": [
+      "en"
+    ],
+    "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#",
+    "title": {
+      "en": "ZORRO demonstrator ontology"
+    },
+    "description": {
+      "en": "Classes and properties from the supplied WP5 demonstrator ontology."
+    }
+  },
+  "namespace": [],
+  "class": [
+    {
+      "id": "0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "9",
+      "type": "rdfs:Datatype"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "0",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#BuildingBlock",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "BuildingBlock"
+      },
+      "instances": 0
+    },
+    {
+      "id": "1",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Cause",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "Cause"
+      },
+      "instances": 0
+    },
+    {
+      "id": "2",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Function",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "Function"
+      },
+      "instances": 0
+    },
+    {
+      "id": "3",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Part",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "Part"
+      },
+      "instances": 0
+    },
+    {
+      "id": "4",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#PartSpecification",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "PartSpecification"
+      },
+      "instances": 0
+    },
+    {
+      "id": "5",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#PartType",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "PartType"
+      },
+      "instances": 0
+    },
+    {
+      "id": "6",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Problem",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "Problem"
+      },
+      "instances": 0
+    },
+    {
+      "id": "7",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Solution",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "Solution"
+      },
+      "instances": 0
+    },
+    {
+      "id": "8",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#SubSystem",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "SubSystem"
+      },
+      "instances": 0
+    },
+    {
+      "id": "9",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "instances": 0
+    }
+  ],
+  "property": [
+    {
+      "id": "10",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "11",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "12",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "13",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "14",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "15",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "16",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "17",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "18",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "19",
+      "type": "owl:objectProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "10",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#BBinvolvedInProblem",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "BBinvolvedInProblem"
+      },
+      "domain": "6",
+      "range": "0",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#hasBuildingBlock",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "hasBuildingBlock"
+      },
+      "domain": "8",
+      "range": "0",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#hasCause",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "hasCause"
+      },
+      "domain": "6",
+      "range": "1",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#hasFunction",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "hasFunction"
+      },
+      "domain": "0",
+      "range": "2",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#hasFunctionDescription",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "hasFunctionDescription"
+      },
+      "domain": "2",
+      "range": "9",
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "15",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#hasPart",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "hasPart"
+      },
+      "domain": "0",
+      "range": "3",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#hasPartSpecification",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "hasPartSpecification"
+      },
+      "domain": "3",
+      "range": "4",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#hasPartType",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "hasPartType"
+      },
+      "domain": "3",
+      "range": "5",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "18",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#hasSolution",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "hasSolution"
+      },
+      "domain": "1",
+      "range": "7",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#partTypeInvolvedInFunc",
+      "baseIri": "http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology",
+      "label": {
+        "IRI-based": "partTypeInvolvedInFunc"
+      },
+      "domain": "2",
+      "range": "5",
+      "attributes": [
+        "object"
+      ]
+    }
+  ]
+}

@@ -20,7 +20,7 @@
     "file": "queries/05-problem-building-block.rq"
   },
   {
-    "name": "What are the building blocks inside the given system?",
+    "name": "What are all the building blocks in the knowledge graph?",
     "file": "queries/06-subsystem-building-blocks.rq"
   },
   {
