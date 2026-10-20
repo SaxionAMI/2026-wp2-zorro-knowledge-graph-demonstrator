@@ -1,0 +1,34 @@
+[
+  {
+    "name": "What are the causes for the given problem?",
+    "file": "queries/01-problem-causes.rq"
+  },
+  {
+    "name": "What are all the problems and causes in the KG?",
+    "file": "queries/02-problems-and-causes.rq"
+  },
+  {
+    "name": "What is the function of the given building block?",
+    "file": "queries/03-building-block-functions.rq"
+  },
+  {
+    "name": "What are the parts in the given building block?",
+    "file": "queries/04-building-block-parts.rq"
+  },
+  {
+    "name": "What are the building block involved in the given problem?",
+    "file": "queries/05-problem-building-block.rq"
+  },
+  {
+    "name": "What are the building blocks inside the given system?",
+    "file": "queries/06-subsystem-building-blocks.rq"
+  },
+  {
+    "name": "What are all the causes and solutions in the KG?",
+    "file": "queries/07-causes-and-solutions.rq"
+  },
+  {
+    "name": "What is the solution for the given cause?",
+    "file": "queries/08-cause-solutions.rq"
+  }
+]

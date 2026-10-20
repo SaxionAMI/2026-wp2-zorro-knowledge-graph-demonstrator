@@ -1,0 +1,65 @@
+@prefix : <http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology .
+
+:BBinvolvedInProblem a owl:ObjectProperty ;
+    rdfs:domain :Problem ;
+    rdfs:range :BuildingBlock .
+
+:hasBuildingBlock a owl:ObjectProperty ;
+    rdfs:domain :SubSystem ;
+    rdfs:range :BuildingBlock .
+
+:hasCause a owl:ObjectProperty ;
+    rdfs:domain :Problem ;
+    rdfs:range :Cause .
+
+:hasFunction a owl:ObjectProperty ;
+    rdfs:domain :BuildingBlock ;
+    rdfs:range :Function .
+
+:hasFunctionDescription a owl:DatatypeProperty ;
+    rdfs:domain :Function ;
+    rdfs:range xsd:string .
+
+:hasPart a owl:ObjectProperty ;
+    rdfs:domain :BuildingBlock ;
+    rdfs:range :Part .
+
+:hasPartSpecification a owl:ObjectProperty ;
+    rdfs:domain :Part ;
+    rdfs:range :PartSpecification .
+
+:hasPartType a owl:ObjectProperty ;
+    rdfs:domain :Part ;
+    rdfs:range :PartType .
+
+:hasSolution a owl:ObjectProperty ;
+    rdfs:domain :Cause ;
+    rdfs:range :Solution .
+
+:partTypeInvolvedInFunc a owl:ObjectProperty ;
+    rdfs:domain :Function ;
+    rdfs:range :PartType .
+
+:PartSpecification a owl:Class .
+
+:Solution a owl:Class .
+
+:SubSystem a owl:Class .
+
+:Cause a owl:Class .
+
+:PartType a owl:Class .
+
+:Problem a owl:Class .
+
+:Function a owl:Class .
+
+:Part a owl:Class .
+
+:BuildingBlock a owl:Class .
+

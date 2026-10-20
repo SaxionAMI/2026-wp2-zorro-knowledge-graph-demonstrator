@@ -1,0 +1,1284 @@
+@prefix : <http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Control a :SubSystem ;
+    :hasBuildingBlock :Control_System_%28Turck_PLC_Setup%29 .
+
+:Handling a :SubSystem ;
+    :hasBuildingBlock :XYZ_Robot_%28VGR%29 .
+
+:Processing a :SubSystem ;
+    :hasBuildingBlock :Processing_Station_%28MPO%29 .
+
+:RFID_Station a :BuildingBlock ;
+    :hasFunction :Read_workpiece_data .
+
+:Robot_%28XYZ%29 a :BuildingBlock ;
+    :hasFunction :Move_to_warehouse,
+        :Pick_from_sorting_line,
+        :Pick_up_from_RFID,
+        :Pick_up_workpiece,
+        :Place_in_warehouse_input,
+        :Place_on_MPO_input,
+        :Place_workpiece_on_RFID,
+        :Transport_to_RFID_station,
+        :Transport_to_processing_station_MPO,
+        :Transport_to_warehouse .
+
+:Sorting a :SubSystem ;
+    :hasBuildingBlock :Sorting_Line_%28SLD%29 .
+
+:Storage a :SubSystem ;
+    :hasBuildingBlock :Warehouse_%28HBW%29 .
+
+:problem001 a :Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause001 .
+
+:problem002 a :Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause002 .
+
+:problem003 a :Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause003 .
+
+:problem004 a :Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause004 .
+
+:problem005 a :Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause005 .
+
+:problem006 a :Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause006 .
+
+:problem007 a :Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause007 .
+
+:problem008 a :Problem ;
+    rdfs:label "RFID station does not detect workpiece color" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause008 .
+
+:problem009 a :Problem ;
+    rdfs:label "RFID station does not detect workpiece color" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause009 .
+
+:problem010 a :Problem ;
+    rdfs:label "Robot XYZ drops workpiece during transport warehouse to RFID" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause010 .
+
+:problem011 a :Problem ;
+    rdfs:label "Robot XYZ drops workpiece during transport warehouse to RFID" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause011 .
+
+:problem012 a :Problem ;
+    rdfs:label "Robot XYZ drops workpiece during transport RFID to processing station" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause012 .
+
+:problem013 a :Problem ;
+    rdfs:label "Robot XYZ drops workpiece during transport RFID to processing station" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause013 .
+
+:problem014 a :Problem ;
+    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause014 .
+
+:problem015 a :Problem ;
+    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause015 .
+
+:problem016 a :Problem ;
+    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause016 .
+
+:problem017 a :Problem ;
+    rdfs:label "Robot XYZ places workpiece incorrectly in sorting line SLD" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause017 .
+
+:problem018 a :Problem ;
+    rdfs:label "Robot XYZ places workpiece incorrectly in sorting line SLD" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause018 .
+
+:problem019 a :Problem ;
+    rdfs:label "Robot XYZ places red white or blue workpiece incorrectly into warehouse" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause019 .
+
+:problem020 a :Problem ;
+    rdfs:label "Robot XYZ places red white or blue workpiece incorrectly into warehouse" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause020 .
+
+:problem021 a :Problem ;
+    rdfs:label "Processing Station MPO fails to detect workpiece at conveyor entry" ;
+    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
+    :hasCause :cause021 .
+
+:problem022 a :Problem ;
+    rdfs:label "Processing Station MPO fails to detect workpiece at conveyor entry" ;
+    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
+    :hasCause :cause022 .
+
+:problem023 a :Problem ;
+    rdfs:label "Processing Station MPO oven does not receive workpiece" ;
+    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
+    :hasCause :cause023 .
+
+:problem024 a :Problem ;
+    rdfs:label "Processing Station MPO oven doors do not close" ;
+    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
+    :hasCause :cause024 .
+
+:problem025 a :Problem ;
+    rdfs:label "Processing Station MPO oven does not receive workpiece" ;
+    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
+    :hasCause :cause025 .
+
+:problem026 a :Problem ;
+    rdfs:label "Processing Station MPO workpiece not transferred from oven to turntable" ;
+    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
+    :hasCause :cause026 .
+
+:problem027 a :Problem ;
+    rdfs:label "Processing Station MPO workpiece not transferred from oven to turntable" ;
+    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
+    :hasCause :cause027 .
+
+:problem028 a :Problem ;
+    rdfs:label "Processing Station MPO workpiece not ejected to conveyor" ;
+    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
+    :hasCause :cause028 .
+
+:problem029 a :Problem ;
+    rdfs:label "Processing Station MPO workpiece not ejected to conveyor" ;
+    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
+    :hasCause :cause029 .
+
+:problem030 a :Problem ;
+    rdfs:label "Sorting Line SLD fails to detect incoming workpiece" ;
+    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
+    :hasCause :cause030 .
+
+:problem031 a :Problem ;
+    rdfs:label "Sorting Line SLD fails to detect incoming workpiece" ;
+    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
+    :hasCause :cause031 .
+
+:problem032 a :Problem ;
+    rdfs:label "Sorting Line SLD incorrectly sorts workpiece color" ;
+    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
+    :hasCause :cause032 .
+
+:problem033 a :Problem ;
+    rdfs:label "Sorting Line SLD incorrectly sorts workpiece color" ;
+    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
+    :hasCause :cause033 .
+
+:problem034 a :Problem ;
+    rdfs:label "Sorting Line SLD fails to eject workpiece into correct bin" ;
+    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
+    :hasCause :cause034 .
+
+:problem035 a :Problem ;
+    rdfs:label "Sorting Line SLD fails to eject workpiece into correct bin" ;
+    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
+    :hasCause :cause035 .
+
+:problem036 a :Problem ;
+    rdfs:label "Warehouse HBW picks wrong workpiece from storage" ;
+    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
+    :hasCause :cause036 .
+
+:problem037 a :Problem ;
+    rdfs:label "Warehouse HBW picks wrong workpiece from storage" ;
+    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
+    :hasCause :cause037 .
+
+:problem038 a :Problem ;
+    rdfs:label "Warehouse HBW fails to pick up carrier from rack" ;
+    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
+    :hasCause :cause038 .
+
+:problem039 a :Problem ;
+    rdfs:label "Warehouse HBW fails to pick up carrier from rack" ;
+    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
+    :hasCause :cause039 .
+
+:problem040 a :Problem ;
+    rdfs:label "Warehouse HBW causes collision with carrier" ;
+    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
+    :hasCause :cause040 .
+
+:problem041 a :Problem ;
+    rdfs:label "Warehouse HBW causes collision with carrier" ;
+    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
+    :hasCause :cause041 .
+
+:problem042 a :Problem ;
+    rdfs:label "Warehouse HBW pushes or damages structure during movement" ;
+    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
+    :hasCause :cause042 .
+
+:problem043 a :Problem ;
+    rdfs:label "Warehouse HBW pushes or damages structure during movement" ;
+    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
+    :hasCause :cause043 .
+
+:problem044 a :Problem ;
+    rdfs:label "System wide intermittent failures across stations" ;
+    :BBinvolvedInProblem :System ;
+    :hasCause :cause044 .
+
+:problem045 a :Problem ;
+    rdfs:label "Robot XYZ fails to reach reference position during homing" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause045 .
+
+:problem046 a :Problem ;
+    rdfs:label "Robot XYZ fails to reach reference position during homing" ;
+    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
+    :hasCause :cause046 .
+
+:problem047 a :Problem ;
+    rdfs:label "System stops or does not continue production flow at any station" ;
+    :BBinvolvedInProblem :System ;
+    :hasCause :cause047 .
+
+:problem048 a :Problem ;
+    rdfs:label "System stops or does not continue production flow at any station" ;
+    :BBinvolvedInProblem :System ;
+    :hasCause :cause048 .
+
+:problem049 a :Problem ;
+    rdfs:label "System shows slow or inconsistent movement across stations" ;
+    :BBinvolvedInProblem :System ;
+    :hasCause :cause049 .
+
+:24V_DC_power_system a :PartSpecification .
+
+:ALL_SYSTEMS a :PartType .
+
+<http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Analog_I/O_module> a :PartSpecification .
+
+:Backward_conveyor_mini_motor a :PartSpecification .
+
+:Blue_bin_detection_sensor a :PartSpecification .
+
+:Blue_ejector_cylinder a :PartSpecification .
+
+:Blue_ejector_valve a :PartSpecification .
+
+:Cantilever_back_switch a :PartSpecification .
+
+:Cantilever_backward_motor a :PartSpecification .
+
+:Cantilever_forward_motor a :PartSpecification .
+
+:Cantilever_front_switch a :PartSpecification .
+
+:Control_System_%28Turck_PLC_Setup%29 a :BuildingBlock ;
+    :hasPart :HMI-PANEL,
+        :IO-ANALOG,
+        :IO-DIGITAL,
+        :PLC-NET,
+        :PLC-TURCK,
+        :POWER-24V .
+
+:Cycle_complete a :Function ;
+    :hasFunctionDescription "System returns to idle state and is ready for next cycle" ;
+    :partTypeInvolvedInFunc :ALL_SYSTEMS .
+
+:Detect_color a :Function ;
+    :hasFunctionDescription "Color sensor determines workpiece color" ;
+    :partTypeInvolvedInFunc :COLOR_SENSOR .
+
+:Detect_incoming_workpiece a :Function ;
+    :hasFunctionDescription "Entry light sensor detects arrival of workpiece" ;
+    :partTypeInvolvedInFunc :LIGHT_SENSOR .
+
+:Detect_workpiece a :Function ;
+    :hasFunctionDescription "Light sensor confirms presence of workpiece at entry" ;
+    :partTypeInvolvedInFunc :LIGHT_SENSOR .
+
+<http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Digital_I/O_module> a :PartSpecification .
+
+:Eject_workpiece a :Function ;
+    :hasFunctionDescription "Pneumatic ejector pushes workpiece onto conveyor" ;
+    :partTypeInvolvedInFunc :COMPRESSOR,
+        :CYLINDER,
+        :SOLENOID_VALVE .
+
+:Feed_into_oven a :Function ;
+    :hasFunctionDescription "Feeder pushes workpiece into oven and door closes using pneumatic system" ;
+    :partTypeInvolvedInFunc :COMPRESSOR,
+        :CYLINDER,
+        :SOLENOID_VALVE .
+
+:Forward_conveyor_mini_motor a :PartSpecification .
+
+:Furnace_unit a :PartSpecification .
+
+:HMI a :PartType .
+
+:HMI-PANEL a :Part ;
+    :hasPartSpecification :Operator_interface ;
+    :hasPartType :HMI .
+
+:Horizontal_encoder_motor a :PartSpecification .
+
+:Horizontal_movement_motor a :PartSpecification .
+
+:Horizontal_position_encoder a :PartSpecification .
+
+:IO-ANALOG a :Part ;
+    :hasPartSpecification <http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Analog_I/O_module> ;
+    :hasPartType :IO_MODULE .
+
+:IO-DIGITAL a :Part ;
+    :hasPartSpecification <http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Digital_I/O_module> ;
+    :hasPartType :IO_MODULE .
+
+:Indexing_turntable a :PartSpecification .
+
+:Industrial_Ethernet_switch a :PartSpecification .
+
+:Input_light_barrier a :PartSpecification .
+
+:Inside_light_barrier a :PartSpecification .
+
+:MPO-COMP a :Part ;
+    :hasPartSpecification :Pneumatic_supply ;
+    :hasPartType :COMPRESSOR .
+
+:MPO-CONV-MOTOR a :Part ;
+    :hasPartSpecification :Conveyor_drive_mini_motor ;
+    :hasPartType :MINI_MOTOR .
+
+:MPO-CONVEYOR a :Part ;
+    :hasPartSpecification :Transport_conveyor ;
+    :hasPartType :CONVEYOR .
+
+:MPO-EJECTOR a :Part ;
+    :hasPartSpecification :Turntable_ejection_valve ;
+    :hasPartType :SOLENOID_VALVE .
+
+:MPO-FEEDER-IN a :Part ;
+    :hasPartSpecification :Oven_feeder_inside_cylinder ;
+    :hasPartType :CYLINDER .
+
+:MPO-FEEDER-OUT a :Part ;
+    :hasPartSpecification :Oven_feeder_outside_cylinder ;
+    :hasPartType :CYLINDER .
+
+:MPO-LIGHT-BARRIER a :Part ;
+    :hasPartSpecification :Workpiece_detection_sensor ;
+    :hasPartType :LIGHT_SENSOR .
+
+:MPO-OVEN a :Part ;
+    :hasPartSpecification :Furnace_unit ;
+    :hasPartType :KILN .
+
+:MPO-OVEN-DOOR a :Part ;
+    :hasPartSpecification :Oven_door_valve ;
+    :hasPartType :SOLENOID_VALVE .
+
+:MPO-OVEN-SENSOR a :Part ;
+    :hasPartSpecification :Oven_presence_sensor ;
+    :hasPartType :LIGHT_SENSOR .
+
+:MPO-SAWWHEEL a :Part ;
+    :hasPartSpecification :Saw_or_milling_motor ;
+    :hasPartType :MINI_MOTOR .
+
+:MPO-SUCTION a :Part ;
+    :hasPartSpecification :Vacuum_suction_cup_%28workpiece_transfer%29 ;
+    :hasPartType :SUCTION_CUP .
+
+:MPO-TT-MOTOR a :Part ;
+    :hasPartSpecification :Turntable_drive_mini_motor ;
+    :hasPartType :MINI_MOTOR .
+
+:MPO-TURNTABLE a :Part ;
+    :hasPartSpecification :Indexing_turntable ;
+    :hasPartType :ROTARY_TABLE .
+
+:MPO-VAC-HEAD a :Part ;
+    :hasPartSpecification :Vacuum_lowering_cylinder ;
+    :hasPartType :CYLINDER .
+
+:Machine_workpiece a :Function ;
+    :hasFunctionDescription "Saw or milling operation is performed" ;
+    :partTypeInvolvedInFunc :MINI_MOTOR .
+
+:Main_industrial_controller a :PartSpecification .
+
+:Move_along_conveyor a :Function ;
+    :hasFunctionDescription "Workpiece is transported through sorting section" ;
+    :partTypeInvolvedInFunc :CONVEYOR,
+        :MINI_MOTOR .
+
+:Move_conveyor_to_pickup_position a :Function ;
+    :hasFunctionDescription "Conveyor belt moves carrier to output position where it can be picked up" ;
+    :partTypeInvolvedInFunc :CONVEYOR,
+        :LIGHT_SENSOR,
+        :MINI_MOTOR .
+
+:Move_conveyor_to_storage_position a :Function ;
+    :hasFunctionDescription "Conveyor transports workpiece into warehouse system" ;
+    :partTypeInvolvedInFunc :CONVEYOR,
+        :LIGHT_SENSOR,
+        :MINI_MOTOR .
+
+:Move_to_warehouse a :Function ;
+    :hasFunctionDescription "Robot moves to warehouse pickup position" ;
+    :partTypeInvolvedInFunc :ENCODER_MOTOR,
+        :REFERENCE_SWITCH .
+
+:Operator_interface a :PartSpecification .
+
+:Optical_color_sensor a :PartSpecification .
+
+:Output_light_barrier a :PartSpecification .
+
+:Outside_light_barrier a :PartSpecification .
+
+:Oven_door_valve a :PartSpecification .
+
+:Oven_feeder_inside_cylinder a :PartSpecification .
+
+:Oven_feeder_outside_cylinder a :PartSpecification .
+
+:Oven_presence_sensor a :PartSpecification .
+
+:PLC a :PartType .
+
+:PLC-NET a :Part ;
+    :hasPartSpecification :Industrial_Ethernet_switch ;
+    :hasPartType :SWITCH .
+
+:PLC-TURCK a :Part ;
+    :hasPartSpecification :Main_industrial_controller ;
+    :hasPartType :PLC .
+
+:POWER-24V a :Part ;
+    :hasPartSpecification :24V_DC_power_system ;
+    :hasPartType :POWER_SUPPLY .
+
+:POWER_SUPPLY a :PartType .
+
+:Pick_from_sorting_line a :Function ;
+    :hasFunctionDescription "Robot grips processed workpiece from sorting output" ;
+    :partTypeInvolvedInFunc :COMPRESSOR,
+        :CYLINDER,
+        :SOLENOID_VALVE,
+        :SUCTION_CUP .
+
+:Pick_up_from_RFID a :Function ;
+    :hasFunctionDescription "Vacuum system grips workpiece again" ;
+    :partTypeInvolvedInFunc :COMPRESSOR,
+        :CYLINDER,
+        :SOLENOID_VALVE,
+        :SUCTION_CUP .
+
+:Pick_up_workpiece a :Function ;
+    :hasFunctionDescription "Vacuum system activates and grips workpiece from carrier" ;
+    :partTypeInvolvedInFunc :COMPRESSOR,
+        :CYLINDER,
+        :SOLENOID_VALVE,
+        :SUCTION_CUP .
+
+:Place_in_warehouse_input a :Function ;
+    :hasFunctionDescription "Workpiece is placed at warehouse entry point" ;
+    :partTypeInvolvedInFunc :COMPRESSOR,
+        :CYLINDER,
+        :SOLENOID_VALVE,
+        :SUCTION_CUP .
+
+:Place_on_MPO_input a :Function ;
+    :hasFunctionDescription "Workpiece is placed onto MPO conveyor or feeder" ;
+    :partTypeInvolvedInFunc :COMPRESSOR,
+        :CYLINDER,
+        :SOLENOID_VALVE,
+        :SUCTION_CUP .
+
+:Place_workpiece_on_RFID a :Function ;
+    :hasFunctionDescription "Vacuum is released and workpiece is placed on RFID platform" ;
+    :partTypeInvolvedInFunc :COMPRESSOR,
+        :CYLINDER,
+        :SOLENOID_VALVE,
+        :SUCTION_CUP .
+
+:Pneumatic_vacuum_supply a :PartSpecification .
+
+:Process_workpiece a :Function ;
+    :hasFunctionDescription "Workpiece undergoes heating simulation indicated by red LED" ;
+    :partTypeInvolvedInFunc :KILN .
+
+:Processing_Station_%28MPO%29 a :BuildingBlock ;
+    :hasFunction :Detect_workpiece,
+        :Eject_workpiece,
+        :Feed_into_oven,
+        :Machine_workpiece,
+        :Process_workpiece,
+        :Remove_from_oven,
+        :Rotate_workpiece,
+        :Transfer_to_turntable,
+        :Transport_to_output ;
+    :hasPart :MPO-COMP,
+        :MPO-CONV-MOTOR,
+        :MPO-CONVEYOR,
+        :MPO-EJECTOR,
+        :MPO-FEEDER-IN,
+        :MPO-FEEDER-OUT,
+        :MPO-LIGHT-BARRIER,
+        :MPO-OVEN,
+        :MPO-OVEN-DOOR,
+        :MPO-OVEN-SENSOR,
+        :MPO-SAWWHEEL,
+        :MPO-SUCTION,
+        :MPO-TT-MOTOR,
+        :MPO-TURNTABLE,
+        :MPO-VAC-HEAD .
+
+:RFID_reader_for_workpiece_identification a :PartSpecification .
+
+:Read_workpiece_data a :Function ;
+    :hasFunctionDescription "RFID sensor reads color and identification data from workpiece" ;
+    :partTypeInvolvedInFunc :RFID_SCANNER .
+
+:Red_bin_detection_sensor a :PartSpecification .
+
+:Red_ejector_cylinder a :PartSpecification .
+
+:Red_ejector_valve a :PartSpecification .
+
+:Remove_from_oven a :Function ;
+    :hasFunctionDescription "Feeder pushes workpiece out of oven" ;
+    :partTypeInvolvedInFunc :COMPRESSOR,
+        :CYLINDER,
+        :SOLENOID_VALVE .
+
+:Rotate_workpiece a :Function ;
+    :hasFunctionDescription "Turntable rotates to correct machining position" ;
+    :partTypeInvolvedInFunc :MINI_MOTOR,
+        :ROTARY_TABLE .
+
+:Rotational_encoder_motor a :PartSpecification .
+
+:Rotational_reference_switch a :PartSpecification .
+
+:SLD-BLUE-LB a :Part ;
+    :hasPartSpecification :Blue_bin_detection_sensor ;
+    :hasPartType :LIGHT_SENSOR .
+
+:SLD-COLOR-SENSOR a :Part ;
+    :hasPartSpecification :Optical_color_sensor ;
+    :hasPartType :COLOR_SENSOR .
+
+:SLD-COMP a :Part ;
+    :hasPartSpecification :Pneumatic_supply ;
+    :hasPartType :COMPRESSOR .
+
+:SLD-CONVEYOR a :Part ;
+    :hasPartSpecification :Sorting_conveyor_belt ;
+    :hasPartType :CONVEYOR .
+
+:SLD-EJECT-B a :Part ;
+    :hasPartSpecification :Blue_ejector_cylinder ;
+    :hasPartType :CYLINDER .
+
+:SLD-EJECT-R a :Part ;
+    :hasPartSpecification :Red_ejector_cylinder ;
+    :hasPartType :CYLINDER .
+
+:SLD-EJECT-W a :Part ;
+    :hasPartSpecification :White_ejector_cylinder ;
+    :hasPartType :CYLINDER .
+
+:SLD-IN-LB a :Part ;
+    :hasPartSpecification :Input_light_barrier ;
+    :hasPartType :LIGHT_SENSOR .
+
+:SLD-MOTOR a :Part ;
+    :hasPartSpecification :Conveyor_drive_mini_motor ;
+    :hasPartType :MINI_MOTOR .
+
+:SLD-OUT-LB a :Part ;
+    :hasPartSpecification :Output_light_barrier ;
+    :hasPartType :LIGHT_SENSOR .
+
+:SLD-RED-LB a :Part ;
+    :hasPartSpecification :Red_bin_detection_sensor ;
+    :hasPartType :LIGHT_SENSOR .
+
+:SLD-VALVE-B a :Part ;
+    :hasPartSpecification :Blue_ejector_valve ;
+    :hasPartType :SOLENOID_VALVE .
+
+:SLD-VALVE-R a :Part ;
+    :hasPartSpecification :Red_ejector_valve ;
+    :hasPartType :SOLENOID_VALVE .
+
+:SLD-VALVE-W a :Part ;
+    :hasPartSpecification :White_ejector_valve ;
+    :hasPartType :SOLENOID_VALVE .
+
+:SLD-WHITE-LB a :Part ;
+    :hasPartSpecification :White_bin_detection_sensor ;
+    :hasPartType :LIGHT_SENSOR .
+
+:SWITCH a :PartType .
+
+:Saw_or_milling_motor a :PartSpecification .
+
+:Select_carrier a :Function ;
+    :hasFunctionDescription "Warehouse positions itself using motors and encoders to select the correct carrier location" ;
+    :partTypeInvolvedInFunc :ENCODER,
+        :MINI_MOTOR,
+        :REFERENCE_SWITCH .
+
+:Sort_workpiece a :Function ;
+    :hasFunctionDescription "Pneumatic ejector directs workpiece to correct bin" ;
+    :partTypeInvolvedInFunc :COMPRESSOR,
+        :CYLINDER,
+        :SOLENOID_VALVE .
+
+:Sorting_Line_%28SLD%29 a :BuildingBlock ;
+    :hasFunction :Detect_color,
+        :Detect_incoming_workpiece,
+        :Move_along_conveyor,
+        :Sort_workpiece,
+        :Store_in_bin ;
+    :hasPart :SLD-BLUE-LB,
+        :SLD-COLOR-SENSOR,
+        :SLD-COMP,
+        :SLD-CONVEYOR,
+        :SLD-EJECT-B,
+        :SLD-EJECT-R,
+        :SLD-EJECT-W,
+        :SLD-IN-LB,
+        :SLD-MOTOR,
+        :SLD-OUT-LB,
+        :SLD-RED-LB,
+        :SLD-VALVE-B,
+        :SLD-VALVE-R,
+        :SLD-VALVE-W,
+        :SLD-WHITE-LB .
+
+:Sorting_conveyor_belt a :PartSpecification .
+
+:Store_in_bin a :Function ;
+    :hasFunctionDescription "Light sensor verifies bin occupancy" ;
+    :partTypeInvolvedInFunc :LIGHT_SENSOR .
+
+:Store_workpiece a :Function ;
+    :hasFunctionDescription "Warehouse positions and stores workpiece in correct location" ;
+    :partTypeInvolvedInFunc :ENCODER,
+        :MINI_MOTOR,
+        :REFERENCE_SWITCH .
+
+:Transfer_to_turntable a :Function ;
+    :hasFunctionDescription "Vacuum system moves part from oven output to turntable" ;
+    :partTypeInvolvedInFunc :COMPRESSOR,
+        :CYLINDER,
+        :SOLENOID_VALVE,
+        :SUCTION_CUP .
+
+:Transport_conveyor a :PartSpecification .
+
+:Transport_to_RFID_station a :Function ;
+    :hasFunctionDescription "Robot transports workpiece to RFID platform" ;
+    :partTypeInvolvedInFunc :ENCODER_MOTOR .
+
+:Transport_to_output a :Function ;
+    :hasFunctionDescription "Conveyor transports workpiece toward sorting line" ;
+    :partTypeInvolvedInFunc :CONVEYOR,
+        :MINI_MOTOR .
+
+:Transport_to_processing_station_MPO a :Function ;
+    :hasFunctionDescription "Robot moves workpiece to MPO input area" ;
+    :partTypeInvolvedInFunc :ENCODER_MOTOR .
+
+:Transport_to_warehouse a :Function ;
+    :hasFunctionDescription "Robot moves workpiece back to warehouse input area" ;
+    :partTypeInvolvedInFunc :ENCODER_MOTOR .
+
+:Turntable_drive_mini_motor a :PartSpecification .
+
+:Turntable_ejection_valve a :PartSpecification .
+
+:Vacuum_control_valve a :PartSpecification .
+
+:Vacuum_lowering_cylinder a :PartSpecification .
+
+:Vacuum_suction_cup_%28workpiece_transfer%29 a :PartSpecification .
+
+:Vacuum_suction_cup_gripper a :PartSpecification .
+
+:Vertical_encoder_motor a :PartSpecification .
+
+:Vertical_movement_motor a :PartSpecification .
+
+:Vertical_position_encoder a :PartSpecification .
+
+:WH-CANTILEVER-B a :Part ;
+    :hasPartSpecification :Cantilever_backward_motor ;
+    :hasPartType :MINI_MOTOR .
+
+:WH-CANTILEVER-F a :Part ;
+    :hasPartSpecification :Cantilever_forward_motor ;
+    :hasPartType :MINI_MOTOR .
+
+:WH-CONV-BWD a :Part ;
+    :hasPartSpecification :Backward_conveyor_mini_motor ;
+    :hasPartType :MINI_MOTOR .
+
+:WH-CONV-FWD a :Part ;
+    :hasPartSpecification :Forward_conveyor_mini_motor ;
+    :hasPartType :MINI_MOTOR .
+
+:WH-CONVEYOR a :Part ;
+    :hasPartSpecification :Warehouse_conveyor ;
+    :hasPartType :CONVEYOR .
+
+:WH-ENC-H a :Part ;
+    :hasPartSpecification :Horizontal_position_encoder ;
+    :hasPartType :ENCODER .
+
+:WH-ENC-V a :Part ;
+    :hasPartSpecification :Vertical_position_encoder ;
+    :hasPartType :ENCODER .
+
+:WH-IN-LB a :Part ;
+    :hasPartSpecification :Inside_light_barrier ;
+    :hasPartType :LIGHT_SENSOR .
+
+:WH-MOTOR-H a :Part ;
+    :hasPartSpecification :Horizontal_movement_motor ;
+    :hasPartType :MINI_MOTOR .
+
+:WH-MOTOR-V a :Part ;
+    :hasPartSpecification :Vertical_movement_motor ;
+    :hasPartType :MINI_MOTOR .
+
+:WH-OUT-LB a :Part ;
+    :hasPartSpecification :Outside_light_barrier ;
+    :hasPartType :LIGHT_SENSOR .
+
+:WH-REF-CB a :Part ;
+    :hasPartSpecification :Cantilever_back_switch ;
+    :hasPartType :REFERENCE_SWITCH .
+
+:WH-REF-CF a :Part ;
+    :hasPartSpecification :Cantilever_front_switch ;
+    :hasPartType :REFERENCE_SWITCH .
+
+:WH-REF-H a :Part ;
+    :hasPartSpecification :Horizontal_reference_switch ;
+    :hasPartType :REFERENCE_SWITCH .
+
+:WH-REF-V a :Part ;
+    :hasPartSpecification :Vertical_reference_switch ;
+    :hasPartType :REFERENCE_SWITCH .
+
+:Warehouse_%28HBW%29 a :BuildingBlock ;
+    :hasFunction :Move_conveyor_to_pickup_position,
+        :Move_conveyor_to_storage_position,
+        :Select_carrier,
+        :Store_workpiece ;
+    :hasPart :WH-CANTILEVER-B,
+        :WH-CANTILEVER-F,
+        :WH-CONV-BWD,
+        :WH-CONV-FWD,
+        :WH-CONVEYOR,
+        :WH-ENC-H,
+        :WH-ENC-V,
+        :WH-IN-LB,
+        :WH-MOTOR-H,
+        :WH-MOTOR-V,
+        :WH-OUT-LB,
+        :WH-REF-CB,
+        :WH-REF-CF,
+        :WH-REF-H,
+        :WH-REF-V .
+
+:Warehouse_conveyor a :PartSpecification .
+
+:White_bin_detection_sensor a :PartSpecification .
+
+:White_ejector_cylinder a :PartSpecification .
+
+:White_ejector_valve a :PartSpecification .
+
+:Workpiece_detection_sensor a :PartSpecification .
+
+:XYZ-COMP a :Part ;
+    :hasPartSpecification :Pneumatic_vacuum_supply ;
+    :hasPartType :COMPRESSOR .
+
+:XYZ-CYLINDER_1 a :Part ;
+    :hasPartSpecification :Pneumatic_cylinder_for_vacuum_system ;
+    :hasPartType :CYLINDER .
+
+:XYZ-CYLINDER_2 a :Part ;
+    :hasPartSpecification :Pneumatic_cylinder_for_vacuum_system ;
+    :hasPartType :CYLINDER .
+
+:XYZ-MOTOR-H a :Part ;
+    :hasPartSpecification :Horizontal_encoder_motor ;
+    :hasPartType :ENCODER_MOTOR .
+
+:XYZ-MOTOR-R a :Part ;
+    :hasPartSpecification :Rotational_encoder_motor ;
+    :hasPartType :ENCODER_MOTOR .
+
+:XYZ-MOTOR-V a :Part ;
+    :hasPartSpecification :Vertical_encoder_motor ;
+    :hasPartType :ENCODER_MOTOR .
+
+:XYZ-REF-H a :Part ;
+    :hasPartSpecification :Horizontal_reference_switch ;
+    :hasPartType :REFERENCE_SWITCH .
+
+:XYZ-REF-R a :Part ;
+    :hasPartSpecification :Rotational_reference_switch ;
+    :hasPartType :REFERENCE_SWITCH .
+
+:XYZ-REF-V a :Part ;
+    :hasPartSpecification :Vertical_reference_switch ;
+    :hasPartType :REFERENCE_SWITCH .
+
+:XYZ-RFID a :Part ;
+    :hasPartSpecification :RFID_reader_for_workpiece_identification ;
+    :hasPartType :RFID_SCANNER .
+
+:XYZ-SUCTION a :Part ;
+    :hasPartSpecification :Vacuum_suction_cup_gripper ;
+    :hasPartType :SUCTION_CUP .
+
+:XYZ-VAC-VALVE a :Part ;
+    :hasPartSpecification :Vacuum_control_valve ;
+    :hasPartType :SOLENOID_VALVE .
+
+:XYZ_Robot_%28VGR%29 a :BuildingBlock ;
+    :hasPart :XYZ-COMP,
+        :XYZ-CYLINDER_1,
+        :XYZ-CYLINDER_2,
+        :XYZ-MOTOR-H,
+        :XYZ-MOTOR-R,
+        :XYZ-MOTOR-V,
+        :XYZ-REF-H,
+        :XYZ-REF-R,
+        :XYZ-REF-V,
+        :XYZ-RFID,
+        :XYZ-SUCTION,
+        :XYZ-VAC-VALVE .
+
+:cause001 a :Cause ;
+    rdfs:label "Robot arm miscalibration causing miss position" ;
+    :hasSolution :solution001 .
+
+:cause002 a :Cause ;
+    rdfs:label "Vacuum leakage due to loose pneumatic tubes" ;
+    :hasSolution :solution002 .
+
+:cause003 a :Cause ;
+    rdfs:label "Empty carrier present in warehouse" ;
+    :hasSolution :solution003 .
+
+:cause004 a :Cause ;
+    rdfs:label "Loose gears causing inaccurate motion" ;
+    :hasSolution :solution004 .
+
+:cause005 a :Cause ;
+    rdfs:label "Robot arm miscalibration causing miss position" ;
+    :hasSolution :solution005 .
+
+:cause006 a :Cause ;
+    rdfs:label "Vacuum leakage or insufficient suction" ;
+    :hasSolution :solution006 .
+
+:cause007 a :Cause ;
+    rdfs:label "Loose gears causing inaccurate positioning" ;
+    :hasSolution :solution007 .
+
+:cause008 a :Cause ;
+    rdfs:label "Workpiece misaligned on RFID sensor" ;
+    :hasSolution :solution008 .
+
+:cause009 a :Cause ;
+    rdfs:label "Workpiece missing due to failed pickup" ;
+    :hasSolution :solution009 .
+
+:cause010 a :Cause ;
+    rdfs:label "Suction loss during movement" ;
+    :hasSolution :solution010 .
+
+:cause011 a :Cause ;
+    rdfs:label "Loose pneumatic connections" ;
+    :hasSolution :solution011 .
+
+:cause012 a :Cause ;
+    rdfs:label "Suction loss during movement" ;
+    :hasSolution :solution012 .
+
+:cause013 a :Cause ;
+    rdfs:label "Loose pneumatic connections" ;
+    :hasSolution :solution013 .
+
+:cause014 a :Cause ;
+    rdfs:label "Robot arm miscalibration causing incorrect placement" ;
+    :hasSolution :solution014 .
+
+:cause015 a :Cause ;
+    rdfs:label "Friction or wear causing position drift" ;
+    :hasSolution :solution015 .
+
+:cause016 a :Cause ;
+    rdfs:label "Loose gears causing inaccurate motion" ;
+    :hasSolution :solution016 .
+
+:cause017 a :Cause ;
+    rdfs:label "Robot arm miscalibration causing wrong placement" ;
+    :hasSolution :solution017 .
+
+:cause018 a :Cause ;
+    rdfs:label "Loose gears affecting positioning accuracy" ;
+    :hasSolution :solution018 .
+
+:cause019 a :Cause ;
+    rdfs:label "Robot arm miscalibration causing wrong position" ;
+    :hasSolution :solution019 .
+
+:cause020 a :Cause ;
+    rdfs:label "Incorrect warehouse reference position" ;
+    :hasSolution :solution020 .
+
+:cause021 a :Cause ;
+    rdfs:label "Light sensor misaligned or blocked by incorrect workpiece position" ;
+    :hasSolution :solution021 .
+
+:cause022 a :Cause ;
+    rdfs:label "Workpiece missing due to upstream robot failure" ;
+    :hasSolution :solution022 .
+
+:cause023 a :Cause ;
+    rdfs:label "Oven feeder cylinder not actuating" ;
+    :hasSolution :solution023 .
+
+:cause024 a :Cause ;
+    rdfs:label "Oven feeder cylinder not actuating" ;
+    :hasSolution :solution024 .
+
+:cause025 a :Cause ;
+    rdfs:label "Workpiece not delivered by robot" ;
+    :hasSolution :solution025 .
+
+:cause026 a :Cause ;
+    rdfs:label "Suction system failure during pickup" ;
+    :hasSolution :solution026 .
+
+:cause027 a :Cause ;
+    rdfs:label "Mechanical misalignment of feeder" ;
+    :hasSolution :solution027 .
+
+:cause028 a :Cause ;
+    rdfs:label "Ejector cylinder failure" ;
+    :hasSolution :solution028 .
+
+:cause029 a :Cause ;
+    rdfs:label "Insufficient air pressure" ;
+    :hasSolution :solution029 .
+
+:cause030 a :Cause ;
+    rdfs:label "Workpiece misaligned relative to light sensor" ;
+    :hasSolution :solution030 .
+
+:cause031 a :Cause ;
+    rdfs:label "Workpiece missing due to upstream failure" ;
+    :hasSolution :solution031 .
+
+:cause032 a :Cause ;
+    rdfs:label "Incorrect color sensor calibration" ;
+    :hasSolution :solution032 .
+
+:cause033 a :Cause ;
+    rdfs:label "Incorrect warehouse configuration of colors" ;
+    :hasSolution :solution033 .
+
+:cause034 a :Cause ;
+    rdfs:label "Ejector cylinder not working" ;
+    :hasSolution :solution034 .
+
+:cause035 a :Cause ;
+    rdfs:label "Incorrect timing in PLC control" ;
+    :hasSolution :solution035 .
+
+:cause036 a :Cause ;
+    rdfs:label "Incorrect warehouse configuration" ;
+    :hasSolution :solution036 .
+
+:cause037 a :Cause ;
+    rdfs:label "Incorrect internal PLC tracking state" ;
+    :hasSolution :solution037 .
+
+:cause038 a :Cause ;
+    rdfs:label "Warehouse positioning miscalibration" ;
+    :hasSolution :solution038 .
+
+:cause039 a :Cause ;
+    rdfs:label "Loose mechanical components in drive system" ;
+    :hasSolution :solution039 .
+
+:cause040 a :Cause ;
+    rdfs:label "Carrier placed in wrong orientation" ;
+    :hasSolution :solution040 .
+
+:cause041 a :Cause ;
+    rdfs:label "Loose or misaligned mechanical parts" ;
+    :hasSolution :solution041 .
+
+:cause042 a :Cause ;
+    rdfs:label "Loose rails or structural components" ;
+    :hasSolution :solution042 .
+
+:cause043 a :Cause ;
+    rdfs:label "Carrier incorrectly oriented" ;
+    :hasSolution :solution043 .
+
+:cause044 a :Cause ;
+    rdfs:label "Loose electrical connectors" ;
+    :hasSolution :solution044 .
+
+:cause045 a :Cause ;
+    rdfs:label "Reference switch not triggered" ;
+    :hasSolution :solution045 .
+
+:cause046 a :Cause ;
+    rdfs:label "Mechanical obstruction or misalignment" ;
+    :hasSolution :solution046 .
+
+:cause047 a :Cause ;
+    rdfs:label "Reference switch not triggered or misaligned" ;
+    :hasSolution :solution047 .
+
+:cause048 a :Cause ;
+    rdfs:label "Loose mechanical components preventing reaching reference position" ;
+    :hasSolution :solution048 .
+
+:cause049 a :Cause ;
+    rdfs:label "Insufficient lubrication of mechanical parts" ;
+    :hasSolution :solution049 .
+
+:solution001 a :Solution ;
+    rdfs:label "Recalibrate robot movement in PLC and adjust encoder motor parameters" .
+
+:solution002 a :Solution ;
+    rdfs:label "Check pneumatic tubing and reconnect all loose connections" .
+
+:solution003 a :Solution ;
+    rdfs:label "Verify correct warehouse loading and remove empty carriers" .
+
+:solution004 a :Solution ;
+    rdfs:label "Tighten or replace gears and ensure proper alignment" .
+
+:solution005 a :Solution ;
+    rdfs:label "Recalibrate robot movement and verify placement coordinates" .
+
+:solution006 a :Solution ;
+    rdfs:label "Check suction cup valve cylinder and compressor" .
+
+:solution007 a :Solution ;
+    rdfs:label "Inspect and secure gear connections" .
+
+:solution008 a :Solution ;
+    rdfs:label "Ensure correct placement of workpiece on RFID platform" .
+
+:solution009 a :Solution ;
+    rdfs:label "Trace back to robot pickup operation" .
+
+:solution010 a :Solution ;
+    rdfs:label "Inspect suction cup valve and pneumatic system" .
+
+:solution011 a :Solution ;
+    rdfs:label "Secure all pneumatic tubing and fittings" .
+
+:solution012 a :Solution ;
+    rdfs:label "Inspect suction components and airflow" .
+
+:solution013 a :Solution ;
+    rdfs:label "Check and fix all air connections" .
+
+:solution014 a :Solution ;
+    rdfs:label "Recalibrate robot movement in PLC" .
+
+:solution015 a :Solution ;
+    rdfs:label "Lubricate moving parts and inspect mechanical resistance" .
+
+:solution016 a :Solution ;
+    rdfs:label "Tighten or replace gears" .
+
+:solution017 a :Solution ;
+    rdfs:label "Recalibrate robot positioning for each target location" .
+
+:solution018 a :Solution ;
+    rdfs:label "Inspect and secure mechanical drive components" .
+
+:solution019 a :Solution ;
+    rdfs:label "Recalibrate robot positions for each color slot" .
+
+:solution020 a :Solution ;
+    rdfs:label "Verify and reset reference switches" .
+
+:solution021 a :Solution ;
+    rdfs:label "Clean sensor and align workpiece correctly" .
+
+:solution022 a :Solution ;
+    rdfs:label "Check previous robot transport step" .
+
+:solution023 a :Solution ;
+    rdfs:label "Check cylinder valve and compressed air supply" .
+
+:solution024 a :Solution ;
+    rdfs:label "Verify pneumatic cylinder and valve function" .
+
+:solution025 a :Solution ;
+    rdfs:label "Check robot calibration and pickup" .
+
+:solution026 a :Solution ;
+    rdfs:label "Inspect suction cup valve compressor and cylinder" .
+
+:solution027 a :Solution ;
+    rdfs:label "Realign feeder mechanism and mounting" .
+
+:solution028 a :Solution ;
+    rdfs:label "Check pneumatic cylinder and valve operation" .
+
+:solution029 a :Solution ;
+    rdfs:label "Inspect compressor and check for air leaks" .
+
+:solution030 a :Solution ;
+    rdfs:label "Align workpiece correctly on conveyor" .
+
+:solution031 a :Solution ;
+    rdfs:label "Trace back to processing station and robot" .
+
+:solution032 a :Solution ;
+    rdfs:label "Recalibrate color sensor thresholds" .
+
+:solution033 a :Solution ;
+    rdfs:label "Correct initial warehouse setup" .
+
+:solution034 a :Solution ;
+    rdfs:label "Check pneumatic cylinder and valves" .
+
+:solution035 a :Solution ;
+    rdfs:label "Adjust PLC timing parameters" .
+
+:solution036 a :Solution ;
+    rdfs:label "Reconfigure correct color layout" .
+
+:solution037 a :Solution ;
+    rdfs:label "Reset and verify PLC state" .
+
+:solution038 a :Solution ;
+    rdfs:label "Recalibrate warehouse positioning" .
+
+:solution039 a :Solution ;
+    rdfs:label "Tighten mechanical connections" .
+
+:solution040 a :Solution ;
+    rdfs:label "Place carriers in correct orientation" .
+
+:solution041 a :Solution ;
+    rdfs:label "Inspect and realign mechanical structure" .
+
+:solution042 a :Solution ;
+    rdfs:label "Tighten all mounting structures" .
+
+:solution043 a :Solution ;
+    rdfs:label "Correct carrier orientation before operation" .
+
+:solution044 a :Solution ;
+    rdfs:label "Inspect and reconnect all electrical wiring" .
+
+:solution045 a :Solution ;
+    rdfs:label "Adjust and verify reference switch position" .
+
+:solution046 a :Solution ;
+    rdfs:label "Inspect movement path and remove obstruction" .
+
+:solution047 a :Solution ;
+    rdfs:label "Check and realign reference switches and verify proper actuation" .
+
+:solution048 a :Solution ;
+    rdfs:label "Tighten and secure moving parts and ensure unobstructed movement" .
+
+:solution049 a :Solution ;
+    rdfs:label "Lubricate gears rails and moving elements" .
+
+:COLOR_SENSOR a :PartType .
+
+:Conveyor_drive_mini_motor a :PartSpecification .
+
+:Horizontal_reference_switch a :PartSpecification .
+
+:IO_MODULE a :PartType .
+
+:KILN a :PartType .
+
+:Pneumatic_cylinder_for_vacuum_system a :PartSpecification .
+
+:Pneumatic_supply a :PartSpecification .
+
+:RFID_SCANNER a :PartType .
+
+:ROTARY_TABLE a :PartType .
+
+:Vertical_reference_switch a :PartSpecification .
+
+:ENCODER a :PartType .
+
+:System a :BuildingBlock ;
+    :hasFunction :Cycle_complete .
+
+:CONVEYOR a :PartType .
+
+:ENCODER_MOTOR a :PartType .
+
+:SUCTION_CUP a :PartType .
+
+:REFERENCE_SWITCH a :PartType .
+
+:COMPRESSOR a :PartType .
+
+:LIGHT_SENSOR a :PartType .
+
+:SOLENOID_VALVE a :PartType .
+
+:MINI_MOTOR a :PartType .
+
+:CYLINDER a :PartType .
+
