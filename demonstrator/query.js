@@ -57,10 +57,6 @@
           const title = document.createElement('h3'); title.textContent = context.title;
           const description = document.createElement('p'); description.textContent = context.description;
           text.append(title, description);
-          if (context.overview) {
-            const link = document.createElement('a'); link.href = context.overview; link.textContent = 'Component details →';
-            text.append(link);
-          }
           $('context-content').append(imageLink, text);
         }
         buttons.forEach((item, i) => item.setAttribute('aria-pressed', String(i === index)));
