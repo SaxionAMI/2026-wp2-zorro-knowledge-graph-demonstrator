@@ -1,1284 +1,1417 @@
-@prefix : <http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#> .
+@prefix demo: <http://www.semanticweb.org/ontologies/2026/ZorroDemo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-:Control a :SubSystem ;
-    :hasBuildingBlock :Control_System_%28Turck_PLC_Setup%29 .
-
-:Handling a :SubSystem ;
-    :hasBuildingBlock :XYZ_Robot_%28VGR%29 .
-
-:Processing a :SubSystem ;
-    :hasBuildingBlock :Processing_Station_%28MPO%29 .
-
-:RFID_Station a :BuildingBlock ;
-    :hasFunction :Read_workpiece_data .
-
-:Robot_%28XYZ%29 a :BuildingBlock ;
-    :hasFunction :Move_to_warehouse,
-        :Pick_from_sorting_line,
-        :Pick_up_from_RFID,
-        :Pick_up_workpiece,
-        :Place_in_warehouse_input,
-        :Place_on_MPO_input,
-        :Place_workpiece_on_RFID,
-        :Transport_to_RFID_station,
-        :Transport_to_processing_station_MPO,
-        :Transport_to_warehouse .
-
-:Sorting a :SubSystem ;
-    :hasBuildingBlock :Sorting_Line_%28SLD%29 .
-
-:Storage a :SubSystem ;
-    :hasBuildingBlock :Warehouse_%28HBW%29 .
-
-:problem001 a :Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause001 .
-
-:problem002 a :Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause002 .
-
-:problem003 a :Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause003 .
-
-:problem004 a :Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause004 .
-
-:problem005 a :Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause005 .
-
-:problem006 a :Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause006 .
-
-:problem007 a :Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause007 .
-
-:problem008 a :Problem ;
-    rdfs:label "RFID station does not detect workpiece color" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause008 .
-
-:problem009 a :Problem ;
-    rdfs:label "RFID station does not detect workpiece color" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause009 .
-
-:problem010 a :Problem ;
-    rdfs:label "Robot XYZ drops workpiece during transport warehouse to RFID" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause010 .
-
-:problem011 a :Problem ;
-    rdfs:label "Robot XYZ drops workpiece during transport warehouse to RFID" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause011 .
-
-:problem012 a :Problem ;
-    rdfs:label "Robot XYZ drops workpiece during transport RFID to processing station" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause012 .
-
-:problem013 a :Problem ;
-    rdfs:label "Robot XYZ drops workpiece during transport RFID to processing station" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause013 .
-
-:problem014 a :Problem ;
-    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause014 .
-
-:problem015 a :Problem ;
-    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause015 .
-
-:problem016 a :Problem ;
-    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause016 .
-
-:problem017 a :Problem ;
-    rdfs:label "Robot XYZ places workpiece incorrectly in sorting line SLD" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause017 .
-
-:problem018 a :Problem ;
-    rdfs:label "Robot XYZ places workpiece incorrectly in sorting line SLD" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause018 .
-
-:problem019 a :Problem ;
-    rdfs:label "Robot XYZ places red white or blue workpiece incorrectly into warehouse" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause019 .
-
-:problem020 a :Problem ;
-    rdfs:label "Robot XYZ places red white or blue workpiece incorrectly into warehouse" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause020 .
-
-:problem021 a :Problem ;
-    rdfs:label "Processing Station MPO fails to detect workpiece at conveyor entry" ;
-    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
-    :hasCause :cause021 .
-
-:problem022 a :Problem ;
-    rdfs:label "Processing Station MPO fails to detect workpiece at conveyor entry" ;
-    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
-    :hasCause :cause022 .
-
-:problem023 a :Problem ;
-    rdfs:label "Processing Station MPO oven does not receive workpiece" ;
-    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
-    :hasCause :cause023 .
-
-:problem024 a :Problem ;
-    rdfs:label "Processing Station MPO oven doors do not close" ;
-    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
-    :hasCause :cause024 .
-
-:problem025 a :Problem ;
-    rdfs:label "Processing Station MPO oven does not receive workpiece" ;
-    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
-    :hasCause :cause025 .
-
-:problem026 a :Problem ;
-    rdfs:label "Processing Station MPO workpiece not transferred from oven to turntable" ;
-    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
-    :hasCause :cause026 .
-
-:problem027 a :Problem ;
-    rdfs:label "Processing Station MPO workpiece not transferred from oven to turntable" ;
-    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
-    :hasCause :cause027 .
-
-:problem028 a :Problem ;
-    rdfs:label "Processing Station MPO workpiece not ejected to conveyor" ;
-    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
-    :hasCause :cause028 .
-
-:problem029 a :Problem ;
-    rdfs:label "Processing Station MPO workpiece not ejected to conveyor" ;
-    :BBinvolvedInProblem :Processing_Station_\(MPO\) ;
-    :hasCause :cause029 .
-
-:problem030 a :Problem ;
-    rdfs:label "Sorting Line SLD fails to detect incoming workpiece" ;
-    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
-    :hasCause :cause030 .
-
-:problem031 a :Problem ;
-    rdfs:label "Sorting Line SLD fails to detect incoming workpiece" ;
-    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
-    :hasCause :cause031 .
-
-:problem032 a :Problem ;
-    rdfs:label "Sorting Line SLD incorrectly sorts workpiece color" ;
-    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
-    :hasCause :cause032 .
-
-:problem033 a :Problem ;
-    rdfs:label "Sorting Line SLD incorrectly sorts workpiece color" ;
-    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
-    :hasCause :cause033 .
-
-:problem034 a :Problem ;
-    rdfs:label "Sorting Line SLD fails to eject workpiece into correct bin" ;
-    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
-    :hasCause :cause034 .
-
-:problem035 a :Problem ;
-    rdfs:label "Sorting Line SLD fails to eject workpiece into correct bin" ;
-    :BBinvolvedInProblem :Sorting_Line_\(SLD\) ;
-    :hasCause :cause035 .
-
-:problem036 a :Problem ;
-    rdfs:label "Warehouse HBW picks wrong workpiece from storage" ;
-    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
-    :hasCause :cause036 .
-
-:problem037 a :Problem ;
-    rdfs:label "Warehouse HBW picks wrong workpiece from storage" ;
-    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
-    :hasCause :cause037 .
-
-:problem038 a :Problem ;
-    rdfs:label "Warehouse HBW fails to pick up carrier from rack" ;
-    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
-    :hasCause :cause038 .
-
-:problem039 a :Problem ;
-    rdfs:label "Warehouse HBW fails to pick up carrier from rack" ;
-    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
-    :hasCause :cause039 .
-
-:problem040 a :Problem ;
-    rdfs:label "Warehouse HBW causes collision with carrier" ;
-    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
-    :hasCause :cause040 .
-
-:problem041 a :Problem ;
-    rdfs:label "Warehouse HBW causes collision with carrier" ;
-    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
-    :hasCause :cause041 .
-
-:problem042 a :Problem ;
-    rdfs:label "Warehouse HBW pushes or damages structure during movement" ;
-    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
-    :hasCause :cause042 .
-
-:problem043 a :Problem ;
-    rdfs:label "Warehouse HBW pushes or damages structure during movement" ;
-    :BBinvolvedInProblem :Warehouse_\(HBW\) ;
-    :hasCause :cause043 .
-
-:problem044 a :Problem ;
-    rdfs:label "System wide intermittent failures across stations" ;
-    :BBinvolvedInProblem :System ;
-    :hasCause :cause044 .
-
-:problem045 a :Problem ;
-    rdfs:label "Robot XYZ fails to reach reference position during homing" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause045 .
-
-:problem046 a :Problem ;
-    rdfs:label "Robot XYZ fails to reach reference position during homing" ;
-    :BBinvolvedInProblem :XYZ_Robot_\(VGR\) ;
-    :hasCause :cause046 .
-
-:problem047 a :Problem ;
-    rdfs:label "System stops or does not continue production flow at any station" ;
-    :BBinvolvedInProblem :System ;
-    :hasCause :cause047 .
-
-:problem048 a :Problem ;
-    rdfs:label "System stops or does not continue production flow at any station" ;
-    :BBinvolvedInProblem :System ;
-    :hasCause :cause048 .
-
-:problem049 a :Problem ;
-    rdfs:label "System shows slow or inconsistent movement across stations" ;
-    :BBinvolvedInProblem :System ;
-    :hasCause :cause049 .
-
-:24V_DC_power_system a :PartSpecification .
-
-:ALL_SYSTEMS a :PartType .
-
-<http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Analog_I/O_module> a :PartSpecification .
-
-:Backward_conveyor_mini_motor a :PartSpecification .
-
-:Blue_bin_detection_sensor a :PartSpecification .
-
-:Blue_ejector_cylinder a :PartSpecification .
-
-:Blue_ejector_valve a :PartSpecification .
-
-:Cantilever_back_switch a :PartSpecification .
-
-:Cantilever_backward_motor a :PartSpecification .
-
-:Cantilever_forward_motor a :PartSpecification .
-
-:Cantilever_front_switch a :PartSpecification .
-
-:Control_System_%28Turck_PLC_Setup%29 a :BuildingBlock ;
-    :hasPart :HMI-PANEL,
-        :IO-ANALOG,
-        :IO-DIGITAL,
-        :PLC-NET,
-        :PLC-TURCK,
-        :POWER-24V .
-
-:Cycle_complete a :Function ;
-    :hasFunctionDescription "System returns to idle state and is ready for next cycle" ;
-    :partTypeInvolvedInFunc :ALL_SYSTEMS .
-
-:Detect_color a :Function ;
-    :hasFunctionDescription "Color sensor determines workpiece color" ;
-    :partTypeInvolvedInFunc :COLOR_SENSOR .
-
-:Detect_incoming_workpiece a :Function ;
-    :hasFunctionDescription "Entry light sensor detects arrival of workpiece" ;
-    :partTypeInvolvedInFunc :LIGHT_SENSOR .
-
-:Detect_workpiece a :Function ;
-    :hasFunctionDescription "Light sensor confirms presence of workpiece at entry" ;
-    :partTypeInvolvedInFunc :LIGHT_SENSOR .
-
-<http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Digital_I/O_module> a :PartSpecification .
-
-:Eject_workpiece a :Function ;
-    :hasFunctionDescription "Pneumatic ejector pushes workpiece onto conveyor" ;
-    :partTypeInvolvedInFunc :COMPRESSOR,
-        :CYLINDER,
-        :SOLENOID_VALVE .
-
-:Feed_into_oven a :Function ;
-    :hasFunctionDescription "Feeder pushes workpiece into oven and door closes using pneumatic system" ;
-    :partTypeInvolvedInFunc :COMPRESSOR,
-        :CYLINDER,
-        :SOLENOID_VALVE .
-
-:Forward_conveyor_mini_motor a :PartSpecification .
-
-:Furnace_unit a :PartSpecification .
-
-:HMI a :PartType .
-
-:HMI-PANEL a :Part ;
-    :hasPartSpecification :Operator_interface ;
-    :hasPartType :HMI .
-
-:Horizontal_encoder_motor a :PartSpecification .
-
-:Horizontal_movement_motor a :PartSpecification .
-
-:Horizontal_position_encoder a :PartSpecification .
-
-:IO-ANALOG a :Part ;
-    :hasPartSpecification <http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Analog_I/O_module> ;
-    :hasPartType :IO_MODULE .
-
-:IO-DIGITAL a :Part ;
-    :hasPartSpecification <http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#Digital_I/O_module> ;
-    :hasPartType :IO_MODULE .
-
-:Indexing_turntable a :PartSpecification .
-
-:Industrial_Ethernet_switch a :PartSpecification .
-
-:Input_light_barrier a :PartSpecification .
-
-:Inside_light_barrier a :PartSpecification .
-
-:MPO-COMP a :Part ;
-    :hasPartSpecification :Pneumatic_supply ;
-    :hasPartType :COMPRESSOR .
-
-:MPO-CONV-MOTOR a :Part ;
-    :hasPartSpecification :Conveyor_drive_mini_motor ;
-    :hasPartType :MINI_MOTOR .
-
-:MPO-CONVEYOR a :Part ;
-    :hasPartSpecification :Transport_conveyor ;
-    :hasPartType :CONVEYOR .
-
-:MPO-EJECTOR a :Part ;
-    :hasPartSpecification :Turntable_ejection_valve ;
-    :hasPartType :SOLENOID_VALVE .
-
-:MPO-FEEDER-IN a :Part ;
-    :hasPartSpecification :Oven_feeder_inside_cylinder ;
-    :hasPartType :CYLINDER .
-
-:MPO-FEEDER-OUT a :Part ;
-    :hasPartSpecification :Oven_feeder_outside_cylinder ;
-    :hasPartType :CYLINDER .
-
-:MPO-LIGHT-BARRIER a :Part ;
-    :hasPartSpecification :Workpiece_detection_sensor ;
-    :hasPartType :LIGHT_SENSOR .
-
-:MPO-OVEN a :Part ;
-    :hasPartSpecification :Furnace_unit ;
-    :hasPartType :KILN .
-
-:MPO-OVEN-DOOR a :Part ;
-    :hasPartSpecification :Oven_door_valve ;
-    :hasPartType :SOLENOID_VALVE .
-
-:MPO-OVEN-SENSOR a :Part ;
-    :hasPartSpecification :Oven_presence_sensor ;
-    :hasPartType :LIGHT_SENSOR .
-
-:MPO-SAWWHEEL a :Part ;
-    :hasPartSpecification :Saw_or_milling_motor ;
-    :hasPartType :MINI_MOTOR .
-
-:MPO-SUCTION a :Part ;
-    :hasPartSpecification :Vacuum_suction_cup_%28workpiece_transfer%29 ;
-    :hasPartType :SUCTION_CUP .
-
-:MPO-TT-MOTOR a :Part ;
-    :hasPartSpecification :Turntable_drive_mini_motor ;
-    :hasPartType :MINI_MOTOR .
-
-:MPO-TURNTABLE a :Part ;
-    :hasPartSpecification :Indexing_turntable ;
-    :hasPartType :ROTARY_TABLE .
-
-:MPO-VAC-HEAD a :Part ;
-    :hasPartSpecification :Vacuum_lowering_cylinder ;
-    :hasPartType :CYLINDER .
-
-:Machine_workpiece a :Function ;
-    :hasFunctionDescription "Saw or milling operation is performed" ;
-    :partTypeInvolvedInFunc :MINI_MOTOR .
-
-:Main_industrial_controller a :PartSpecification .
-
-:Move_along_conveyor a :Function ;
-    :hasFunctionDescription "Workpiece is transported through sorting section" ;
-    :partTypeInvolvedInFunc :CONVEYOR,
-        :MINI_MOTOR .
-
-:Move_conveyor_to_pickup_position a :Function ;
-    :hasFunctionDescription "Conveyor belt moves carrier to output position where it can be picked up" ;
-    :partTypeInvolvedInFunc :CONVEYOR,
-        :LIGHT_SENSOR,
-        :MINI_MOTOR .
-
-:Move_conveyor_to_storage_position a :Function ;
-    :hasFunctionDescription "Conveyor transports workpiece into warehouse system" ;
-    :partTypeInvolvedInFunc :CONVEYOR,
-        :LIGHT_SENSOR,
-        :MINI_MOTOR .
-
-:Move_to_warehouse a :Function ;
-    :hasFunctionDescription "Robot moves to warehouse pickup position" ;
-    :partTypeInvolvedInFunc :ENCODER_MOTOR,
-        :REFERENCE_SWITCH .
-
-:Operator_interface a :PartSpecification .
-
-:Optical_color_sensor a :PartSpecification .
-
-:Output_light_barrier a :PartSpecification .
-
-:Outside_light_barrier a :PartSpecification .
-
-:Oven_door_valve a :PartSpecification .
-
-:Oven_feeder_inside_cylinder a :PartSpecification .
-
-:Oven_feeder_outside_cylinder a :PartSpecification .
-
-:Oven_presence_sensor a :PartSpecification .
-
-:PLC a :PartType .
-
-:PLC-NET a :Part ;
-    :hasPartSpecification :Industrial_Ethernet_switch ;
-    :hasPartType :SWITCH .
-
-:PLC-TURCK a :Part ;
-    :hasPartSpecification :Main_industrial_controller ;
-    :hasPartType :PLC .
-
-:POWER-24V a :Part ;
-    :hasPartSpecification :24V_DC_power_system ;
-    :hasPartType :POWER_SUPPLY .
-
-:POWER_SUPPLY a :PartType .
-
-:Pick_from_sorting_line a :Function ;
-    :hasFunctionDescription "Robot grips processed workpiece from sorting output" ;
-    :partTypeInvolvedInFunc :COMPRESSOR,
-        :CYLINDER,
-        :SOLENOID_VALVE,
-        :SUCTION_CUP .
-
-:Pick_up_from_RFID a :Function ;
-    :hasFunctionDescription "Vacuum system grips workpiece again" ;
-    :partTypeInvolvedInFunc :COMPRESSOR,
-        :CYLINDER,
-        :SOLENOID_VALVE,
-        :SUCTION_CUP .
-
-:Pick_up_workpiece a :Function ;
-    :hasFunctionDescription "Vacuum system activates and grips workpiece from carrier" ;
-    :partTypeInvolvedInFunc :COMPRESSOR,
-        :CYLINDER,
-        :SOLENOID_VALVE,
-        :SUCTION_CUP .
-
-:Place_in_warehouse_input a :Function ;
-    :hasFunctionDescription "Workpiece is placed at warehouse entry point" ;
-    :partTypeInvolvedInFunc :COMPRESSOR,
-        :CYLINDER,
-        :SOLENOID_VALVE,
-        :SUCTION_CUP .
-
-:Place_on_MPO_input a :Function ;
-    :hasFunctionDescription "Workpiece is placed onto MPO conveyor or feeder" ;
-    :partTypeInvolvedInFunc :COMPRESSOR,
-        :CYLINDER,
-        :SOLENOID_VALVE,
-        :SUCTION_CUP .
-
-:Place_workpiece_on_RFID a :Function ;
-    :hasFunctionDescription "Vacuum is released and workpiece is placed on RFID platform" ;
-    :partTypeInvolvedInFunc :COMPRESSOR,
-        :CYLINDER,
-        :SOLENOID_VALVE,
-        :SUCTION_CUP .
-
-:Pneumatic_vacuum_supply a :PartSpecification .
-
-:Process_workpiece a :Function ;
-    :hasFunctionDescription "Workpiece undergoes heating simulation indicated by red LED" ;
-    :partTypeInvolvedInFunc :KILN .
-
-:Processing_Station_%28MPO%29 a :BuildingBlock ;
-    :hasFunction :Detect_workpiece,
-        :Eject_workpiece,
-        :Feed_into_oven,
-        :Machine_workpiece,
-        :Process_workpiece,
-        :Remove_from_oven,
-        :Rotate_workpiece,
-        :Transfer_to_turntable,
-        :Transport_to_output ;
-    :hasPart :MPO-COMP,
-        :MPO-CONV-MOTOR,
-        :MPO-CONVEYOR,
-        :MPO-EJECTOR,
-        :MPO-FEEDER-IN,
-        :MPO-FEEDER-OUT,
-        :MPO-LIGHT-BARRIER,
-        :MPO-OVEN,
-        :MPO-OVEN-DOOR,
-        :MPO-OVEN-SENSOR,
-        :MPO-SAWWHEEL,
-        :MPO-SUCTION,
-        :MPO-TT-MOTOR,
-        :MPO-TURNTABLE,
-        :MPO-VAC-HEAD .
-
-:RFID_reader_for_workpiece_identification a :PartSpecification .
-
-:Read_workpiece_data a :Function ;
-    :hasFunctionDescription "RFID sensor reads color and identification data from workpiece" ;
-    :partTypeInvolvedInFunc :RFID_SCANNER .
-
-:Red_bin_detection_sensor a :PartSpecification .
-
-:Red_ejector_cylinder a :PartSpecification .
-
-:Red_ejector_valve a :PartSpecification .
-
-:Remove_from_oven a :Function ;
-    :hasFunctionDescription "Feeder pushes workpiece out of oven" ;
-    :partTypeInvolvedInFunc :COMPRESSOR,
-        :CYLINDER,
-        :SOLENOID_VALVE .
-
-:Rotate_workpiece a :Function ;
-    :hasFunctionDescription "Turntable rotates to correct machining position" ;
-    :partTypeInvolvedInFunc :MINI_MOTOR,
-        :ROTARY_TABLE .
-
-:Rotational_encoder_motor a :PartSpecification .
-
-:Rotational_reference_switch a :PartSpecification .
-
-:SLD-BLUE-LB a :Part ;
-    :hasPartSpecification :Blue_bin_detection_sensor ;
-    :hasPartType :LIGHT_SENSOR .
-
-:SLD-COLOR-SENSOR a :Part ;
-    :hasPartSpecification :Optical_color_sensor ;
-    :hasPartType :COLOR_SENSOR .
-
-:SLD-COMP a :Part ;
-    :hasPartSpecification :Pneumatic_supply ;
-    :hasPartType :COMPRESSOR .
-
-:SLD-CONVEYOR a :Part ;
-    :hasPartSpecification :Sorting_conveyor_belt ;
-    :hasPartType :CONVEYOR .
-
-:SLD-EJECT-B a :Part ;
-    :hasPartSpecification :Blue_ejector_cylinder ;
-    :hasPartType :CYLINDER .
-
-:SLD-EJECT-R a :Part ;
-    :hasPartSpecification :Red_ejector_cylinder ;
-    :hasPartType :CYLINDER .
-
-:SLD-EJECT-W a :Part ;
-    :hasPartSpecification :White_ejector_cylinder ;
-    :hasPartType :CYLINDER .
-
-:SLD-IN-LB a :Part ;
-    :hasPartSpecification :Input_light_barrier ;
-    :hasPartType :LIGHT_SENSOR .
-
-:SLD-MOTOR a :Part ;
-    :hasPartSpecification :Conveyor_drive_mini_motor ;
-    :hasPartType :MINI_MOTOR .
-
-:SLD-OUT-LB a :Part ;
-    :hasPartSpecification :Output_light_barrier ;
-    :hasPartType :LIGHT_SENSOR .
-
-:SLD-RED-LB a :Part ;
-    :hasPartSpecification :Red_bin_detection_sensor ;
-    :hasPartType :LIGHT_SENSOR .
-
-:SLD-VALVE-B a :Part ;
-    :hasPartSpecification :Blue_ejector_valve ;
-    :hasPartType :SOLENOID_VALVE .
-
-:SLD-VALVE-R a :Part ;
-    :hasPartSpecification :Red_ejector_valve ;
-    :hasPartType :SOLENOID_VALVE .
-
-:SLD-VALVE-W a :Part ;
-    :hasPartSpecification :White_ejector_valve ;
-    :hasPartType :SOLENOID_VALVE .
-
-:SLD-WHITE-LB a :Part ;
-    :hasPartSpecification :White_bin_detection_sensor ;
-    :hasPartType :LIGHT_SENSOR .
-
-:SWITCH a :PartType .
-
-:Saw_or_milling_motor a :PartSpecification .
-
-:Select_carrier a :Function ;
-    :hasFunctionDescription "Warehouse positions itself using motors and encoders to select the correct carrier location" ;
-    :partTypeInvolvedInFunc :ENCODER,
-        :MINI_MOTOR,
-        :REFERENCE_SWITCH .
-
-:Sort_workpiece a :Function ;
-    :hasFunctionDescription "Pneumatic ejector directs workpiece to correct bin" ;
-    :partTypeInvolvedInFunc :COMPRESSOR,
-        :CYLINDER,
-        :SOLENOID_VALVE .
-
-:Sorting_Line_%28SLD%29 a :BuildingBlock ;
-    :hasFunction :Detect_color,
-        :Detect_incoming_workpiece,
-        :Move_along_conveyor,
-        :Sort_workpiece,
-        :Store_in_bin ;
-    :hasPart :SLD-BLUE-LB,
-        :SLD-COLOR-SENSOR,
-        :SLD-COMP,
-        :SLD-CONVEYOR,
-        :SLD-EJECT-B,
-        :SLD-EJECT-R,
-        :SLD-EJECT-W,
-        :SLD-IN-LB,
-        :SLD-MOTOR,
-        :SLD-OUT-LB,
-        :SLD-RED-LB,
-        :SLD-VALVE-B,
-        :SLD-VALVE-R,
-        :SLD-VALVE-W,
-        :SLD-WHITE-LB .
-
-:Sorting_conveyor_belt a :PartSpecification .
-
-:Store_in_bin a :Function ;
-    :hasFunctionDescription "Light sensor verifies bin occupancy" ;
-    :partTypeInvolvedInFunc :LIGHT_SENSOR .
-
-:Store_workpiece a :Function ;
-    :hasFunctionDescription "Warehouse positions and stores workpiece in correct location" ;
-    :partTypeInvolvedInFunc :ENCODER,
-        :MINI_MOTOR,
-        :REFERENCE_SWITCH .
-
-:Transfer_to_turntable a :Function ;
-    :hasFunctionDescription "Vacuum system moves part from oven output to turntable" ;
-    :partTypeInvolvedInFunc :COMPRESSOR,
-        :CYLINDER,
-        :SOLENOID_VALVE,
-        :SUCTION_CUP .
-
-:Transport_conveyor a :PartSpecification .
-
-:Transport_to_RFID_station a :Function ;
-    :hasFunctionDescription "Robot transports workpiece to RFID platform" ;
-    :partTypeInvolvedInFunc :ENCODER_MOTOR .
-
-:Transport_to_output a :Function ;
-    :hasFunctionDescription "Conveyor transports workpiece toward sorting line" ;
-    :partTypeInvolvedInFunc :CONVEYOR,
-        :MINI_MOTOR .
-
-:Transport_to_processing_station_MPO a :Function ;
-    :hasFunctionDescription "Robot moves workpiece to MPO input area" ;
-    :partTypeInvolvedInFunc :ENCODER_MOTOR .
-
-:Transport_to_warehouse a :Function ;
-    :hasFunctionDescription "Robot moves workpiece back to warehouse input area" ;
-    :partTypeInvolvedInFunc :ENCODER_MOTOR .
-
-:Turntable_drive_mini_motor a :PartSpecification .
-
-:Turntable_ejection_valve a :PartSpecification .
-
-:Vacuum_control_valve a :PartSpecification .
-
-:Vacuum_lowering_cylinder a :PartSpecification .
-
-:Vacuum_suction_cup_%28workpiece_transfer%29 a :PartSpecification .
-
-:Vacuum_suction_cup_gripper a :PartSpecification .
-
-:Vertical_encoder_motor a :PartSpecification .
-
-:Vertical_movement_motor a :PartSpecification .
-
-:Vertical_position_encoder a :PartSpecification .
-
-:WH-CANTILEVER-B a :Part ;
-    :hasPartSpecification :Cantilever_backward_motor ;
-    :hasPartType :MINI_MOTOR .
-
-:WH-CANTILEVER-F a :Part ;
-    :hasPartSpecification :Cantilever_forward_motor ;
-    :hasPartType :MINI_MOTOR .
-
-:WH-CONV-BWD a :Part ;
-    :hasPartSpecification :Backward_conveyor_mini_motor ;
-    :hasPartType :MINI_MOTOR .
-
-:WH-CONV-FWD a :Part ;
-    :hasPartSpecification :Forward_conveyor_mini_motor ;
-    :hasPartType :MINI_MOTOR .
-
-:WH-CONVEYOR a :Part ;
-    :hasPartSpecification :Warehouse_conveyor ;
-    :hasPartType :CONVEYOR .
-
-:WH-ENC-H a :Part ;
-    :hasPartSpecification :Horizontal_position_encoder ;
-    :hasPartType :ENCODER .
-
-:WH-ENC-V a :Part ;
-    :hasPartSpecification :Vertical_position_encoder ;
-    :hasPartType :ENCODER .
-
-:WH-IN-LB a :Part ;
-    :hasPartSpecification :Inside_light_barrier ;
-    :hasPartType :LIGHT_SENSOR .
-
-:WH-MOTOR-H a :Part ;
-    :hasPartSpecification :Horizontal_movement_motor ;
-    :hasPartType :MINI_MOTOR .
-
-:WH-MOTOR-V a :Part ;
-    :hasPartSpecification :Vertical_movement_motor ;
-    :hasPartType :MINI_MOTOR .
-
-:WH-OUT-LB a :Part ;
-    :hasPartSpecification :Outside_light_barrier ;
-    :hasPartType :LIGHT_SENSOR .
-
-:WH-REF-CB a :Part ;
-    :hasPartSpecification :Cantilever_back_switch ;
-    :hasPartType :REFERENCE_SWITCH .
-
-:WH-REF-CF a :Part ;
-    :hasPartSpecification :Cantilever_front_switch ;
-    :hasPartType :REFERENCE_SWITCH .
-
-:WH-REF-H a :Part ;
-    :hasPartSpecification :Horizontal_reference_switch ;
-    :hasPartType :REFERENCE_SWITCH .
-
-:WH-REF-V a :Part ;
-    :hasPartSpecification :Vertical_reference_switch ;
-    :hasPartType :REFERENCE_SWITCH .
-
-:Warehouse_%28HBW%29 a :BuildingBlock ;
-    :hasFunction :Move_conveyor_to_pickup_position,
-        :Move_conveyor_to_storage_position,
-        :Select_carrier,
-        :Store_workpiece ;
-    :hasPart :WH-CANTILEVER-B,
-        :WH-CANTILEVER-F,
-        :WH-CONV-BWD,
-        :WH-CONV-FWD,
-        :WH-CONVEYOR,
-        :WH-ENC-H,
-        :WH-ENC-V,
-        :WH-IN-LB,
-        :WH-MOTOR-H,
-        :WH-MOTOR-V,
-        :WH-OUT-LB,
-        :WH-REF-CB,
-        :WH-REF-CF,
-        :WH-REF-H,
-        :WH-REF-V .
-
-:Warehouse_conveyor a :PartSpecification .
-
-:White_bin_detection_sensor a :PartSpecification .
-
-:White_ejector_cylinder a :PartSpecification .
-
-:White_ejector_valve a :PartSpecification .
-
-:Workpiece_detection_sensor a :PartSpecification .
-
-:XYZ-COMP a :Part ;
-    :hasPartSpecification :Pneumatic_vacuum_supply ;
-    :hasPartType :COMPRESSOR .
-
-:XYZ-CYLINDER_1 a :Part ;
-    :hasPartSpecification :Pneumatic_cylinder_for_vacuum_system ;
-    :hasPartType :CYLINDER .
-
-:XYZ-CYLINDER_2 a :Part ;
-    :hasPartSpecification :Pneumatic_cylinder_for_vacuum_system ;
-    :hasPartType :CYLINDER .
-
-:XYZ-MOTOR-H a :Part ;
-    :hasPartSpecification :Horizontal_encoder_motor ;
-    :hasPartType :ENCODER_MOTOR .
-
-:XYZ-MOTOR-R a :Part ;
-    :hasPartSpecification :Rotational_encoder_motor ;
-    :hasPartType :ENCODER_MOTOR .
-
-:XYZ-MOTOR-V a :Part ;
-    :hasPartSpecification :Vertical_encoder_motor ;
-    :hasPartType :ENCODER_MOTOR .
-
-:XYZ-REF-H a :Part ;
-    :hasPartSpecification :Horizontal_reference_switch ;
-    :hasPartType :REFERENCE_SWITCH .
-
-:XYZ-REF-R a :Part ;
-    :hasPartSpecification :Rotational_reference_switch ;
-    :hasPartType :REFERENCE_SWITCH .
-
-:XYZ-REF-V a :Part ;
-    :hasPartSpecification :Vertical_reference_switch ;
-    :hasPartType :REFERENCE_SWITCH .
-
-:XYZ-RFID a :Part ;
-    :hasPartSpecification :RFID_reader_for_workpiece_identification ;
-    :hasPartType :RFID_SCANNER .
-
-:XYZ-SUCTION a :Part ;
-    :hasPartSpecification :Vacuum_suction_cup_gripper ;
-    :hasPartType :SUCTION_CUP .
-
-:XYZ-VAC-VALVE a :Part ;
-    :hasPartSpecification :Vacuum_control_valve ;
-    :hasPartType :SOLENOID_VALVE .
-
-:XYZ_Robot_%28VGR%29 a :BuildingBlock ;
-    :hasPart :XYZ-COMP,
-        :XYZ-CYLINDER_1,
-        :XYZ-CYLINDER_2,
-        :XYZ-MOTOR-H,
-        :XYZ-MOTOR-R,
-        :XYZ-MOTOR-V,
-        :XYZ-REF-H,
-        :XYZ-REF-R,
-        :XYZ-REF-V,
-        :XYZ-RFID,
-        :XYZ-SUCTION,
-        :XYZ-VAC-VALVE .
-
-:cause001 a :Cause ;
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zorro: <http://w3id.org/ZorroOntology/> .
+
+zorro:PartOf a owl:ObjectProperty ;
+    rdfs:domain zorro:Part ;
+    rdfs:range zorro:Assembly .
+
+zorro:defines a owl:ObjectProperty ;
+    rdfs:domain zorro:Function ;
+    rdfs:range zorro:Problem .
+
+zorro:dependsOn a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain zorro:Function ;
+    rdfs:range zorro:Function .
+
+zorro:failsVia a owl:ObjectProperty ;
+    rdfs:domain zorro:Component ;
+    rdfs:range zorro:Problem .
+
+zorro:hasCause a owl:ObjectProperty ;
+    rdfs:domain zorro:Problem ;
+    rdfs:range zorro:Cause .
+
+zorro:hasEffect a owl:ObjectProperty ;
+    rdfs:domain zorro:Cause ;
+    rdfs:range zorro:Effect .
+
+zorro:hasFunction a owl:ObjectProperty ;
+    rdfs:domain zorro:Component ;
+    rdfs:range zorro:Function .
+
+zorro:inSystem a owl:ObjectProperty ;
+    rdfs:domain zorro:Assembly ;
+    rdfs:range zorro:System .
+
+zorro:involves a owl:ObjectProperty ;
+    rdfs:domain zorro:Problem ;
+    rdfs:range zorro:Part .
+
+zorro:solves a owl:ObjectProperty ;
+    rdfs:domain <hhttp://w3id.org/ZorroOntology/Solution> ;
+    rdfs:range zorro:Problem .
+
+demo: a owl:Ontology ;
+    owl:imports zorro: .
+
+demo:HMI-PANEL a zorro:Part ;
+    zorro:partOf demo:Control_System_%28Turck_PLC_Setup%29 ;
+    demo:hasPartSpecification demo:Operator_interface ;
+    demo:hasPartType demo:HMI .
+
+demo:IO-ANALOG a zorro:Part ;
+    zorro:partOf demo:Control_System_%28Turck_PLC_Setup%29 ;
+    demo:hasPartSpecification <http://www.semanticweb.org/ontologies/2026/ZorroDemo/Analog_I/O_module> ;
+    demo:hasPartType demo:IO_MODULE .
+
+demo:IO-DIGITAL a zorro:Part ;
+    zorro:partOf demo:Control_System_%28Turck_PLC_Setup%29 ;
+    demo:hasPartSpecification <http://www.semanticweb.org/ontologies/2026/ZorroDemo/Digital_I/O_module> ;
+    demo:hasPartType demo:IO_MODULE .
+
+demo:MPO-COMP a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Pneumatic_supply ;
+    demo:hasPartType demo:COMPRESSOR .
+
+demo:MPO-CONV-MOTOR a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Conveyor_drive_mini_motor ;
+    demo:hasPartType demo:MINI_MOTOR .
+
+demo:MPO-CONVEYOR a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Transport_conveyor ;
+    demo:hasPartType demo:CONVEYOR .
+
+demo:MPO-EJECTOR a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Turntable_ejection_valve ;
+    demo:hasPartType demo:SOLENOID_VALVE .
+
+demo:MPO-FEEDER-IN a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Oven_feeder_inside_cylinder ;
+    demo:hasPartType demo:CYLINDER .
+
+demo:MPO-FEEDER-OUT a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Oven_feeder_outside_cylinder ;
+    demo:hasPartType demo:CYLINDER .
+
+demo:MPO-LIGHT-BARRIER a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Workpiece_detection_sensor ;
+    demo:hasPartType demo:LIGHT_SENSOR .
+
+demo:MPO-OVEN a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Furnace_unit ;
+    demo:hasPartType demo:KILN .
+
+demo:MPO-OVEN-DOOR a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Oven_door_valve ;
+    demo:hasPartType demo:SOLENOID_VALVE .
+
+demo:MPO-OVEN-SENSOR a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Oven_presence_sensor ;
+    demo:hasPartType demo:LIGHT_SENSOR .
+
+demo:MPO-SAWWHEEL a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Saw_or_milling_motor ;
+    demo:hasPartType demo:MINI_MOTOR .
+
+demo:MPO-SUCTION a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Vacuum_suction_cup_%28workpiece_transfer%29 ;
+    demo:hasPartType demo:SUCTION_CUP .
+
+demo:MPO-TT-MOTOR a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Turntable_drive_mini_motor ;
+    demo:hasPartType demo:MINI_MOTOR .
+
+demo:MPO-TURNTABLE a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Indexing_turntable ;
+    demo:hasPartType demo:ROTARY_TABLE .
+
+demo:MPO-VAC-HEAD a zorro:Part ;
+    zorro:partOf demo:Processing_Station_%28MPO%29 ;
+    demo:hasPartSpecification demo:Vacuum_lowering_cylinder ;
+    demo:hasPartType demo:CYLINDER .
+
+demo:PLC-NET a zorro:Part ;
+    zorro:partOf demo:Control_System_%28Turck_PLC_Setup%29 ;
+    demo:hasPartSpecification demo:Industrial_Ethernet_switch ;
+    demo:hasPartType demo:SWITCH .
+
+demo:PLC-TURCK a zorro:Part ;
+    zorro:partOf demo:Control_System_%28Turck_PLC_Setup%29 ;
+    demo:hasPartSpecification demo:Main_industrial_controller ;
+    demo:hasPartType demo:PLC .
+
+demo:POWER-24V a zorro:Part ;
+    zorro:partOf demo:Control_System_%28Turck_PLC_Setup%29 ;
+    demo:hasPartSpecification demo:24V_DC_power_system ;
+    demo:hasPartType demo:POWER_SUPPLY .
+
+demo:Processing_Station_\(MPO\) zorro:failsVia demo:problem021,
+        demo:problem022,
+        demo:problem023,
+        demo:problem024,
+        demo:problem025,
+        demo:problem026,
+        demo:problem027,
+        demo:problem028,
+        demo:problem029 .
+
+demo:RFID_Station a zorro:Assembly ;
+    zorro:hasFunction demo:Read_workpiece_data .
+
+demo:Robot_%28XYZ%29 a zorro:Assembly ;
+    zorro:hasFunction demo:Move_to_warehouse,
+        demo:Pick_from_sorting_line,
+        demo:Pick_up_from_RFID,
+        demo:Pick_up_workpiece,
+        demo:Place_in_warehouse_input,
+        demo:Place_on_MPO_input,
+        demo:Place_workpiece_on_RFID,
+        demo:Transport_to_RFID_station,
+        demo:Transport_to_processing_station_MPO,
+        demo:Transport_to_warehouse .
+
+demo:SLD-BLUE-LB a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Blue_bin_detection_sensor ;
+    demo:hasPartType demo:LIGHT_SENSOR .
+
+demo:SLD-COLOR-SENSOR a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Optical_color_sensor ;
+    demo:hasPartType demo:COLOR_SENSOR .
+
+demo:SLD-COMP a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Pneumatic_supply ;
+    demo:hasPartType demo:COMPRESSOR .
+
+demo:SLD-CONVEYOR a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Sorting_conveyor_belt ;
+    demo:hasPartType demo:CONVEYOR .
+
+demo:SLD-EJECT-B a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Blue_ejector_cylinder ;
+    demo:hasPartType demo:CYLINDER .
+
+demo:SLD-EJECT-R a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Red_ejector_cylinder ;
+    demo:hasPartType demo:CYLINDER .
+
+demo:SLD-EJECT-W a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:White_ejector_cylinder ;
+    demo:hasPartType demo:CYLINDER .
+
+demo:SLD-IN-LB a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Input_light_barrier ;
+    demo:hasPartType demo:LIGHT_SENSOR .
+
+demo:SLD-MOTOR a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Conveyor_drive_mini_motor ;
+    demo:hasPartType demo:MINI_MOTOR .
+
+demo:SLD-OUT-LB a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Output_light_barrier ;
+    demo:hasPartType demo:LIGHT_SENSOR .
+
+demo:SLD-RED-LB a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Red_bin_detection_sensor ;
+    demo:hasPartType demo:LIGHT_SENSOR .
+
+demo:SLD-VALVE-B a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Blue_ejector_valve ;
+    demo:hasPartType demo:SOLENOID_VALVE .
+
+demo:SLD-VALVE-R a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:Red_ejector_valve ;
+    demo:hasPartType demo:SOLENOID_VALVE .
+
+demo:SLD-VALVE-W a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:White_ejector_valve ;
+    demo:hasPartType demo:SOLENOID_VALVE .
+
+demo:SLD-WHITE-LB a zorro:Part ;
+    zorro:partOf demo:Sorting_Line_%28SLD%29 ;
+    demo:hasPartSpecification demo:White_bin_detection_sensor ;
+    demo:hasPartType demo:LIGHT_SENSOR .
+
+demo:Sorting_Line_\(SLD\) zorro:failsVia demo:problem030,
+        demo:problem031,
+        demo:problem032,
+        demo:problem033,
+        demo:problem034,
+        demo:problem035 .
+
+demo:System a zorro:Assembly ;
+    zorro:failsVia demo:problem044,
+        demo:problem047,
+        demo:problem048,
+        demo:problem049 ;
+    zorro:hasFunction demo:Cycle_complete .
+
+demo:WH-CANTILEVER-B a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Cantilever_backward_motor ;
+    demo:hasPartType demo:MINI_MOTOR .
+
+demo:WH-CANTILEVER-F a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Cantilever_forward_motor ;
+    demo:hasPartType demo:MINI_MOTOR .
+
+demo:WH-CONV-BWD a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Backward_conveyor_mini_motor ;
+    demo:hasPartType demo:MINI_MOTOR .
+
+demo:WH-CONV-FWD a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Forward_conveyor_mini_motor ;
+    demo:hasPartType demo:MINI_MOTOR .
+
+demo:WH-CONVEYOR a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Warehouse_conveyor ;
+    demo:hasPartType demo:CONVEYOR .
+
+demo:WH-ENC-H a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Horizontal_position_encoder ;
+    demo:hasPartType demo:ENCODER .
+
+demo:WH-ENC-V a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Vertical_position_encoder ;
+    demo:hasPartType demo:ENCODER .
+
+demo:WH-IN-LB a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Inside_light_barrier ;
+    demo:hasPartType demo:LIGHT_SENSOR .
+
+demo:WH-MOTOR-H a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Horizontal_movement_motor ;
+    demo:hasPartType demo:MINI_MOTOR .
+
+demo:WH-MOTOR-V a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Vertical_movement_motor ;
+    demo:hasPartType demo:MINI_MOTOR .
+
+demo:WH-OUT-LB a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Outside_light_barrier ;
+    demo:hasPartType demo:LIGHT_SENSOR .
+
+demo:WH-REF-CB a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Cantilever_back_switch ;
+    demo:hasPartType demo:REFERENCE_SWITCH .
+
+demo:WH-REF-CF a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Cantilever_front_switch ;
+    demo:hasPartType demo:REFERENCE_SWITCH .
+
+demo:WH-REF-H a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Horizontal_reference_switch ;
+    demo:hasPartType demo:REFERENCE_SWITCH .
+
+demo:WH-REF-V a zorro:Part ;
+    zorro:partOf demo:Warehouse_%28HBW%29 ;
+    demo:hasPartSpecification demo:Vertical_reference_switch ;
+    demo:hasPartType demo:REFERENCE_SWITCH .
+
+demo:Warehouse_\(HBW\) zorro:failsVia demo:problem036,
+        demo:problem037,
+        demo:problem038,
+        demo:problem039,
+        demo:problem040,
+        demo:problem041,
+        demo:problem042,
+        demo:problem043 .
+
+demo:XYZ-COMP a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:Pneumatic_vacuum_supply ;
+    demo:hasPartType demo:COMPRESSOR .
+
+demo:XYZ-CYLINDER_1 a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:Pneumatic_cylinder_for_vacuum_system ;
+    demo:hasPartType demo:CYLINDER .
+
+demo:XYZ-CYLINDER_2 a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:Pneumatic_cylinder_for_vacuum_system ;
+    demo:hasPartType demo:CYLINDER .
+
+demo:XYZ-MOTOR-H a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:Horizontal_encoder_motor ;
+    demo:hasPartType demo:ENCODER_MOTOR .
+
+demo:XYZ-MOTOR-R a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:Rotational_encoder_motor ;
+    demo:hasPartType demo:ENCODER_MOTOR .
+
+demo:XYZ-MOTOR-V a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:Vertical_encoder_motor ;
+    demo:hasPartType demo:ENCODER_MOTOR .
+
+demo:XYZ-REF-H a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:Horizontal_reference_switch ;
+    demo:hasPartType demo:REFERENCE_SWITCH .
+
+demo:XYZ-REF-R a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:Rotational_reference_switch ;
+    demo:hasPartType demo:REFERENCE_SWITCH .
+
+demo:XYZ-REF-V a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:Vertical_reference_switch ;
+    demo:hasPartType demo:REFERENCE_SWITCH .
+
+demo:XYZ-RFID a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:RFID_reader_for_workpiece_identification ;
+    demo:hasPartType demo:RFID_SCANNER .
+
+demo:XYZ-SUCTION a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:Vacuum_suction_cup_gripper ;
+    demo:hasPartType demo:SUCTION_CUP .
+
+demo:XYZ-VAC-VALVE a zorro:Part ;
+    zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
+    demo:hasPartSpecification demo:Vacuum_control_valve ;
+    demo:hasPartType demo:SOLENOID_VALVE .
+
+demo:XYZ_Robot_\(VGR\) zorro:failsVia demo:problem001,
+        demo:problem002,
+        demo:problem003,
+        demo:problem004,
+        demo:problem005,
+        demo:problem006,
+        demo:problem007,
+        demo:problem008,
+        demo:problem009,
+        demo:problem010,
+        demo:problem011,
+        demo:problem012,
+        demo:problem013,
+        demo:problem014,
+        demo:problem015,
+        demo:problem016,
+        demo:problem017,
+        demo:problem018,
+        demo:problem019,
+        demo:problem020,
+        demo:problem045,
+        demo:problem046 .
+
+demo:hasFunctionDescription a owl:DatatypeProperty ;
+    rdfs:domain zorro:Function ;
+    rdfs:range xsd:string .
+
+demo:hasPartSpecification a owl:ObjectProperty ;
+    rdfs:domain zorro:Part ;
+    rdfs:range demo:PartSpecification .
+
+demo:hasPartType a owl:ObjectProperty ;
+    rdfs:domain zorro:Part ;
+    rdfs:range demo:PartType .
+
+demo:hasSolution a owl:ObjectProperty ;
+    rdfs:domain zorro:Cause ;
+    rdfs:range zorro:Solution .
+
+demo:inSubsystem a owl:ObjectProperty ;
+    rdfs:domain zorro:Assembly ;
+    rdfs:range demo:SubSystem .
+
+demo:partTypeInvolvedInFunc a owl:ObjectProperty ;
+    rdfs:domain zorro:Function ;
+    rdfs:range demo:PartType .
+
+zorro: a owl:Ontology .
+
+zorro:System a owl:Class ;
+    rdfs:subClassOf zorro:Component .
+
+demo:24V_DC_power_system a demo:PartSpecification .
+
+demo:ALL_SYSTEMS a demo:PartType .
+
+<http://www.semanticweb.org/ontologies/2026/ZorroDemo/Analog_I/O_module> a demo:PartSpecification .
+
+demo:Backward_conveyor_mini_motor a demo:PartSpecification .
+
+demo:Blue_bin_detection_sensor a demo:PartSpecification .
+
+demo:Blue_ejector_cylinder a demo:PartSpecification .
+
+demo:Blue_ejector_valve a demo:PartSpecification .
+
+demo:Cantilever_back_switch a demo:PartSpecification .
+
+demo:Cantilever_backward_motor a demo:PartSpecification .
+
+demo:Cantilever_forward_motor a demo:PartSpecification .
+
+demo:Cantilever_front_switch a demo:PartSpecification .
+
+demo:Control a zorro:SubSystem .
+
+demo:Cycle_complete a zorro:Function ;
+    demo:hasFunctionDescription "System returns to idle state and is ready for next cycle" ;
+    demo:partTypeInvolvedInFunc demo:ALL_SYSTEMS .
+
+demo:Detect_color a zorro:Function ;
+    demo:hasFunctionDescription "Color sensor determines workpiece color" ;
+    demo:partTypeInvolvedInFunc demo:COLOR_SENSOR .
+
+demo:Detect_incoming_workpiece a zorro:Function ;
+    demo:hasFunctionDescription "Entry light sensor detects arrival of workpiece" ;
+    demo:partTypeInvolvedInFunc demo:LIGHT_SENSOR .
+
+demo:Detect_workpiece a zorro:Function ;
+    demo:hasFunctionDescription "Light sensor confirms presence of workpiece at entry" ;
+    demo:partTypeInvolvedInFunc demo:LIGHT_SENSOR .
+
+<http://www.semanticweb.org/ontologies/2026/ZorroDemo/Digital_I/O_module> a demo:PartSpecification .
+
+demo:Eject_workpiece a zorro:Function ;
+    demo:hasFunctionDescription "Pneumatic ejector pushes workpiece onto conveyor" ;
+    demo:partTypeInvolvedInFunc demo:COMPRESSOR,
+        demo:CYLINDER,
+        demo:SOLENOID_VALVE .
+
+demo:Feed_into_oven a zorro:Function ;
+    demo:hasFunctionDescription "Feeder pushes workpiece into oven and door closes using pneumatic system" ;
+    demo:partTypeInvolvedInFunc demo:COMPRESSOR,
+        demo:CYLINDER,
+        demo:SOLENOID_VALVE .
+
+demo:Forward_conveyor_mini_motor a demo:PartSpecification .
+
+demo:Furnace_unit a demo:PartSpecification .
+
+demo:HMI a demo:PartType .
+
+demo:Handling a zorro:SubSystem .
+
+demo:Horizontal_encoder_motor a demo:PartSpecification .
+
+demo:Horizontal_movement_motor a demo:PartSpecification .
+
+demo:Horizontal_position_encoder a demo:PartSpecification .
+
+demo:Indexing_turntable a demo:PartSpecification .
+
+demo:Industrial_Ethernet_switch a demo:PartSpecification .
+
+demo:Input_light_barrier a demo:PartSpecification .
+
+demo:Inside_light_barrier a demo:PartSpecification .
+
+demo:Machine_workpiece a zorro:Function ;
+    demo:hasFunctionDescription "Saw or milling operation is performed" ;
+    demo:partTypeInvolvedInFunc demo:MINI_MOTOR .
+
+demo:Main_industrial_controller a demo:PartSpecification .
+
+demo:Move_along_conveyor a zorro:Function ;
+    demo:hasFunctionDescription "Workpiece is transported through sorting section" ;
+    demo:partTypeInvolvedInFunc demo:CONVEYOR,
+        demo:MINI_MOTOR .
+
+demo:Move_conveyor_to_pickup_position a zorro:Function ;
+    demo:hasFunctionDescription "Conveyor belt moves carrier to output position where it can be picked up" ;
+    demo:partTypeInvolvedInFunc demo:CONVEYOR,
+        demo:LIGHT_SENSOR,
+        demo:MINI_MOTOR .
+
+demo:Move_conveyor_to_storage_position a zorro:Function ;
+    demo:hasFunctionDescription "Conveyor transports workpiece into warehouse system" ;
+    demo:partTypeInvolvedInFunc demo:CONVEYOR,
+        demo:LIGHT_SENSOR,
+        demo:MINI_MOTOR .
+
+demo:Move_to_warehouse a zorro:Function ;
+    demo:hasFunctionDescription "Robot moves to warehouse pickup position" ;
+    demo:partTypeInvolvedInFunc demo:ENCODER_MOTOR,
+        demo:REFERENCE_SWITCH .
+
+demo:Operator_interface a demo:PartSpecification .
+
+demo:Optical_color_sensor a demo:PartSpecification .
+
+demo:Output_light_barrier a demo:PartSpecification .
+
+demo:Outside_light_barrier a demo:PartSpecification .
+
+demo:Oven_door_valve a demo:PartSpecification .
+
+demo:Oven_feeder_inside_cylinder a demo:PartSpecification .
+
+demo:Oven_feeder_outside_cylinder a demo:PartSpecification .
+
+demo:Oven_presence_sensor a demo:PartSpecification .
+
+demo:PLC a demo:PartType .
+
+demo:POWER_SUPPLY a demo:PartType .
+
+demo:Pick_from_sorting_line a zorro:Function ;
+    demo:hasFunctionDescription "Robot grips processed workpiece from sorting output" ;
+    demo:partTypeInvolvedInFunc demo:COMPRESSOR,
+        demo:CYLINDER,
+        demo:SOLENOID_VALVE,
+        demo:SUCTION_CUP .
+
+demo:Pick_up_from_RFID a zorro:Function ;
+    demo:hasFunctionDescription "Vacuum system grips workpiece again" ;
+    demo:partTypeInvolvedInFunc demo:COMPRESSOR,
+        demo:CYLINDER,
+        demo:SOLENOID_VALVE,
+        demo:SUCTION_CUP .
+
+demo:Pick_up_workpiece a zorro:Function ;
+    demo:hasFunctionDescription "Vacuum system activates and grips workpiece from carrier" ;
+    demo:partTypeInvolvedInFunc demo:COMPRESSOR,
+        demo:CYLINDER,
+        demo:SOLENOID_VALVE,
+        demo:SUCTION_CUP .
+
+demo:Place_in_warehouse_input a zorro:Function ;
+    demo:hasFunctionDescription "Workpiece is placed at warehouse entry point" ;
+    demo:partTypeInvolvedInFunc demo:COMPRESSOR,
+        demo:CYLINDER,
+        demo:SOLENOID_VALVE,
+        demo:SUCTION_CUP .
+
+demo:Place_on_MPO_input a zorro:Function ;
+    demo:hasFunctionDescription "Workpiece is placed onto MPO conveyor or feeder" ;
+    demo:partTypeInvolvedInFunc demo:COMPRESSOR,
+        demo:CYLINDER,
+        demo:SOLENOID_VALVE,
+        demo:SUCTION_CUP .
+
+demo:Place_workpiece_on_RFID a zorro:Function ;
+    demo:hasFunctionDescription "Vacuum is released and workpiece is placed on RFID platform" ;
+    demo:partTypeInvolvedInFunc demo:COMPRESSOR,
+        demo:CYLINDER,
+        demo:SOLENOID_VALVE,
+        demo:SUCTION_CUP .
+
+demo:Pneumatic_vacuum_supply a demo:PartSpecification .
+
+demo:Process_workpiece a zorro:Function ;
+    demo:hasFunctionDescription "Workpiece undergoes heating simulation indicated by red LED" ;
+    demo:partTypeInvolvedInFunc demo:KILN .
+
+demo:Processing a zorro:SubSystem .
+
+demo:RFID_reader_for_workpiece_identification a demo:PartSpecification .
+
+demo:Read_workpiece_data a zorro:Function ;
+    demo:hasFunctionDescription "RFID sensor reads color and identification data from workpiece" ;
+    demo:partTypeInvolvedInFunc demo:RFID_SCANNER .
+
+demo:Red_bin_detection_sensor a demo:PartSpecification .
+
+demo:Red_ejector_cylinder a demo:PartSpecification .
+
+demo:Red_ejector_valve a demo:PartSpecification .
+
+demo:Remove_from_oven a zorro:Function ;
+    demo:hasFunctionDescription "Feeder pushes workpiece out of oven" ;
+    demo:partTypeInvolvedInFunc demo:COMPRESSOR,
+        demo:CYLINDER,
+        demo:SOLENOID_VALVE .
+
+demo:Rotate_workpiece a zorro:Function ;
+    demo:hasFunctionDescription "Turntable rotates to correct machining position" ;
+    demo:partTypeInvolvedInFunc demo:MINI_MOTOR,
+        demo:ROTARY_TABLE .
+
+demo:Rotational_encoder_motor a demo:PartSpecification .
+
+demo:Rotational_reference_switch a demo:PartSpecification .
+
+demo:SWITCH a demo:PartType .
+
+demo:Saw_or_milling_motor a demo:PartSpecification .
+
+demo:Select_carrier a zorro:Function ;
+    demo:hasFunctionDescription "Warehouse positions itself using motors and encoders to select the correct carrier location" ;
+    demo:partTypeInvolvedInFunc demo:ENCODER,
+        demo:MINI_MOTOR,
+        demo:REFERENCE_SWITCH .
+
+demo:Sort_workpiece a zorro:Function ;
+    demo:hasFunctionDescription "Pneumatic ejector directs workpiece to correct bin" ;
+    demo:partTypeInvolvedInFunc demo:COMPRESSOR,
+        demo:CYLINDER,
+        demo:SOLENOID_VALVE .
+
+demo:Sorting a zorro:SubSystem .
+
+demo:Sorting_conveyor_belt a demo:PartSpecification .
+
+demo:Storage a zorro:SubSystem .
+
+demo:Store_in_bin a zorro:Function ;
+    demo:hasFunctionDescription "Light sensor verifies bin occupancy" ;
+    demo:partTypeInvolvedInFunc demo:LIGHT_SENSOR .
+
+demo:Store_workpiece a zorro:Function ;
+    demo:hasFunctionDescription "Warehouse positions and stores workpiece in correct location" ;
+    demo:partTypeInvolvedInFunc demo:ENCODER,
+        demo:MINI_MOTOR,
+        demo:REFERENCE_SWITCH .
+
+demo:SubSystem a owl:Class .
+
+demo:Transfer_to_turntable a zorro:Function ;
+    demo:hasFunctionDescription "Vacuum system moves part from oven output to turntable" ;
+    demo:partTypeInvolvedInFunc demo:COMPRESSOR,
+        demo:CYLINDER,
+        demo:SOLENOID_VALVE,
+        demo:SUCTION_CUP .
+
+demo:Transport_conveyor a demo:PartSpecification .
+
+demo:Transport_to_RFID_station a zorro:Function ;
+    demo:hasFunctionDescription "Robot transports workpiece to RFID platform" ;
+    demo:partTypeInvolvedInFunc demo:ENCODER_MOTOR .
+
+demo:Transport_to_output a zorro:Function ;
+    demo:hasFunctionDescription "Conveyor transports workpiece toward sorting line" ;
+    demo:partTypeInvolvedInFunc demo:CONVEYOR,
+        demo:MINI_MOTOR .
+
+demo:Transport_to_processing_station_MPO a zorro:Function ;
+    demo:hasFunctionDescription "Robot moves workpiece to MPO input area" ;
+    demo:partTypeInvolvedInFunc demo:ENCODER_MOTOR .
+
+demo:Transport_to_warehouse a zorro:Function ;
+    demo:hasFunctionDescription "Robot moves workpiece back to warehouse input area" ;
+    demo:partTypeInvolvedInFunc demo:ENCODER_MOTOR .
+
+demo:Turntable_drive_mini_motor a demo:PartSpecification .
+
+demo:Turntable_ejection_valve a demo:PartSpecification .
+
+demo:Vacuum_control_valve a demo:PartSpecification .
+
+demo:Vacuum_lowering_cylinder a demo:PartSpecification .
+
+demo:Vacuum_suction_cup_%28workpiece_transfer%29 a demo:PartSpecification .
+
+demo:Vacuum_suction_cup_gripper a demo:PartSpecification .
+
+demo:Vertical_encoder_motor a demo:PartSpecification .
+
+demo:Vertical_movement_motor a demo:PartSpecification .
+
+demo:Vertical_position_encoder a demo:PartSpecification .
+
+demo:Warehouse_conveyor a demo:PartSpecification .
+
+demo:White_bin_detection_sensor a demo:PartSpecification .
+
+demo:White_ejector_cylinder a demo:PartSpecification .
+
+demo:White_ejector_valve a demo:PartSpecification .
+
+demo:Workpiece_detection_sensor a demo:PartSpecification .
+
+demo:cause001 a zorro:Cause ;
     rdfs:label "Robot arm miscalibration causing miss position" ;
-    :hasSolution :solution001 .
+    zorro:hasSolution demo:solution001 .
 
-:cause002 a :Cause ;
+demo:cause002 a zorro:Cause ;
     rdfs:label "Vacuum leakage due to loose pneumatic tubes" ;
-    :hasSolution :solution002 .
+    zorro:hasSolution demo:solution002 .
 
-:cause003 a :Cause ;
+demo:cause003 a zorro:Cause ;
     rdfs:label "Empty carrier present in warehouse" ;
-    :hasSolution :solution003 .
+    zorro:hasSolution demo:solution003 .
 
-:cause004 a :Cause ;
+demo:cause004 a zorro:Cause ;
     rdfs:label "Loose gears causing inaccurate motion" ;
-    :hasSolution :solution004 .
+    zorro:hasSolution demo:solution004 .
 
-:cause005 a :Cause ;
+demo:cause005 a zorro:Cause ;
     rdfs:label "Robot arm miscalibration causing miss position" ;
-    :hasSolution :solution005 .
+    zorro:hasSolution demo:solution005 .
 
-:cause006 a :Cause ;
+demo:cause006 a zorro:Cause ;
     rdfs:label "Vacuum leakage or insufficient suction" ;
-    :hasSolution :solution006 .
+    zorro:hasSolution demo:solution006 .
 
-:cause007 a :Cause ;
+demo:cause007 a zorro:Cause ;
     rdfs:label "Loose gears causing inaccurate positioning" ;
-    :hasSolution :solution007 .
+    zorro:hasSolution demo:solution007 .
 
-:cause008 a :Cause ;
+demo:cause008 a zorro:Cause ;
     rdfs:label "Workpiece misaligned on RFID sensor" ;
-    :hasSolution :solution008 .
+    zorro:hasSolution demo:solution008 .
 
-:cause009 a :Cause ;
+demo:cause009 a zorro:Cause ;
     rdfs:label "Workpiece missing due to failed pickup" ;
-    :hasSolution :solution009 .
+    zorro:hasSolution demo:solution009 .
 
-:cause010 a :Cause ;
+demo:cause010 a zorro:Cause ;
     rdfs:label "Suction loss during movement" ;
-    :hasSolution :solution010 .
+    zorro:hasSolution demo:solution010 .
 
-:cause011 a :Cause ;
+demo:cause011 a zorro:Cause ;
     rdfs:label "Loose pneumatic connections" ;
-    :hasSolution :solution011 .
+    zorro:hasSolution demo:solution011 .
 
-:cause012 a :Cause ;
+demo:cause012 a zorro:Cause ;
     rdfs:label "Suction loss during movement" ;
-    :hasSolution :solution012 .
+    zorro:hasSolution demo:solution012 .
 
-:cause013 a :Cause ;
+demo:cause013 a zorro:Cause ;
     rdfs:label "Loose pneumatic connections" ;
-    :hasSolution :solution013 .
+    zorro:hasSolution demo:solution013 .
 
-:cause014 a :Cause ;
+demo:cause014 a zorro:Cause ;
     rdfs:label "Robot arm miscalibration causing incorrect placement" ;
-    :hasSolution :solution014 .
+    zorro:hasSolution demo:solution014 .
 
-:cause015 a :Cause ;
+demo:cause015 a zorro:Cause ;
     rdfs:label "Friction or wear causing position drift" ;
-    :hasSolution :solution015 .
+    zorro:hasSolution demo:solution015 .
 
-:cause016 a :Cause ;
+demo:cause016 a zorro:Cause ;
     rdfs:label "Loose gears causing inaccurate motion" ;
-    :hasSolution :solution016 .
+    zorro:hasSolution demo:solution016 .
 
-:cause017 a :Cause ;
+demo:cause017 a zorro:Cause ;
     rdfs:label "Robot arm miscalibration causing wrong placement" ;
-    :hasSolution :solution017 .
+    zorro:hasSolution demo:solution017 .
 
-:cause018 a :Cause ;
+demo:cause018 a zorro:Cause ;
     rdfs:label "Loose gears affecting positioning accuracy" ;
-    :hasSolution :solution018 .
+    zorro:hasSolution demo:solution018 .
 
-:cause019 a :Cause ;
+demo:cause019 a zorro:Cause ;
     rdfs:label "Robot arm miscalibration causing wrong position" ;
-    :hasSolution :solution019 .
+    zorro:hasSolution demo:solution019 .
 
-:cause020 a :Cause ;
+demo:cause020 a zorro:Cause ;
     rdfs:label "Incorrect warehouse reference position" ;
-    :hasSolution :solution020 .
+    zorro:hasSolution demo:solution020 .
 
-:cause021 a :Cause ;
+demo:cause021 a zorro:Cause ;
     rdfs:label "Light sensor misaligned or blocked by incorrect workpiece position" ;
-    :hasSolution :solution021 .
+    zorro:hasSolution demo:solution021 .
 
-:cause022 a :Cause ;
+demo:cause022 a zorro:Cause ;
     rdfs:label "Workpiece missing due to upstream robot failure" ;
-    :hasSolution :solution022 .
+    zorro:hasSolution demo:solution022 .
 
-:cause023 a :Cause ;
+demo:cause023 a zorro:Cause ;
     rdfs:label "Oven feeder cylinder not actuating" ;
-    :hasSolution :solution023 .
+    zorro:hasSolution demo:solution023 .
 
-:cause024 a :Cause ;
+demo:cause024 a zorro:Cause ;
     rdfs:label "Oven feeder cylinder not actuating" ;
-    :hasSolution :solution024 .
+    zorro:hasSolution demo:solution024 .
 
-:cause025 a :Cause ;
+demo:cause025 a zorro:Cause ;
     rdfs:label "Workpiece not delivered by robot" ;
-    :hasSolution :solution025 .
+    zorro:hasSolution demo:solution025 .
 
-:cause026 a :Cause ;
+demo:cause026 a zorro:Cause ;
     rdfs:label "Suction system failure during pickup" ;
-    :hasSolution :solution026 .
+    zorro:hasSolution demo:solution026 .
 
-:cause027 a :Cause ;
+demo:cause027 a zorro:Cause ;
     rdfs:label "Mechanical misalignment of feeder" ;
-    :hasSolution :solution027 .
+    zorro:hasSolution demo:solution027 .
 
-:cause028 a :Cause ;
+demo:cause028 a zorro:Cause ;
     rdfs:label "Ejector cylinder failure" ;
-    :hasSolution :solution028 .
+    zorro:hasSolution demo:solution028 .
 
-:cause029 a :Cause ;
+demo:cause029 a zorro:Cause ;
     rdfs:label "Insufficient air pressure" ;
-    :hasSolution :solution029 .
+    zorro:hasSolution demo:solution029 .
 
-:cause030 a :Cause ;
+demo:cause030 a zorro:Cause ;
     rdfs:label "Workpiece misaligned relative to light sensor" ;
-    :hasSolution :solution030 .
+    zorro:hasSolution demo:solution030 .
 
-:cause031 a :Cause ;
+demo:cause031 a zorro:Cause ;
     rdfs:label "Workpiece missing due to upstream failure" ;
-    :hasSolution :solution031 .
+    zorro:hasSolution demo:solution031 .
 
-:cause032 a :Cause ;
+demo:cause032 a zorro:Cause ;
     rdfs:label "Incorrect color sensor calibration" ;
-    :hasSolution :solution032 .
+    zorro:hasSolution demo:solution032 .
 
-:cause033 a :Cause ;
+demo:cause033 a zorro:Cause ;
     rdfs:label "Incorrect warehouse configuration of colors" ;
-    :hasSolution :solution033 .
+    zorro:hasSolution demo:solution033 .
 
-:cause034 a :Cause ;
+demo:cause034 a zorro:Cause ;
     rdfs:label "Ejector cylinder not working" ;
-    :hasSolution :solution034 .
+    zorro:hasSolution demo:solution034 .
 
-:cause035 a :Cause ;
+demo:cause035 a zorro:Cause ;
     rdfs:label "Incorrect timing in PLC control" ;
-    :hasSolution :solution035 .
+    zorro:hasSolution demo:solution035 .
 
-:cause036 a :Cause ;
+demo:cause036 a zorro:Cause ;
     rdfs:label "Incorrect warehouse configuration" ;
-    :hasSolution :solution036 .
+    zorro:hasSolution demo:solution036 .
 
-:cause037 a :Cause ;
+demo:cause037 a zorro:Cause ;
     rdfs:label "Incorrect internal PLC tracking state" ;
-    :hasSolution :solution037 .
+    zorro:hasSolution demo:solution037 .
 
-:cause038 a :Cause ;
+demo:cause038 a zorro:Cause ;
     rdfs:label "Warehouse positioning miscalibration" ;
-    :hasSolution :solution038 .
+    zorro:hasSolution demo:solution038 .
 
-:cause039 a :Cause ;
+demo:cause039 a zorro:Cause ;
     rdfs:label "Loose mechanical components in drive system" ;
-    :hasSolution :solution039 .
+    zorro:hasSolution demo:solution039 .
 
-:cause040 a :Cause ;
+demo:cause040 a zorro:Cause ;
     rdfs:label "Carrier placed in wrong orientation" ;
-    :hasSolution :solution040 .
+    zorro:hasSolution demo:solution040 .
 
-:cause041 a :Cause ;
+demo:cause041 a zorro:Cause ;
     rdfs:label "Loose or misaligned mechanical parts" ;
-    :hasSolution :solution041 .
+    zorro:hasSolution demo:solution041 .
 
-:cause042 a :Cause ;
+demo:cause042 a zorro:Cause ;
     rdfs:label "Loose rails or structural components" ;
-    :hasSolution :solution042 .
+    zorro:hasSolution demo:solution042 .
 
-:cause043 a :Cause ;
+demo:cause043 a zorro:Cause ;
     rdfs:label "Carrier incorrectly oriented" ;
-    :hasSolution :solution043 .
+    zorro:hasSolution demo:solution043 .
 
-:cause044 a :Cause ;
+demo:cause044 a zorro:Cause ;
     rdfs:label "Loose electrical connectors" ;
-    :hasSolution :solution044 .
+    zorro:hasSolution demo:solution044 .
 
-:cause045 a :Cause ;
+demo:cause045 a zorro:Cause ;
     rdfs:label "Reference switch not triggered" ;
-    :hasSolution :solution045 .
+    zorro:hasSolution demo:solution045 .
 
-:cause046 a :Cause ;
+demo:cause046 a zorro:Cause ;
     rdfs:label "Mechanical obstruction or misalignment" ;
-    :hasSolution :solution046 .
+    zorro:hasSolution demo:solution046 .
 
-:cause047 a :Cause ;
+demo:cause047 a zorro:Cause ;
     rdfs:label "Reference switch not triggered or misaligned" ;
-    :hasSolution :solution047 .
+    zorro:hasSolution demo:solution047 .
 
-:cause048 a :Cause ;
+demo:cause048 a zorro:Cause ;
     rdfs:label "Loose mechanical components preventing reaching reference position" ;
-    :hasSolution :solution048 .
+    zorro:hasSolution demo:solution048 .
 
-:cause049 a :Cause ;
+demo:cause049 a zorro:Cause ;
     rdfs:label "Insufficient lubrication of mechanical parts" ;
-    :hasSolution :solution049 .
+    zorro:hasSolution demo:solution049 .
 
-:solution001 a :Solution ;
+demo:problem001 a zorro:Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
+    zorro:hasCause demo:cause001 .
+
+demo:problem002 a zorro:Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
+    zorro:hasCause demo:cause002 .
+
+demo:problem003 a zorro:Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
+    zorro:hasCause demo:cause003 .
+
+demo:problem004 a zorro:Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
+    zorro:hasCause demo:cause004 .
+
+demo:problem005 a zorro:Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
+    zorro:hasCause demo:cause005 .
+
+demo:problem006 a zorro:Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
+    zorro:hasCause demo:cause006 .
+
+demo:problem007 a zorro:Problem ;
+    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
+    zorro:hasCause demo:cause007 .
+
+demo:problem008 a zorro:Problem ;
+    rdfs:label "RFID station does not detect workpiece color" ;
+    zorro:hasCause demo:cause008 .
+
+demo:problem009 a zorro:Problem ;
+    rdfs:label "RFID station does not detect workpiece color" ;
+    zorro:hasCause demo:cause009 .
+
+demo:problem010 a zorro:Problem ;
+    rdfs:label "Robot XYZ drops workpiece during transport warehouse to RFID" ;
+    zorro:hasCause demo:cause010 .
+
+demo:problem011 a zorro:Problem ;
+    rdfs:label "Robot XYZ drops workpiece during transport warehouse to RFID" ;
+    zorro:hasCause demo:cause011 .
+
+demo:problem012 a zorro:Problem ;
+    rdfs:label "Robot XYZ drops workpiece during transport RFID to processing station" ;
+    zorro:hasCause demo:cause012 .
+
+demo:problem013 a zorro:Problem ;
+    rdfs:label "Robot XYZ drops workpiece during transport RFID to processing station" ;
+    zorro:hasCause demo:cause013 .
+
+demo:problem014 a zorro:Problem ;
+    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
+    zorro:hasCause demo:cause014 .
+
+demo:problem015 a zorro:Problem ;
+    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
+    zorro:hasCause demo:cause015 .
+
+demo:problem016 a zorro:Problem ;
+    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
+    zorro:hasCause demo:cause016 .
+
+demo:problem017 a zorro:Problem ;
+    rdfs:label "Robot XYZ places workpiece incorrectly in sorting line SLD" ;
+    zorro:hasCause demo:cause017 .
+
+demo:problem018 a zorro:Problem ;
+    rdfs:label "Robot XYZ places workpiece incorrectly in sorting line SLD" ;
+    zorro:hasCause demo:cause018 .
+
+demo:problem019 a zorro:Problem ;
+    rdfs:label "Robot XYZ places red white or blue workpiece incorrectly into warehouse" ;
+    zorro:hasCause demo:cause019 .
+
+demo:problem020 a zorro:Problem ;
+    rdfs:label "Robot XYZ places red white or blue workpiece incorrectly into warehouse" ;
+    zorro:hasCause demo:cause020 .
+
+demo:problem021 a zorro:Problem ;
+    rdfs:label "Processing Station MPO fails to detect workpiece at conveyor entry" ;
+    zorro:hasCause demo:cause021 .
+
+demo:problem022 a zorro:Problem ;
+    rdfs:label "Processing Station MPO fails to detect workpiece at conveyor entry" ;
+    zorro:hasCause demo:cause022 .
+
+demo:problem023 a zorro:Problem ;
+    rdfs:label "Processing Station MPO oven does not receive workpiece" ;
+    zorro:hasCause demo:cause023 .
+
+demo:problem024 a zorro:Problem ;
+    rdfs:label "Processing Station MPO oven doors do not close" ;
+    zorro:hasCause demo:cause024 .
+
+demo:problem025 a zorro:Problem ;
+    rdfs:label "Processing Station MPO oven does not receive workpiece" ;
+    zorro:hasCause demo:cause025 .
+
+demo:problem026 a zorro:Problem ;
+    rdfs:label "Processing Station MPO workpiece not transferred from oven to turntable" ;
+    zorro:hasCause demo:cause026 .
+
+demo:problem027 a zorro:Problem ;
+    rdfs:label "Processing Station MPO workpiece not transferred from oven to turntable" ;
+    zorro:hasCause demo:cause027 .
+
+demo:problem028 a zorro:Problem ;
+    rdfs:label "Processing Station MPO workpiece not ejected to conveyor" ;
+    zorro:hasCause demo:cause028 .
+
+demo:problem029 a zorro:Problem ;
+    rdfs:label "Processing Station MPO workpiece not ejected to conveyor" ;
+    zorro:hasCause demo:cause029 .
+
+demo:problem030 a zorro:Problem ;
+    rdfs:label "Sorting Line SLD fails to detect incoming workpiece" ;
+    zorro:hasCause demo:cause030 .
+
+demo:problem031 a zorro:Problem ;
+    rdfs:label "Sorting Line SLD fails to detect incoming workpiece" ;
+    zorro:hasCause demo:cause031 .
+
+demo:problem032 a zorro:Problem ;
+    rdfs:label "Sorting Line SLD incorrectly sorts workpiece color" ;
+    zorro:hasCause demo:cause032 .
+
+demo:problem033 a zorro:Problem ;
+    rdfs:label "Sorting Line SLD incorrectly sorts workpiece color" ;
+    zorro:hasCause demo:cause033 .
+
+demo:problem034 a zorro:Problem ;
+    rdfs:label "Sorting Line SLD fails to eject workpiece into correct bin" ;
+    zorro:hasCause demo:cause034 .
+
+demo:problem035 a zorro:Problem ;
+    rdfs:label "Sorting Line SLD fails to eject workpiece into correct bin" ;
+    zorro:hasCause demo:cause035 .
+
+demo:problem036 a zorro:Problem ;
+    rdfs:label "Warehouse HBW picks wrong workpiece from storage" ;
+    zorro:hasCause demo:cause036 .
+
+demo:problem037 a zorro:Problem ;
+    rdfs:label "Warehouse HBW picks wrong workpiece from storage" ;
+    zorro:hasCause demo:cause037 .
+
+demo:problem038 a zorro:Problem ;
+    rdfs:label "Warehouse HBW fails to pick up carrier from rack" ;
+    zorro:hasCause demo:cause038 .
+
+demo:problem039 a zorro:Problem ;
+    rdfs:label "Warehouse HBW fails to pick up carrier from rack" ;
+    zorro:hasCause demo:cause039 .
+
+demo:problem040 a zorro:Problem ;
+    rdfs:label "Warehouse HBW causes collision with carrier" ;
+    zorro:hasCause demo:cause040 .
+
+demo:problem041 a zorro:Problem ;
+    rdfs:label "Warehouse HBW causes collision with carrier" ;
+    zorro:hasCause demo:cause041 .
+
+demo:problem042 a zorro:Problem ;
+    rdfs:label "Warehouse HBW pushes or damages structure during movement" ;
+    zorro:hasCause demo:cause042 .
+
+demo:problem043 a zorro:Problem ;
+    rdfs:label "Warehouse HBW pushes or damages structure during movement" ;
+    zorro:hasCause demo:cause043 .
+
+demo:problem044 a zorro:Problem ;
+    rdfs:label "System wide intermittent failures across stations" ;
+    zorro:hasCause demo:cause044 .
+
+demo:problem045 a zorro:Problem ;
+    rdfs:label "Robot XYZ fails to reach reference position during homing" ;
+    zorro:hasCause demo:cause045 .
+
+demo:problem046 a zorro:Problem ;
+    rdfs:label "Robot XYZ fails to reach reference position during homing" ;
+    zorro:hasCause demo:cause046 .
+
+demo:problem047 a zorro:Problem ;
+    rdfs:label "System stops or does not continue production flow at any station" ;
+    zorro:hasCause demo:cause047 .
+
+demo:problem048 a zorro:Problem ;
+    rdfs:label "System stops or does not continue production flow at any station" ;
+    zorro:hasCause demo:cause048 .
+
+demo:problem049 a zorro:Problem ;
+    rdfs:label "System shows slow or inconsistent movement across stations" ;
+    zorro:hasCause demo:cause049 .
+
+demo:solution001 a zorro:Solution ;
     rdfs:label "Recalibrate robot movement in PLC and adjust encoder motor parameters" .
 
-:solution002 a :Solution ;
+demo:solution002 a zorro:Solution ;
     rdfs:label "Check pneumatic tubing and reconnect all loose connections" .
 
-:solution003 a :Solution ;
+demo:solution003 a zorro:Solution ;
     rdfs:label "Verify correct warehouse loading and remove empty carriers" .
 
-:solution004 a :Solution ;
+demo:solution004 a zorro:Solution ;
     rdfs:label "Tighten or replace gears and ensure proper alignment" .
 
-:solution005 a :Solution ;
+demo:solution005 a zorro:Solution ;
     rdfs:label "Recalibrate robot movement and verify placement coordinates" .
 
-:solution006 a :Solution ;
+demo:solution006 a zorro:Solution ;
     rdfs:label "Check suction cup valve cylinder and compressor" .
 
-:solution007 a :Solution ;
+demo:solution007 a zorro:Solution ;
     rdfs:label "Inspect and secure gear connections" .
 
-:solution008 a :Solution ;
+demo:solution008 a zorro:Solution ;
     rdfs:label "Ensure correct placement of workpiece on RFID platform" .
 
-:solution009 a :Solution ;
+demo:solution009 a zorro:Solution ;
     rdfs:label "Trace back to robot pickup operation" .
 
-:solution010 a :Solution ;
+demo:solution010 a zorro:Solution ;
     rdfs:label "Inspect suction cup valve and pneumatic system" .
 
-:solution011 a :Solution ;
+demo:solution011 a zorro:Solution ;
     rdfs:label "Secure all pneumatic tubing and fittings" .
 
-:solution012 a :Solution ;
+demo:solution012 a zorro:Solution ;
     rdfs:label "Inspect suction components and airflow" .
 
-:solution013 a :Solution ;
+demo:solution013 a zorro:Solution ;
     rdfs:label "Check and fix all air connections" .
 
-:solution014 a :Solution ;
+demo:solution014 a zorro:Solution ;
     rdfs:label "Recalibrate robot movement in PLC" .
 
-:solution015 a :Solution ;
+demo:solution015 a zorro:Solution ;
     rdfs:label "Lubricate moving parts and inspect mechanical resistance" .
 
-:solution016 a :Solution ;
+demo:solution016 a zorro:Solution ;
     rdfs:label "Tighten or replace gears" .
 
-:solution017 a :Solution ;
+demo:solution017 a zorro:Solution ;
     rdfs:label "Recalibrate robot positioning for each target location" .
 
-:solution018 a :Solution ;
+demo:solution018 a zorro:Solution ;
     rdfs:label "Inspect and secure mechanical drive components" .
 
-:solution019 a :Solution ;
+demo:solution019 a zorro:Solution ;
     rdfs:label "Recalibrate robot positions for each color slot" .
 
-:solution020 a :Solution ;
+demo:solution020 a zorro:Solution ;
     rdfs:label "Verify and reset reference switches" .
 
-:solution021 a :Solution ;
+demo:solution021 a zorro:Solution ;
     rdfs:label "Clean sensor and align workpiece correctly" .
 
-:solution022 a :Solution ;
+demo:solution022 a zorro:Solution ;
     rdfs:label "Check previous robot transport step" .
 
-:solution023 a :Solution ;
+demo:solution023 a zorro:Solution ;
     rdfs:label "Check cylinder valve and compressed air supply" .
 
-:solution024 a :Solution ;
+demo:solution024 a zorro:Solution ;
     rdfs:label "Verify pneumatic cylinder and valve function" .
 
-:solution025 a :Solution ;
+demo:solution025 a zorro:Solution ;
     rdfs:label "Check robot calibration and pickup" .
 
-:solution026 a :Solution ;
+demo:solution026 a zorro:Solution ;
     rdfs:label "Inspect suction cup valve compressor and cylinder" .
 
-:solution027 a :Solution ;
+demo:solution027 a zorro:Solution ;
     rdfs:label "Realign feeder mechanism and mounting" .
 
-:solution028 a :Solution ;
+demo:solution028 a zorro:Solution ;
     rdfs:label "Check pneumatic cylinder and valve operation" .
 
-:solution029 a :Solution ;
+demo:solution029 a zorro:Solution ;
     rdfs:label "Inspect compressor and check for air leaks" .
 
-:solution030 a :Solution ;
+demo:solution030 a zorro:Solution ;
     rdfs:label "Align workpiece correctly on conveyor" .
 
-:solution031 a :Solution ;
+demo:solution031 a zorro:Solution ;
     rdfs:label "Trace back to processing station and robot" .
 
-:solution032 a :Solution ;
+demo:solution032 a zorro:Solution ;
     rdfs:label "Recalibrate color sensor thresholds" .
 
-:solution033 a :Solution ;
+demo:solution033 a zorro:Solution ;
     rdfs:label "Correct initial warehouse setup" .
 
-:solution034 a :Solution ;
+demo:solution034 a zorro:Solution ;
     rdfs:label "Check pneumatic cylinder and valves" .
 
-:solution035 a :Solution ;
+demo:solution035 a zorro:Solution ;
     rdfs:label "Adjust PLC timing parameters" .
 
-:solution036 a :Solution ;
+demo:solution036 a zorro:Solution ;
     rdfs:label "Reconfigure correct color layout" .
 
-:solution037 a :Solution ;
+demo:solution037 a zorro:Solution ;
     rdfs:label "Reset and verify PLC state" .
 
-:solution038 a :Solution ;
+demo:solution038 a zorro:Solution ;
     rdfs:label "Recalibrate warehouse positioning" .
 
-:solution039 a :Solution ;
+demo:solution039 a zorro:Solution ;
     rdfs:label "Tighten mechanical connections" .
 
-:solution040 a :Solution ;
+demo:solution040 a zorro:Solution ;
     rdfs:label "Place carriers in correct orientation" .
 
-:solution041 a :Solution ;
+demo:solution041 a zorro:Solution ;
     rdfs:label "Inspect and realign mechanical structure" .
 
-:solution042 a :Solution ;
+demo:solution042 a zorro:Solution ;
     rdfs:label "Tighten all mounting structures" .
 
-:solution043 a :Solution ;
+demo:solution043 a zorro:Solution ;
     rdfs:label "Correct carrier orientation before operation" .
 
-:solution044 a :Solution ;
+demo:solution044 a zorro:Solution ;
     rdfs:label "Inspect and reconnect all electrical wiring" .
 
-:solution045 a :Solution ;
+demo:solution045 a zorro:Solution ;
     rdfs:label "Adjust and verify reference switch position" .
 
-:solution046 a :Solution ;
+demo:solution046 a zorro:Solution ;
     rdfs:label "Inspect movement path and remove obstruction" .
 
-:solution047 a :Solution ;
+demo:solution047 a zorro:Solution ;
     rdfs:label "Check and realign reference switches and verify proper actuation" .
 
-:solution048 a :Solution ;
+demo:solution048 a zorro:Solution ;
     rdfs:label "Tighten and secure moving parts and ensure unobstructed movement" .
 
-:solution049 a :Solution ;
+demo:solution049 a zorro:Solution ;
     rdfs:label "Lubricate gears rails and moving elements" .
 
-:COLOR_SENSOR a :PartType .
+demo:COLOR_SENSOR a demo:PartType .
 
-:Conveyor_drive_mini_motor a :PartSpecification .
+demo:Conveyor_drive_mini_motor a demo:PartSpecification .
 
-:Horizontal_reference_switch a :PartSpecification .
+demo:Horizontal_reference_switch a demo:PartSpecification .
 
-:IO_MODULE a :PartType .
+demo:IO_MODULE a demo:PartType .
 
-:KILN a :PartType .
+demo:KILN a demo:PartType .
 
-:Pneumatic_cylinder_for_vacuum_system a :PartSpecification .
+demo:Pneumatic_cylinder_for_vacuum_system a demo:PartSpecification .
 
-:Pneumatic_supply a :PartSpecification .
+demo:Pneumatic_supply a demo:PartSpecification .
 
-:RFID_SCANNER a :PartType .
+demo:RFID_SCANNER a demo:PartType .
 
-:ROTARY_TABLE a :PartType .
+demo:ROTARY_TABLE a demo:PartType .
 
-:Vertical_reference_switch a :PartSpecification .
+demo:Vertical_reference_switch a demo:PartSpecification .
 
-:ENCODER a :PartType .
+zorro:Effect a owl:Class ;
+    rdfs:comment "Effect is also a problem" ;
+    owl:disjointWith zorro:Component,
+        zorro:Function,
+        zorro:Solution .
 
-:System a :BuildingBlock ;
-    :hasFunction :Cycle_complete .
+demo:ENCODER a demo:PartType .
 
-:CONVEYOR a :PartType .
+demo:Control_System_%28Turck_PLC_Setup%29 a zorro:Assembly ;
+    demo:inSubsystem demo:Control .
 
-:ENCODER_MOTOR a :PartType .
+demo:CONVEYOR a demo:PartType .
 
-:SUCTION_CUP a :PartType .
+demo:ENCODER_MOTOR a demo:PartType .
 
-:REFERENCE_SWITCH a :PartType .
+demo:SUCTION_CUP a demo:PartType .
 
-:COMPRESSOR a :PartType .
+zorro:Component a owl:Class ;
+    rdfs:comment "A component can have one or more functions" ;
+    owl:disjointWith zorro:Cause,
+        zorro:Effect,
+        zorro:Function,
+        zorro:Problem,
+        zorro:Solution .
 
-:LIGHT_SENSOR a :PartType .
+demo:REFERENCE_SWITCH a demo:PartType .
 
-:SOLENOID_VALVE a :PartType .
+zorro:Assembly a owl:Class ;
+    rdfs:subClassOf zorro:Component .
 
-:MINI_MOTOR a :PartType .
+demo:XYZ_Robot_%28VGR%29 a zorro:Assembly ;
+    demo:inSubsystem demo:Handling .
 
-:CYLINDER a :PartType .
+demo:COMPRESSOR a demo:PartType .
+
+demo:LIGHT_SENSOR a demo:PartType .
+
+demo:Processing_Station_%28MPO%29 a zorro:Assembly ;
+    zorro:hasFunction demo:Detect_workpiece,
+        demo:Eject_workpiece,
+        demo:Feed_into_oven,
+        demo:Machine_workpiece,
+        demo:Process_workpiece,
+        demo:Remove_from_oven,
+        demo:Rotate_workpiece,
+        demo:Transfer_to_turntable,
+        demo:Transport_to_output ;
+    demo:inSubsystem demo:Processing .
+
+demo:Sorting_Line_%28SLD%29 a zorro:Assembly ;
+    zorro:hasFunction demo:Detect_color,
+        demo:Detect_incoming_workpiece,
+        demo:Move_along_conveyor,
+        demo:Sort_workpiece,
+        demo:Store_in_bin ;
+    demo:inSubsystem demo:Sorting .
+
+demo:Warehouse_%28HBW%29 a zorro:Assembly ;
+    zorro:hasFunction demo:Move_conveyor_to_pickup_position,
+        demo:Move_conveyor_to_storage_position,
+        demo:Select_carrier,
+        demo:Store_workpiece ;
+    demo:inSubsystem demo:Storage .
+
+demo:SOLENOID_VALVE a demo:PartType .
+
+demo:MINI_MOTOR a demo:PartType .
+
+demo:CYLINDER a demo:PartType .
+
+demo:PartType a owl:Class .
+
+zorro:Function a owl:Class ;
+    rdfs:comment "A function can be performed by one or several componenets" ;
+    owl:disjointWith zorro:Cause,
+        zorro:Component,
+        zorro:Effect,
+        zorro:Problem,
+        zorro:Solution .
+
+zorro:Cause a owl:Class ;
+    rdfs:comment "Cause itself  is a problem" ;
+    owl:disjointWith zorro:Component,
+        zorro:Function,
+        zorro:Solution .
+
+zorro:Solution a owl:Class ;
+    rdfs:comment "Solution solves the cause of the problem" ;
+    owl:disjointWith zorro:Cause,
+        zorro:Component,
+        zorro:Effect,
+        zorro:Function,
+        zorro:Problem .
+
+zorro:Problem a owl:Class ;
+    owl:disjointWith zorro:Component,
+        zorro:Function,
+        zorro:Solution .
+
+demo:PartSpecification a owl:Class .
+
+zorro:Part a owl:Class ;
+    rdfs:subClassOf zorro:Component .
 

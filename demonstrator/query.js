@@ -1,7 +1,7 @@
 (async () => {
   const $ = id => document.getElementById(id);
   let original = '', csv = '', engine;
-  const sources = ['WP5KG.ttl', 'ontology.ttl'].map(path => ({type: 'file', value: new URL(path, location.href).href}));
+  const sources = ['WP5KG.ttl'].map(path => ({type: 'file', value: new URL(path, location.href).href}));
   const status = (message, error = false) => { $('status').textContent = message; $('status').className = error ? 'error' : ''; };
   async function fetchText(path) {
     const response = await fetch(path);
@@ -14,7 +14,7 @@
     if (term.termType === 'NamedNode') {
       const link = document.createElement('a');
       link.href = `graph.html?node=${encodeURIComponent(term.value)}`;
-      link.textContent = decodeURIComponent(term.value.split('#').pop()).replaceAll('_', ' ');
+      link.textContent = decodeURIComponent(term.value.replace(/\/$/, '').split(/[#/]/).pop()).replaceAll('_', ' ');
       link.title = term.value; cell.append(link);
     } else cell.textContent = term.value;
     return cell;
@@ -54,7 +54,8 @@
   $('query').addEventListener('keydown', event => {
     if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') { event.preventDefault(); if (!$('run').disabled) $('run').click(); }
   });
-  $('reset').onclick = () => { $('query').value = original; };
+  $('reset').onclick = () => { $('query').value = original; $('context-edited').hidden = true; };
+  $('query').addEventListener('input', () => { $('context-edited').hidden = $('query').value === original; });
   $('download').onclick = () => {
     const url = URL.createObjectURL(new Blob([csv], {type: 'text/csv;charset=utf-8'}));
     const link = document.createElement('a'); link.href = url; link.download = 'zorro-results.csv'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
@@ -68,6 +69,21 @@
       const button = document.createElement('button'); button.textContent = example.name;
       button.onclick = () => {
         original = texts[index]; $('query').value = original;
+        const context = example.context;
+        $('context-content').replaceChildren();
+        $('query-context').hidden = !context;
+        $('context-edited').hidden = true;
+        if (context) {
+          const imageLink = document.createElement('a'); imageLink.href = context.overview;
+          const image = document.createElement('img'); image.src = context.image; image.alt = context.alt;
+          imageLink.append(image);
+          const text = document.createElement('div');
+          const title = document.createElement('h3'); title.textContent = context.title;
+          const description = document.createElement('p'); description.textContent = context.description;
+          const link = document.createElement('a'); link.href = context.overview; link.textContent = 'Component details →';
+          text.append(title, description, link);
+          $('context-content').append(imageLink, text);
+        }
         buttons.forEach((item, i) => item.setAttribute('aria-pressed', String(i === index)));
         const url = new URL(location.href); url.searchParams.set('example', index); history.replaceState(null, '', url);
         $('results').replaceChildren(); $('download').disabled = true; status('Example loaded. Run the query to see results.');

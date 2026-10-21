@@ -1,34 +1,90 @@
 [
   {
     "name": "What are the causes for the given problem?",
-    "file": "queries/01-problem-causes.rq"
+    "file": "queries/01-problem-causes.rq",
+    "context": {
+      "title": "Warehouse pickup fault",
+      "image": "img/warehouse.png",
+      "alt": "High-bay warehouse",
+      "overview": "overview.html#warehouse",
+      "description": "This example asks for the cause linked to problem038: \u201cWarehouse HBW fails to pick up carrier from rack\u201d. The graph records \u201cWarehouse positioning miscalibration\u201d. The installation notes describe positioning problems, but do not independently confirm the cause of this individual graph entry."
+    }
   },
   {
     "name": "What are all the problems and causes in the KG?",
-    "file": "queries/02-problems-and-causes.rq"
+    "file": "queries/02-problems-and-causes.rq",
+    "context": {
+      "title": "Problems and causes across the factory",
+      "image": "img/demonstrator_1.png",
+      "alt": "Complete local factory setup",
+      "overview": "overview.html#faults",
+      "description": "Lists the problem\u2013cause relationships recorded in the supplied graph. The photo provides equipment context; the results are not a live diagnosis or measured fault frequency."
+    }
   },
   {
-    "name": "What is the function of the given building block?",
-    "file": "queries/03-building-block-functions.rq"
+    "name": "What is the function of the given assembly?",
+    "file": "queries/03-assembly-functions.rq",
+    "context": {
+      "title": "RFID station function",
+      "image": "img/demonstrator_1.png",
+      "alt": "Complete local factory setup",
+      "overview": "overview.html#rfid",
+      "description": "The query targets RFID_Station and returns Read_workpiece_data. Workpiece tags carry identification and colour information in the local installation notes. The image shows the whole factory; it is not a close-up of the RFID reader."
+    }
   },
   {
-    "name": "What are the parts in the given building block?",
-    "file": "queries/04-building-block-parts.rq"
+    "name": "What are the parts in the given assembly?",
+    "file": "queries/04-assembly-parts.rq",
+    "context": {
+      "title": "Turck control system parts",
+      "image": "img/demonstrator_1.png",
+      "alt": "Complete local factory setup",
+      "overview": "overview.html#control",
+      "description": "The query targets the Turck PLC control-system assembly. It lists the HMI, analogue and digital I/O, PLC, network interface and 24 V supply recorded in the graph. The standard manual\u2019s TXT/Raspberry Pi setup is different."
+    }
   },
   {
-    "name": "What are the building block involved in the given problem?",
-    "file": "queries/05-problem-building-block.rq"
+    "name": "What are the assemblies failing via the given problem?",
+    "file": "queries/05-problem-assembly.rq",
+    "context": {
+      "title": "Wrong warehouse workpiece",
+      "image": "img/warehouse.png",
+      "alt": "High-bay warehouse",
+      "overview": "overview.html#warehouse",
+      "description": "This example targets problem037: \u201cWarehouse HBW picks wrong workpiece from storage\u201d. It asks which assembly is involved. The installation notes describe incorrect colour arrangements as one real-world context; this query itself does not identify a cause."
+    }
   },
   {
-    "name": "What are all the building blocks in the knowledge graph?",
-    "file": "queries/06-subsystem-building-blocks.rq"
+    "name": "What are the assemblies inside the given subsystem?",
+    "file": "queries/06-subsystem-assemblies.rq",
+    "context": {
+      "title": "Assemblies in Handling",
+      "image": "img/xyz_robot.png",
+      "alt": "XYZ robot / vacuum gripper",
+      "overview": "overview.html#robot",
+      "description": "Lists assemblies linked to demo:Handling through demo:inSubsystem. This supplied example asks about the Handling subsystem; it does not list every assembly in the graph."
+    }
   },
   {
     "name": "What are all the causes and solutions in the KG?",
-    "file": "queries/07-causes-and-solutions.rq"
+    "file": "queries/07-causes-and-solutions.rq",
+    "context": {
+      "title": "Recorded causes and solutions",
+      "image": "img/demonstrator_1.png",
+      "alt": "Complete local factory setup",
+      "overview": "overview.html#faults",
+      "description": "Follows zorro:hasSolution links from recorded causes to solutions. These are graph entries to inspect, not automatically verified fixes for the current machine state."
+    }
   },
   {
     "name": "What is the solution for the given cause?",
-    "file": "queries/08-cause-solutions.rq"
+    "file": "queries/08-cause-solutions.rq",
+    "context": {
+      "title": "Warehouse reference position",
+      "image": "img/warehouse.png",
+      "alt": "High-bay warehouse",
+      "overview": "overview.html#reference-switch",
+      "description": "The query targets cause020, labelled \u201cIncorrect warehouse reference position\u201d. Its linked solution is \u201cVerify and reset reference switches\u201d. The installation notes explain why reaching a known reference position matters."
+    }
   }
 ]

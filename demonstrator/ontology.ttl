@@ -1,65 +1,132 @@
-@prefix : <http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#> .
+@prefix : <http://w3id.org/ZorroOntology/> .
+@prefix default1: <http://www.semanticweb.org/ontologies/2026/ZorroDemo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-: a owl:Ontology .
+:PartOf a owl:ObjectProperty ;
+    rdfs:domain :Part ;
+    rdfs:range :Assembly .
 
-:BBinvolvedInProblem a owl:ObjectProperty ;
-    rdfs:domain :Problem ;
-    rdfs:range :BuildingBlock .
+:defines a owl:ObjectProperty ;
+    rdfs:domain :Function ;
+    rdfs:range :Problem .
 
-:hasBuildingBlock a owl:ObjectProperty ;
-    rdfs:domain :SubSystem ;
-    rdfs:range :BuildingBlock .
+:dependsOn a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Function ;
+    rdfs:range :Function .
+
+:failsVia a owl:ObjectProperty ;
+    rdfs:domain :Component ;
+    rdfs:range :Problem .
 
 :hasCause a owl:ObjectProperty ;
     rdfs:domain :Problem ;
     rdfs:range :Cause .
 
+:hasEffect a owl:ObjectProperty ;
+    rdfs:domain :Cause ;
+    rdfs:range :Effect .
+
 :hasFunction a owl:ObjectProperty ;
-    rdfs:domain :BuildingBlock ;
+    rdfs:domain :Component ;
     rdfs:range :Function .
 
-:hasFunctionDescription a owl:DatatypeProperty ;
+:inSystem a owl:ObjectProperty ;
+    rdfs:domain :Assembly ;
+    rdfs:range :System .
+
+:involves a owl:ObjectProperty ;
+    rdfs:domain :Problem ;
+    rdfs:range :Part .
+
+:solves a owl:ObjectProperty ;
+    rdfs:domain <hhttp://w3id.org/ZorroOntology/Solution> ;
+    rdfs:range :Problem .
+
+default1: a owl:Ontology ;
+    owl:imports : .
+
+default1:hasFunctionDescription a owl:DatatypeProperty ;
     rdfs:domain :Function ;
     rdfs:range xsd:string .
 
-:hasPart a owl:ObjectProperty ;
-    rdfs:domain :BuildingBlock ;
-    rdfs:range :Part .
-
-:hasPartSpecification a owl:ObjectProperty ;
+default1:hasPartSpecification a owl:ObjectProperty ;
     rdfs:domain :Part ;
-    rdfs:range :PartSpecification .
+    rdfs:range default1:PartSpecification .
 
-:hasPartType a owl:ObjectProperty ;
+default1:hasPartType a owl:ObjectProperty ;
     rdfs:domain :Part ;
-    rdfs:range :PartType .
+    rdfs:range default1:PartType .
 
-:hasSolution a owl:ObjectProperty ;
+default1:hasSolution a owl:ObjectProperty ;
     rdfs:domain :Cause ;
     rdfs:range :Solution .
 
-:partTypeInvolvedInFunc a owl:ObjectProperty ;
+default1:inSubsystem a owl:ObjectProperty ;
+    rdfs:domain :Assembly ;
+    rdfs:range default1:SubSystem .
+
+default1:partTypeInvolvedInFunc a owl:ObjectProperty ;
     rdfs:domain :Function ;
-    rdfs:range :PartType .
+    rdfs:range default1:PartType .
 
-:PartSpecification a owl:Class .
+: a owl:Ontology .
 
-:Solution a owl:Class .
+:System a owl:Class ;
+    rdfs:subClassOf :Component .
 
-:SubSystem a owl:Class .
+default1:PartSpecification a owl:Class .
 
-:Cause a owl:Class .
+default1:SubSystem a owl:Class .
 
-:PartType a owl:Class .
+default1:PartType a owl:Class .
 
-:Problem a owl:Class .
+:Assembly a owl:Class ;
+    rdfs:subClassOf :Component .
 
-:Function a owl:Class .
+:Effect a owl:Class ;
+    rdfs:comment "Effect is also a problem" ;
+    owl:disjointWith :Component,
+        :Function,
+        :Solution .
 
-:Part a owl:Class .
+:Part a owl:Class ;
+    rdfs:subClassOf :Component .
 
-:BuildingBlock a owl:Class .
+:Cause a owl:Class ;
+    rdfs:comment "Cause itself  is a problem" ;
+    owl:disjointWith :Component,
+        :Function,
+        :Solution .
+
+:Solution a owl:Class ;
+    rdfs:comment "Solution solves the cause of the problem" ;
+    owl:disjointWith :Cause,
+        :Component,
+        :Effect,
+        :Function,
+        :Problem .
+
+:Problem a owl:Class ;
+    owl:disjointWith :Component,
+        :Function,
+        :Solution .
+
+:Component a owl:Class ;
+    rdfs:comment "A component can have one or more functions" ;
+    owl:disjointWith :Cause,
+        :Effect,
+        :Function,
+        :Problem,
+        :Solution .
+
+:Function a owl:Class ;
+    rdfs:comment "A function can be performed by one or several componenets" ;
+    owl:disjointWith :Cause,
+        :Component,
+        :Effect,
+        :Problem,
+        :Solution .
 

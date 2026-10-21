@@ -1,0 +1,11 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX demo: <http://www.semanticweb.org/ontologies/2026/ZorroDemo/>
+PREFIX  zorro: <http://w3id.org/ZorroOntology/>
+
+select ?parts
+where {
+?parts  zorro:partOf  demo:Control_System_%28Turck_PLC_Setup%29.
+}

@@ -8,26 +8,32 @@ python3 -m http.server 8000
 
 Open http://localhost:8000/demonstrator/ (the repository root also redirects there).
 The default page opens the SPARQL queries. Navigation also provides the knowledge graph
-and ontology viewer.
+and ontology viewer, plus a Demonstrator tab with component and installation context.
 The static pages can also be served by GitHub Pages from the repository root.
 Internet access is needed for the Comunica query engine and vis-network graph library.
 Open the pages through HTTP rather than directly as local files.
 
-- **SPARQL queries:** eight examples extracted from `Example_query.docx`, editable queries,
+- **Demonstrator:** module and part descriptions, supplied equipment images, manual page
+  references and a summary of the installation observations. Distinguishes the local
+  Turck/CODESYS setup from the standard manual.
+- **SPARQL queries:** eight examples extracted from `Example_query2.docx`, editable queries,
   SELECT tables with CSV downloads, ASK results, and CONSTRUCT/DESCRIBE output as Turtle.
   Ctrl/Cmd+Enter runs a query. Resource links open that resource in the graph explorer.
+  Each example also shows an equipment image and explanation with a link to its
+  overview section. This context describes the selected example, including after
+  editing (an edit notice is shown); it does not interpret arbitrary query results.
 - **Ontology:** embedded WebVOWL using the same bundled viewer as the original ZORRO
-  documentation, with a full-screen option. Displays the supplied demonstrator OWL
-  schema; its VOWL JSON is rebuilt by `build_data.py`.
+  documentation, with a full-screen option. Displays the supplied `ZorroOntology.owl` upper ontology and `ZorroDemo.owl`
+  extension, including subclass and disjointness links; its VOWL JSON is rebuilt by `build_data.py`.
 - **Knowledge graph:** every resource and resource relationship in `WP5KG.ttl` and
-  `Zorro_ontology.owl`; literal values appear in the resource details. Search and type
+  the two updated OWL files; literal values appear in the resource details. Search and type
   filters include immediate neighbours to preserve context. Ontology/type links can
   be hidden. Resource details also list incoming relationships.
 
-Queries read `WP5KG.ttl` and `ontology.ttl` directly. The latter is a generated Turtle
-copy of the supplied OWL file to avoid HTTP servers treating `.owl` as binary data.
-The explorer uses `graph-data.json`. After changing either research file,
-regenerate both browser exports with the project's Python environment:
+Queries read `WP5KG.ttl` directly; this supplied export already includes both ontologies.
+The graph explorer uses `graph-data.json`; WebVOWL uses `webvowl/data/ontology.json`.
+`ontology.ttl` is a generated Turtle copy of the two supplied OWL files. After replacing
+the graph or ontology sources, regenerate the browser exports:
 
 ```sh
 python demonstrator/build_data.py
@@ -43,3 +49,17 @@ pytest tests/test_demonstrator.py
 Source identifiers are preserved, including differently encoded equipment names;
 no equivalence or fault-propagation inference is added. The aircraft playground,
 ontology documentation and original research files remain available unchanged.
+
+`KG_construction.py` is the researcher's original construction script, preserved as
+supplied. It is not needed to serve the site. Reconstructing the research graph requires
+its input CSV files (`processed_troubleshooting.csv`, `InputCSVfiles/parts_catalog.csv`,
+`InputCSVfiles/process_flow.csv`) and dependencies; these CSVs were not supplied here.
+The eight query bodies follow `Example_query2.docx` unchanged. Example 6 asks for
+assemblies in Handling, rather than all assemblies. No reasoning or URI corrections
+are applied; identifiers and relationship directions remain as supplied.
+
+Existing source details are preserved: `solves` has a domain URI starting with
+`hhttp://`, so WebVOWL can show a second Solution node. The supplied extension
+uses `demo:hasSolution`, while the graph and examples use `zorro:hasSolution`;
+`PartOf` and `partOf` also differ in case. No equivalences or missing subclass
+axioms are invented to reconcile these differences.

@@ -1,9 +1,12 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX : <http://www.semanticweb.org/ydo840/ontologies/2025/1/ZorroOntology#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX demo: <http://www.semanticweb.org/ontologies/2026/ZorroDemo/>
+PREFIX  zorro: <http://w3id.org/ZorroOntology/>
 
 select ?cause ?label
 where {
-:problem038 :hasCause ?cause.
+demo:problem038 zorro:hasCause ?cause.
 ?cause rdfs:label ?label.
 }
