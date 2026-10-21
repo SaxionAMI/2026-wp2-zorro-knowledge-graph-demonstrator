@@ -14,17 +14,26 @@ Internet access is needed for the Comunica query engine and vis-network graph li
 Open the pages through HTTP rather than directly as local files.
 
 - **Demonstrator:** module and part descriptions, supplied equipment images, manual page
-  references and a summary of the installation observations. Distinguishes the local
+  references. Distinguishes the local
   Turck/CODESYS setup from the standard manual.
 - **SPARQL queries:** eight examples extracted from `Example_query2.docx`, editable queries,
   SELECT tables with CSV downloads, ASK results, and CONSTRUCT/DESCRIBE output as Turtle.
-  Ctrl/Cmd+Enter runs a query. Resource links open that resource in the graph explorer.
+  Examples are read-only until **Try it yourself** is selected. Resetting or selecting
+  another example restores read-only mode. Ctrl/Cmd+Enter runs a query. Resource links open that resource in the graph explorer.
   Each example also shows an equipment image and explanation with a link to its
   overview section. This context describes the selected example, including after
   editing (an edit notice is shown); it does not interpret arbitrary query results.
+- **Query builder:** choices come directly from `WP5KG.ttl`. Select a type or item,
+  add incoming/outgoing relationships, optionally choose values, and run the generated
+  SPARQL. Rows match together; use an earlier result in the From selector to follow
+  a chain (for example warehouse → parts → specifications). Manual editing is optional;
+  returning to the builder restores the query from its selections. No extra plugin,
+  server or ontology inference is required.
 - **Ontology:** embedded WebVOWL using the same bundled viewer as the original ZORRO
   documentation, with a full-screen option. Displays the supplied `ZorroOntology.owl` upper ontology and `ZorroDemo.owl`
   extension, including subclass and disjointness links; its VOWL JSON is rebuilt by `build_data.py`.
+  The ZORRO, Demo extension and Combined buttons switch the displayed model.
+  Full screen opens the currently selected model.
 - **Knowledge graph:** every resource and resource relationship in `WP5KG.ttl` and
   the two updated OWL files; literal values appear in the resource details. Search and type
   filters include immediate neighbours to preserve context. Ontology/type links can

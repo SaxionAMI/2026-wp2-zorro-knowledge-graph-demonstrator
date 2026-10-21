@@ -20,7 +20,7 @@ def load_ontology():
     return ontology
 
 
-def export_webvowl(ontology):
+def export_webvowl(ontology, filename="ontology", title="ZORRO + demonstrator extension", iri="http://www.semanticweb.org/ontologies/2026/ZorroDemo/"):
     """Display declared properties, subclass and disjointness axioms as supplied."""
     properties = sorted(set(ontology.subjects(RDF.type, OWL.ObjectProperty)) |
                         set(ontology.subjects(RDF.type, OWL.DatatypeProperty)), key=str)
@@ -45,8 +45,8 @@ def export_webvowl(ontology):
                 'label': {'IRI-based': label(term)}}
 
     result = {
-        'header': {'languages': ['en'], 'iri': 'http://www.semanticweb.org/ontologies/2026/ZorroDemo/',
-                   'title': {'en': 'ZORRO + demonstrator extension'}},
+        'header': {'languages': ['en'], 'iri': iri,
+                   'title': {'en': title}},
         'namespace': [],
         'class': [{'id': ids[c], 'type': 'owl:Class'} for c in classes] +
                  [{'id': ids[d], 'type': 'rdfs:Datatype'} for d in datatypes],
@@ -67,13 +67,15 @@ def export_webvowl(ontology):
                                             'attributes': ['object', 'anonymous']})
     directory = ROOT / 'webvowl' / 'data'
     directory.mkdir(parents=True, exist_ok=True)
-    (directory / 'ontology.json').write_text(json.dumps(result, indent=2) + '\n')
+    (directory / f'{filename}.json').write_text(json.dumps(result, indent=2) + '\n')
 
 
 def build():
     ontology = load_ontology()
     ontology.serialize(ROOT / 'ontology.ttl', format='turtle')
     export_webvowl(ontology)
+    export_webvowl(Graph().parse(ROOT / 'ZorroOntology.owl', format='xml'), 'zorro', 'ZORRO', 'http://w3id.org/ZorroOntology/')
+    export_webvowl(Graph().parse(ROOT / 'ZorroDemo.owl', format='xml'), 'demo', 'Demo extension')
     graph = Graph().parse(ROOT / 'WP5KG.ttl') + ontology
 
     def display_label(term):

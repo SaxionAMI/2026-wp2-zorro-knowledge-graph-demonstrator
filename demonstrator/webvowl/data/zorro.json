@@ -1,0 +1,672 @@
+{
+  "header": {
+    "languages": [
+      "en"
+    ],
+    "iri": "http://w3id.org/ZorroOntology/",
+    "title": {
+      "en": "ZORRO"
+    }
+  },
+  "namespace": [],
+  "class": [
+    {
+      "id": "0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "0",
+      "iri": "hhttp://w3id.org/ZorroOntology/Solution",
+      "baseIri": "hhttp://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Solution"
+      },
+      "instances": 0
+    },
+    {
+      "id": "1",
+      "iri": "http://w3id.org/ZorroOntology/Assembly",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Assembly"
+      },
+      "instances": 0
+    },
+    {
+      "id": "2",
+      "iri": "http://w3id.org/ZorroOntology/Cause",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Cause"
+      },
+      "instances": 0
+    },
+    {
+      "id": "3",
+      "iri": "http://w3id.org/ZorroOntology/Component",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Component"
+      },
+      "instances": 0
+    },
+    {
+      "id": "4",
+      "iri": "http://w3id.org/ZorroOntology/Effect",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Effect"
+      },
+      "instances": 0
+    },
+    {
+      "id": "5",
+      "iri": "http://w3id.org/ZorroOntology/Function",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Function"
+      },
+      "instances": 0
+    },
+    {
+      "id": "6",
+      "iri": "http://w3id.org/ZorroOntology/Part",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Part"
+      },
+      "instances": 0
+    },
+    {
+      "id": "7",
+      "iri": "http://w3id.org/ZorroOntology/Problem",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Problem"
+      },
+      "instances": 0
+    },
+    {
+      "id": "8",
+      "iri": "http://w3id.org/ZorroOntology/Solution",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Solution"
+      },
+      "instances": 0
+    },
+    {
+      "id": "9",
+      "iri": "http://w3id.org/ZorroOntology/System",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "System"
+      },
+      "instances": 0
+    }
+  ],
+  "property": [
+    {
+      "id": "10",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "11",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "12",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "13",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "14",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "15",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "16",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "17",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "18",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "19",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "axiom-0",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "axiom-1",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "axiom-2",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "axiom-3",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-4",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-5",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-6",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-7",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-8",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-9",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-10",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-11",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-12",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-13",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-14",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-15",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-16",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-17",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-18",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-19",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-20",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-21",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-22",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-23",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-24",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-25",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-26",
+      "type": "owl:disjointWith"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "10",
+      "iri": "http://w3id.org/ZorroOntology/PartOf",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "PartOf"
+      },
+      "domain": "6",
+      "range": "1",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "http://w3id.org/ZorroOntology/defines",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "defines"
+      },
+      "domain": "5",
+      "range": "7",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "http://w3id.org/ZorroOntology/dependsOn",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "dependsOn"
+      },
+      "domain": "5",
+      "range": "5",
+      "attributes": [
+        "object",
+        "transitive"
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "http://w3id.org/ZorroOntology/failsVia",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "failsVia"
+      },
+      "domain": "3",
+      "range": "7",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "http://w3id.org/ZorroOntology/hasCause",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "hasCause"
+      },
+      "domain": "7",
+      "range": "2",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "15",
+      "iri": "http://w3id.org/ZorroOntology/hasEffect",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "hasEffect"
+      },
+      "domain": "2",
+      "range": "4",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "http://w3id.org/ZorroOntology/hasFunction",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "hasFunction"
+      },
+      "domain": "3",
+      "range": "5",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "http://w3id.org/ZorroOntology/inSystem",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "inSystem"
+      },
+      "domain": "1",
+      "range": "9",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "18",
+      "iri": "http://w3id.org/ZorroOntology/involves",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "involves"
+      },
+      "domain": "7",
+      "range": "6",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "http://w3id.org/ZorroOntology/solves",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "solves"
+      },
+      "domain": "0",
+      "range": "7",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "axiom-0",
+      "domain": "1",
+      "range": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-1",
+      "domain": "6",
+      "range": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-2",
+      "domain": "9",
+      "range": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-3",
+      "domain": "2",
+      "range": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-4",
+      "domain": "2",
+      "range": "5",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-5",
+      "domain": "2",
+      "range": "8",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-6",
+      "domain": "3",
+      "range": "2",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-7",
+      "domain": "3",
+      "range": "4",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-8",
+      "domain": "3",
+      "range": "5",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-9",
+      "domain": "3",
+      "range": "7",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-10",
+      "domain": "3",
+      "range": "8",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-11",
+      "domain": "4",
+      "range": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-12",
+      "domain": "4",
+      "range": "5",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-13",
+      "domain": "4",
+      "range": "8",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-14",
+      "domain": "5",
+      "range": "2",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-15",
+      "domain": "5",
+      "range": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-16",
+      "domain": "5",
+      "range": "4",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-17",
+      "domain": "5",
+      "range": "7",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-18",
+      "domain": "5",
+      "range": "8",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-19",
+      "domain": "7",
+      "range": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-20",
+      "domain": "7",
+      "range": "5",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-21",
+      "domain": "7",
+      "range": "8",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-22",
+      "domain": "8",
+      "range": "2",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-23",
+      "domain": "8",
+      "range": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-24",
+      "domain": "8",
+      "range": "4",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-25",
+      "domain": "8",
+      "range": "5",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-26",
+      "domain": "8",
+      "range": "7",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    }
+  ]
+}

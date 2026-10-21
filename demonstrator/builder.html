@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Query builder · ZORRO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="query.html">ZORRO</a>
+      <nav aria-label="Main navigation">
+        <a href="overview.html">Demonstrator</a>
+        <a href="query.html">SPARQL queries</a>
+        <a href="builder.html" aria-current="page">Query builder</a>
+        <a href="graph.html">Knowledge graph</a>
+        <a href="oßßntology.html">Ontology</a>
+      </nav>
+    </header>
+    <main class="builder-page">
+      <div class="panel">
+        <h1>Query builder</h1>
+        <div class="builder-controls" id="builder-controls">
+          <div class="builder-start">
+            <label>
+              Type
+              <select id="builder-type" disabled>
+                <option>Loading…</option>
+              </select>
+            </label>
+            <label>
+              Item
+              <select id="builder-item" disabled>
+                <option>Loading…</option>
+              </select>
+            </label>
+            <label>
+              Result limit
+              <select id="builder-limit">
+                <option>25</option>
+                <option selected>100</option>
+                <option>500</option>
+              </select>
+            </label>
+          </div>
+          <div id="conditions"></div>
+          <button id="add-condition" class="secondary" disabled>
+            Add relationship
+          </button>
+          <p class="builder-help">
+            Choose a type or item, then add relationships. Each row must match.
+            Arrows show the relationship direction. Use a previous result as
+            “From” to follow a chain.
+          </p>
+        </div>
+        <div class="actions">
+          <button id="manual" class="secondary" disabled>Edit manually</button>
+        </div>
+        <p id="manual-note" hidden>
+          Manual mode. Returning to the builder restores the query from your
+          selections.
+        </p>
+        <label for="query">SPARQL query</label>
+        <textarea id="query" spellcheck="false" rows="12" readonly></textarea>
+        <div class="actions">
+          <button id="run" disabled>Run query</button>
+          <button class="secondary" id="download" disabled>Download CSV</button>
+        </div>
+        <p id="status" role="status">Loading knowledge graph…</p>
+        <div id="results" class="results"></div>
+      </div>
+    </main>
+    <script src="https://rdf.js.org/comunica-browser/versions/v4/engines/query-sparql/comunica-browser.js"></script>
+    <script src="query-runner.js" defer></script>
+    <script src="builder.js" defer></script>
+  </body>
+</html>

@@ -68,3 +68,13 @@ def test_webvowl_export_preserves_relationships():
     for predicate, kind in ((RDFS.subClassOf, 'rdfs:SubClassOf'), (OWL.disjointWith, 'owl:disjointWith')):
         assert {(ids[p['domain']], ids[p['range']]) for p in attributes.values() if kinds[p['id']] == kind} == {
             (str(s), str(o)) for s, o in graph.subject_objects(predicate)}
+
+
+def test_switchable_ontology_exports_use_only_selected_sources():
+    for filename, source in (('zorro', 'ZorroOntology.owl'), ('demo', 'ZorroDemo.owl')):
+        graph = Graph().parse(ROOT / source, format='xml')
+        export = json.loads((ROOT / f'webvowl/data/{filename}.json').read_text())
+        actual = {p['iri'] for p in export['propertyAttribute'] if 'iri' in p}
+        expected = {str(p) for kind in (OWL.ObjectProperty, OWL.DatatypeProperty)
+                    for p in graph.subjects(RDF.type, kind)}
+        assert actual == expected

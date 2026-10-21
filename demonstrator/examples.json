@@ -17,7 +17,7 @@
       "title": "Problems and causes across the factory",
       "image": "img/demonstrator_1.png",
       "alt": "Complete local factory setup",
-      "overview": "overview.html#faults",
+      "overview": "overview.html",
       "description": "Lists the problem\u2013cause relationships recorded in the supplied graph. The photo provides equipment context; the results are not a live diagnosis or measured fault frequency."
     }
   },
@@ -72,7 +72,7 @@
       "title": "Recorded causes and solutions",
       "image": "img/demonstrator_1.png",
       "alt": "Complete local factory setup",
-      "overview": "overview.html#faults",
+      "overview": "overview.html",
       "description": "Follows zorro:hasSolution links from recorded causes to solutions. These are graph entries to inspect, not automatically verified fixes for the current machine state."
     }
   },
