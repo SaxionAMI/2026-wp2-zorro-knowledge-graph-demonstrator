@@ -3,9 +3,9 @@
     "languages": [
       "en"
     ],
-    "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/",
+    "iri": "http://w3id.org/ZorroOntology/",
     "title": {
-      "en": "ZORRO + demonstrator extension"
+      "en": "ZORRO"
     }
   },
   "namespace": [],
@@ -49,22 +49,6 @@
     {
       "id": "9",
       "type": "owl:Class"
-    },
-    {
-      "id": "10",
-      "type": "owl:Class"
-    },
-    {
-      "id": "11",
-      "type": "owl:Class"
-    },
-    {
-      "id": "12",
-      "type": "owl:Class"
-    },
-    {
-      "id": "13",
-      "type": "rdfs:Datatype"
     }
   ],
   "classAttribute": [
@@ -157,45 +141,25 @@
         "IRI-based": "System"
       },
       "instances": 0
-    },
-    {
-      "id": "10",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/PartSpecification",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
-      "label": {
-        "IRI-based": "PartSpecification"
-      },
-      "instances": 0
-    },
-    {
-      "id": "11",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/PartType",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
-      "label": {
-        "IRI-based": "PartType"
-      },
-      "instances": 0
-    },
-    {
-      "id": "12",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/SubSystem",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
-      "label": {
-        "IRI-based": "SubSystem"
-      },
-      "instances": 0
-    },
-    {
-      "id": "13",
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "label": {
-        "IRI-based": "string"
-      },
-      "instances": 0
     }
   ],
   "property": [
+    {
+      "id": "10",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "11",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "12",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "13",
+      "type": "owl:objectProperty"
+    },
     {
       "id": "14",
       "type": "owl:objectProperty"
@@ -218,46 +182,6 @@
     },
     {
       "id": "19",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "20",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "21",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "22",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "23",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "24",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "25",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "26",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "27",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "28",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "29",
       "type": "owl:objectProperty"
     },
     {
@@ -371,7 +295,7 @@
   ],
   "propertyAttribute": [
     {
-      "id": "14",
+      "id": "10",
       "iri": "http://w3id.org/ZorroOntology/PartOf",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -384,7 +308,7 @@
       ]
     },
     {
-      "id": "15",
+      "id": "11",
       "iri": "http://w3id.org/ZorroOntology/defines",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -397,7 +321,7 @@
       ]
     },
     {
-      "id": "16",
+      "id": "12",
       "iri": "http://w3id.org/ZorroOntology/dependsOn",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -411,7 +335,7 @@
       ]
     },
     {
-      "id": "17",
+      "id": "13",
       "iri": "http://w3id.org/ZorroOntology/failsVia",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -424,7 +348,7 @@
       ]
     },
     {
-      "id": "18",
+      "id": "14",
       "iri": "http://w3id.org/ZorroOntology/hasCause",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -437,7 +361,7 @@
       ]
     },
     {
-      "id": "19",
+      "id": "15",
       "iri": "http://w3id.org/ZorroOntology/hasEffect",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -450,7 +374,7 @@
       ]
     },
     {
-      "id": "20",
+      "id": "16",
       "iri": "http://w3id.org/ZorroOntology/hasFunction",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -463,7 +387,7 @@
       ]
     },
     {
-      "id": "21",
+      "id": "17",
       "iri": "http://w3id.org/ZorroOntology/inSystem",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -476,7 +400,7 @@
       ]
     },
     {
-      "id": "22",
+      "id": "18",
       "iri": "http://w3id.org/ZorroOntology/involves",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -489,7 +413,7 @@
       ]
     },
     {
-      "id": "23",
+      "id": "19",
       "iri": "http://w3id.org/ZorroOntology/solves",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -497,84 +421,6 @@
       },
       "domain": "0",
       "range": "7",
-      "attributes": [
-        "object"
-      ]
-    },
-    {
-      "id": "24",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasFunctionDescription",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
-      "label": {
-        "IRI-based": "hasFunctionDescription"
-      },
-      "domain": "5",
-      "range": "13",
-      "attributes": [
-        "datatype"
-      ]
-    },
-    {
-      "id": "25",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasPartSpecification",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
-      "label": {
-        "IRI-based": "hasPartSpecification"
-      },
-      "domain": "6",
-      "range": "10",
-      "attributes": [
-        "object"
-      ]
-    },
-    {
-      "id": "26",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasPartType",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
-      "label": {
-        "IRI-based": "hasPartType"
-      },
-      "domain": "6",
-      "range": "11",
-      "attributes": [
-        "object"
-      ]
-    },
-    {
-      "id": "27",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasSolution",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
-      "label": {
-        "IRI-based": "hasSolution"
-      },
-      "domain": "2",
-      "range": "8",
-      "attributes": [
-        "object"
-      ]
-    },
-    {
-      "id": "28",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/inSubsystem",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
-      "label": {
-        "IRI-based": "inSubsystem"
-      },
-      "domain": "1",
-      "range": "12",
-      "attributes": [
-        "object"
-      ]
-    },
-    {
-      "id": "29",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/partTypeInvolvedInFunc",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
-      "label": {
-        "IRI-based": "partTypeInvolvedInFunc"
-      },
-      "domain": "5",
-      "range": "11",
       "attributes": [
         "object"
       ]

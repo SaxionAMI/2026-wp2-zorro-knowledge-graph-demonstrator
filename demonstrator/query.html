@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>SPARQL queries · ZORRO</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=2" />
   </head>
   <body>
     <header>
@@ -31,13 +31,28 @@
               Query edited. The explanation refers to the selected example.
             </p>
           </details>
-          <label for="query">SPARQL query</label>
-          <textarea id="query" spellcheck="false" rows="18" readonly></textarea>
+          <div class="query-editor" id="query-editor">
+            <div class="editor-toolbar">
+              <label for="query">SPARQL query</label>
+              <span id="editor-mode" role="status">Read-only example</span>
+              <button class="secondary" id="edit" disabled aria-pressed="false">
+                Try it yourself
+              </button>
+            </div>
+            <p id="editor-hint" hidden>
+              Editing enabled. Change the query below, then select Run query.
+            </p>
+            <textarea
+              id="query"
+              spellcheck="false"
+              rows="18"
+              readonly
+              aria-readonly="true"
+              aria-describedby="editor-mode editor-hint"
+            ></textarea>
+          </div>
           <div class="actions">
             <button id="run" disabled>Run query</button>
-            <button class="secondary" id="edit" disabled>
-              Try it yourself
-            </button>
             <button class="secondary" id="reset" disabled>Reset example</button>
             <button class="secondary" id="download" disabled>
               Download CSV
@@ -50,6 +65,6 @@
     </main>
     <script src="https://rdf.js.org/comunica-browser/versions/v4/engines/query-sparql/comunica-browser.js"></script>
     <script src="query-runner.js" defer></script>
-    <script src="query.js" defer></script>
+    <script src="query.js?v=2" defer></script>
   </body>
 </html>

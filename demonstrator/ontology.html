@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Ontology · ZORRO</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=2" />
   </head>
   <body>
     <header>
@@ -19,25 +19,24 @@
     </header>
     <main class="ontology-page">
       <div class="actions">
+        <button data-view="ontology" aria-pressed="true">ZORRO</button>
+        <button class="secondary" data-view="demo" aria-pressed="false">
+          Demo Extension
+        </button>
         <a class="button" id="fullscreen" href="webvowl/index.html">
           Full screen
         </a>
-        <button class="secondary" data-view="zorro" aria-pressed="false">
-          ZORRO (OWL)
-        </button>
-        <button class="secondary" data-view="demo" aria-pressed="false">
-          Demo extension (OWL)
-        </button>
-        <button data-view="ontology" aria-pressed="true">Combined</button>
-        <a href="upperOntology.pdf">Ontology diagram (PDF)</a>
+        <a id="ontology-download" href="ZorroOntology.owl" download>
+          Download ZORRO (OWL)
+        </a>
       </div>
       <iframe
         class="ontology-viewer"
         src="webvowl/index.html"
-        title="Interactive WebVOWL visualisation of the demonstrator ontology"
+        title="Interactive WebVOWL visualisation of the ZORRO ontology"
         loading="lazy"
       ></iframe>
     </main>
-    <script src="ontology.js" defer></script>
+    <script src="ontology.js?v=3" defer></script>
   </body>
 </html>

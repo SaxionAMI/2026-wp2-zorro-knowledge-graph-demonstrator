@@ -20,7 +20,7 @@ def load_ontology():
     return ontology
 
 
-def export_webvowl(ontology, filename="ontology", title="ZORRO + demonstrator extension", iri="http://www.semanticweb.org/ontologies/2026/ZorroDemo/"):
+def export_webvowl(ontology, filename="ontology", title="ZORRO", iri="http://w3id.org/ZorroOntology/"):
     """Display declared properties, subclass and disjointness axioms as supplied."""
     properties = sorted(set(ontology.subjects(RDF.type, OWL.ObjectProperty)) |
                         set(ontology.subjects(RDF.type, OWL.DatatypeProperty)), key=str)
@@ -72,10 +72,9 @@ def export_webvowl(ontology, filename="ontology", title="ZORRO + demonstrator ex
 
 def build():
     ontology = load_ontology()
-    ontology.serialize(ROOT / 'ontology.ttl', format='turtle')
-    export_webvowl(ontology)
-    export_webvowl(Graph().parse(ROOT / 'ZorroOntology.owl', format='xml'), 'zorro', 'ZORRO', 'http://w3id.org/ZorroOntology/')
-    export_webvowl(Graph().parse(ROOT / 'ZorroDemo.owl', format='xml'), 'demo', 'Demo extension')
+    export_webvowl(Graph().parse(ROOT / 'ZorroOntology.owl', format='xml'))
+    export_webvowl(Graph().parse(ROOT / 'ZorroDemo.owl', format='xml'), 'demo', 'Demo Extension',
+                   'http://www.semanticweb.org/ontologies/2026/ZorroDemo/')
     graph = Graph().parse(ROOT / 'WP5KG.ttl') + ontology
 
     def display_label(term):

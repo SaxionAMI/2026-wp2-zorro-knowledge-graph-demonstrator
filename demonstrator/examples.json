@@ -39,7 +39,6 @@
       "title": "Turck control system parts",
       "image": "img/demonstrator_1.png",
       "alt": "Complete local factory setup",
-      "overview": "overview.html#control",
       "description": "The query targets the Turck PLC control-system assembly. It lists the HMI, analogue and digital I/O, PLC, network interface and 24 V supply recorded in the graph. The standard manual\u2019s TXT/Raspberry Pi setup is different."
     }
   },

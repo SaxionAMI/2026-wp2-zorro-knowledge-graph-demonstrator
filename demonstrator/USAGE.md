@@ -29,11 +29,9 @@ Open the pages through HTTP rather than directly as local files.
   a chain (for example warehouse → parts → specifications). Manual editing is optional;
   returning to the builder restores the query from its selections. No extra plugin,
   server or ontology inference is required.
-- **Ontology:** embedded WebVOWL using the same bundled viewer as the original ZORRO
-  documentation, with a full-screen option. Displays the supplied `ZorroOntology.owl` upper ontology and `ZorroDemo.owl`
-  extension, including subclass and disjointness links; its VOWL JSON is rebuilt by `build_data.py`.
-  The ZORRO, Demo extension and Combined buttons switch the displayed model.
-  Full screen opens the currently selected model.
+- **Ontology:** switch between standard ZORRO (`ZorroOntology.owl`) and Demo Extension
+  (`ZorroDemo.owl`) in WebVOWL. Full screen and the OWL download follow the selected
+  view. There is no combined view.
 - **Knowledge graph:** every resource and resource relationship in `WP5KG.ttl` and
   the two updated OWL files; literal values appear in the resource details. Search and type
   filters include immediate neighbours to preserve context. Ontology/type links can
@@ -41,8 +39,7 @@ Open the pages through HTTP rather than directly as local files.
 
 Queries read `WP5KG.ttl` directly; this supplied export already includes both ontologies.
 The graph explorer uses `graph-data.json`; WebVOWL uses `webvowl/data/ontology.json`.
-`ontology.ttl` is a generated Turtle copy of the two supplied OWL files. After replacing
-the graph or ontology sources, regenerate the browser exports:
+After replacing the graph or ontology sources, regenerate the browser exports:
 
 ```sh
 python demonstrator/build_data.py

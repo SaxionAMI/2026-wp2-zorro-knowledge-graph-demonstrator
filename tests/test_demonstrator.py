@@ -5,7 +5,6 @@ import xml.etree.ElementTree as ET
 import zipfile
 
 from rdflib import Graph, Literal, RDF, RDFS, OWL
-from rdflib.compare import isomorphic
 
 ROOT = Path(__file__).resolve().parents[1] / 'demonstrator'
 
@@ -50,12 +49,8 @@ def test_queries_match_researcher_document_and_return_results():
         assert len(list(graph.query(text))) == count
 
 
-def test_browser_ontology_matches_supplied_ontologies():
-    assert isomorphic(ontology(), Graph().parse(ROOT / 'ontology.ttl'))
-
-
 def test_webvowl_export_preserves_relationships():
-    graph = ontology()
+    graph = Graph().parse(ROOT / 'ZorroOntology.owl', format='xml')
     export = json.loads((ROOT / 'webvowl/data/ontology.json').read_text())
     ids = {item['id']: item['iri'] for item in export['classAttribute']}
     assert {str(c) for c in graph.subjects(RDF.type, OWL.Class)} <= set(ids.values())
@@ -70,11 +65,18 @@ def test_webvowl_export_preserves_relationships():
             (str(s), str(o)) for s, o in graph.subject_objects(predicate)}
 
 
-def test_switchable_ontology_exports_use_only_selected_sources():
-    for filename, source in (('zorro', 'ZorroOntology.owl'), ('demo', 'ZorroDemo.owl')):
-        graph = Graph().parse(ROOT / source, format='xml')
-        export = json.loads((ROOT / f'webvowl/data/{filename}.json').read_text())
-        actual = {p['iri'] for p in export['propertyAttribute'] if 'iri' in p}
-        expected = {str(p) for kind in (OWL.ObjectProperty, OWL.DatatypeProperty)
-                    for p in graph.subjects(RDF.type, kind)}
-        assert actual == expected
+def test_viewer_excludes_extension_properties():
+    export = json.loads((ROOT / 'webvowl/data/ontology.json').read_text())
+    declared = {p['iri'] for p in export['propertyAttribute'] if 'iri' in p}
+    extension = Graph().parse(ROOT / 'ZorroDemo.owl', format='xml')
+    extension_properties = {str(p) for kind in (OWL.ObjectProperty, OWL.DatatypeProperty)
+                            for p in extension.subjects(RDF.type, kind)}
+    assert declared.isdisjoint(extension_properties)
+
+
+def test_demo_view_contains_supplied_extension_properties():
+    graph = Graph().parse(ROOT / 'ZorroDemo.owl', format='xml')
+    export = json.loads((ROOT / 'webvowl/data/demo.json').read_text())
+    expected = {str(p) for kind in (OWL.ObjectProperty, OWL.DatatypeProperty)
+                for p in graph.subjects(RDF.type, kind)}
+    assert {p['iri'] for p in export['propertyAttribute'] if 'iri' in p} == expected
