@@ -818,12 +818,6 @@
       "properties": []
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_(MPO)",
-      "label": "Processing Station (MPO)",
-      "group": "Resource",
-      "properties": []
-    },
-    {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/REFERENCE_SWITCH",
       "label": "REFERENCE SWITCH",
       "group": "PartType",
@@ -1068,12 +1062,6 @@
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_%28SLD%29",
       "label": "Sorting Line (SLD)",
       "group": "Assembly",
-      "properties": []
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_(SLD)",
-      "label": "Sorting Line (SLD)",
-      "group": "Resource",
       "properties": []
     },
     {
@@ -1340,12 +1328,6 @@
       "properties": []
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_(HBW)",
-      "label": "Warehouse (HBW)",
-      "group": "Resource",
-      "properties": []
-    },
-    {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_conveyor",
       "label": "Warehouse conveyor",
       "group": "PartSpecification",
@@ -1454,12 +1436,6 @@
       "properties": []
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "label": "XYZ Robot (VGR)",
-      "group": "Resource",
-      "properties": []
-    },
-    {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause001",
       "label": "Robot arm miscalibration causing miss position",
       "group": "Cause",
@@ -1505,17 +1481,6 @@
     },
     {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause005",
-      "label": "Robot arm miscalibration causing miss position",
-      "group": "Cause",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot arm miscalibration causing miss position"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause006",
       "label": "Vacuum leakage or insufficient suction",
       "group": "Cause",
       "properties": [
@@ -1526,7 +1491,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause007",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause006",
       "label": "Loose gears causing inaccurate positioning",
       "group": "Cause",
       "properties": [
@@ -1537,7 +1502,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause008",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause007",
       "label": "Workpiece misaligned on RFID sensor",
       "group": "Cause",
       "properties": [
@@ -1548,7 +1513,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause009",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause008",
       "label": "Workpiece missing due to failed pickup",
       "group": "Cause",
       "properties": [
@@ -1559,51 +1524,29 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause010",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause009",
       "label": "Suction loss during movement",
       "group": "Cause",
       "properties": [
         {
           "predicate": "label",
           "value": "Suction loss during movement"
+        }
+      ]
+    },
+    {
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause010",
+      "label": "Loose pneumatic connections",
+      "group": "Cause",
+      "properties": [
+        {
+          "predicate": "label",
+          "value": "Loose pneumatic connections"
         }
       ]
     },
     {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause011",
-      "label": "Loose pneumatic connections",
-      "group": "Cause",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Loose pneumatic connections"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause012",
-      "label": "Suction loss during movement",
-      "group": "Cause",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Suction loss during movement"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause013",
-      "label": "Loose pneumatic connections",
-      "group": "Cause",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Loose pneumatic connections"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause014",
       "label": "Robot arm miscalibration causing incorrect placement",
       "group": "Cause",
       "properties": [
@@ -1614,7 +1557,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause015",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause012",
       "label": "Friction or wear causing position drift",
       "group": "Cause",
       "properties": [
@@ -1625,18 +1568,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause016",
-      "label": "Loose gears causing inaccurate motion",
-      "group": "Cause",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Loose gears causing inaccurate motion"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause017",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause013",
       "label": "Robot arm miscalibration causing wrong placement",
       "group": "Cause",
       "properties": [
@@ -1647,7 +1579,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause018",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause014",
       "label": "Loose gears affecting positioning accuracy",
       "group": "Cause",
       "properties": [
@@ -1658,7 +1590,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause019",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause015",
       "label": "Robot arm miscalibration causing wrong position",
       "group": "Cause",
       "properties": [
@@ -1669,7 +1601,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause020",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause016",
       "label": "Incorrect warehouse reference position",
       "group": "Cause",
       "properties": [
@@ -1680,7 +1612,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause021",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause017",
       "label": "Light sensor misaligned or blocked by incorrect workpiece position",
       "group": "Cause",
       "properties": [
@@ -1691,7 +1623,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause022",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause018",
       "label": "Workpiece missing due to upstream robot failure",
       "group": "Cause",
       "properties": [
@@ -1702,7 +1634,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause023",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause019",
       "label": "Oven feeder cylinder not actuating",
       "group": "Cause",
       "properties": [
@@ -1713,18 +1645,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause024",
-      "label": "Oven feeder cylinder not actuating",
-      "group": "Cause",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Oven feeder cylinder not actuating"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause025",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause020",
       "label": "Workpiece not delivered by robot",
       "group": "Cause",
       "properties": [
@@ -1735,7 +1656,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause026",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause021",
       "label": "Suction system failure during pickup",
       "group": "Cause",
       "properties": [
@@ -1746,7 +1667,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause027",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause022",
       "label": "Mechanical misalignment of feeder",
       "group": "Cause",
       "properties": [
@@ -1757,7 +1678,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause028",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause023",
       "label": "Ejector cylinder failure",
       "group": "Cause",
       "properties": [
@@ -1768,7 +1689,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause029",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause024",
       "label": "Insufficient air pressure",
       "group": "Cause",
       "properties": [
@@ -1779,7 +1700,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause030",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause025",
       "label": "Workpiece misaligned relative to light sensor",
       "group": "Cause",
       "properties": [
@@ -1790,7 +1711,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause031",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause026",
       "label": "Workpiece missing due to upstream failure",
       "group": "Cause",
       "properties": [
@@ -1801,7 +1722,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause032",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause027",
       "label": "Incorrect color sensor calibration",
       "group": "Cause",
       "properties": [
@@ -1812,7 +1733,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause033",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause028",
       "label": "Incorrect warehouse configuration of colors",
       "group": "Cause",
       "properties": [
@@ -1823,7 +1744,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause034",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause029",
       "label": "Ejector cylinder not working",
       "group": "Cause",
       "properties": [
@@ -1834,7 +1755,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause035",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause030",
       "label": "Incorrect timing in PLC control",
       "group": "Cause",
       "properties": [
@@ -1845,7 +1766,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause036",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause031",
       "label": "Incorrect warehouse configuration",
       "group": "Cause",
       "properties": [
@@ -1856,7 +1777,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause037",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause032",
       "label": "Incorrect internal PLC tracking state",
       "group": "Cause",
       "properties": [
@@ -1867,7 +1788,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause038",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause033",
       "label": "Warehouse positioning miscalibration",
       "group": "Cause",
       "properties": [
@@ -1878,7 +1799,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause039",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause034",
       "label": "Loose mechanical components in drive system",
       "group": "Cause",
       "properties": [
@@ -1889,7 +1810,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause040",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause035",
       "label": "Carrier placed in wrong orientation",
       "group": "Cause",
       "properties": [
@@ -1900,7 +1821,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause041",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause036",
       "label": "Loose or misaligned mechanical parts",
       "group": "Cause",
       "properties": [
@@ -1911,7 +1832,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause042",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause037",
       "label": "Loose rails or structural components",
       "group": "Cause",
       "properties": [
@@ -1922,7 +1843,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause043",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause038",
       "label": "Carrier incorrectly oriented",
       "group": "Cause",
       "properties": [
@@ -1933,7 +1854,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause044",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause039",
       "label": "Loose electrical connectors",
       "group": "Cause",
       "properties": [
@@ -1944,7 +1865,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause045",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause040",
       "label": "Reference switch not triggered",
       "group": "Cause",
       "properties": [
@@ -1955,7 +1876,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause046",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause041",
       "label": "Mechanical obstruction or misalignment",
       "group": "Cause",
       "properties": [
@@ -1966,7 +1887,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause047",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause042",
       "label": "Reference switch not triggered or misaligned",
       "group": "Cause",
       "properties": [
@@ -1977,7 +1898,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause048",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause043",
       "label": "Loose mechanical components preventing reaching reference position",
       "group": "Cause",
       "properties": [
@@ -1988,7 +1909,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause049",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause044",
       "label": "Insufficient lubrication of mechanical parts",
       "group": "Cause",
       "properties": [
@@ -2047,237 +1968,94 @@
     },
     {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem002",
-      "label": "Robot XYZ fails to pick workpiece at warehouse",
+      "label": "Robot XYZ fails to pick workpiece at RFID station",
       "group": "Problem",
       "properties": [
         {
           "predicate": "label",
-          "value": "Robot XYZ fails to pick workpiece at warehouse"
+          "value": "Robot XYZ fails to pick workpiece at RFID station"
         }
       ]
     },
     {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem003",
-      "label": "Robot XYZ fails to pick workpiece at warehouse",
+      "label": "RFID station does not detect workpiece color",
       "group": "Problem",
       "properties": [
         {
           "predicate": "label",
-          "value": "Robot XYZ fails to pick workpiece at warehouse"
+          "value": "RFID station does not detect workpiece color"
         }
       ]
     },
     {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem004",
-      "label": "Robot XYZ fails to pick workpiece at warehouse",
+      "label": "Robot XYZ drops workpiece during transport warehouse to RFID",
       "group": "Problem",
       "properties": [
         {
           "predicate": "label",
-          "value": "Robot XYZ fails to pick workpiece at warehouse"
+          "value": "Robot XYZ drops workpiece during transport warehouse to RFID"
         }
       ]
     },
     {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem005",
-      "label": "Robot XYZ fails to pick workpiece at RFID station",
+      "label": "Robot XYZ drops workpiece during transport RFID to processing station",
       "group": "Problem",
       "properties": [
         {
           "predicate": "label",
-          "value": "Robot XYZ fails to pick workpiece at RFID station"
+          "value": "Robot XYZ drops workpiece during transport RFID to processing station"
         }
       ]
     },
     {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem006",
-      "label": "Robot XYZ fails to pick workpiece at RFID station",
+      "label": "Robot XYZ places workpiece incorrectly on processing station MPO",
       "group": "Problem",
       "properties": [
         {
           "predicate": "label",
-          "value": "Robot XYZ fails to pick workpiece at RFID station"
+          "value": "Robot XYZ places workpiece incorrectly on processing station MPO"
         }
       ]
     },
     {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem007",
-      "label": "Robot XYZ fails to pick workpiece at RFID station",
+      "label": "Robot XYZ places workpiece incorrectly in sorting line SLD",
       "group": "Problem",
       "properties": [
         {
           "predicate": "label",
-          "value": "Robot XYZ fails to pick workpiece at RFID station"
+          "value": "Robot XYZ places workpiece incorrectly in sorting line SLD"
         }
       ]
     },
     {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem008",
-      "label": "RFID station does not detect workpiece color",
+      "label": "Robot XYZ places red white or blue workpiece incorrectly into warehouse",
       "group": "Problem",
       "properties": [
         {
           "predicate": "label",
-          "value": "RFID station does not detect workpiece color"
+          "value": "Robot XYZ places red white or blue workpiece incorrectly into warehouse"
         }
       ]
     },
     {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem009",
-      "label": "RFID station does not detect workpiece color",
+      "label": "Processing Station MPO fails to detect workpiece at conveyor entry",
       "group": "Problem",
       "properties": [
         {
           "predicate": "label",
-          "value": "RFID station does not detect workpiece color"
+          "value": "Processing Station MPO fails to detect workpiece at conveyor entry"
         }
       ]
     },
     {
       "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem010",
-      "label": "Robot XYZ drops workpiece during transport warehouse to RFID",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ drops workpiece during transport warehouse to RFID"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem011",
-      "label": "Robot XYZ drops workpiece during transport warehouse to RFID",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ drops workpiece during transport warehouse to RFID"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem012",
-      "label": "Robot XYZ drops workpiece during transport RFID to processing station",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ drops workpiece during transport RFID to processing station"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem013",
-      "label": "Robot XYZ drops workpiece during transport RFID to processing station",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ drops workpiece during transport RFID to processing station"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem014",
-      "label": "Robot XYZ places workpiece incorrectly on processing station MPO",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ places workpiece incorrectly on processing station MPO"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem015",
-      "label": "Robot XYZ places workpiece incorrectly on processing station MPO",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ places workpiece incorrectly on processing station MPO"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem016",
-      "label": "Robot XYZ places workpiece incorrectly on processing station MPO",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ places workpiece incorrectly on processing station MPO"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem017",
-      "label": "Robot XYZ places workpiece incorrectly in sorting line SLD",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ places workpiece incorrectly in sorting line SLD"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem018",
-      "label": "Robot XYZ places workpiece incorrectly in sorting line SLD",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ places workpiece incorrectly in sorting line SLD"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem019",
-      "label": "Robot XYZ places red white or blue workpiece incorrectly into warehouse",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ places red white or blue workpiece incorrectly into warehouse"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem020",
-      "label": "Robot XYZ places red white or blue workpiece incorrectly into warehouse",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ places red white or blue workpiece incorrectly into warehouse"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem021",
-      "label": "Processing Station MPO fails to detect workpiece at conveyor entry",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Processing Station MPO fails to detect workpiece at conveyor entry"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem022",
-      "label": "Processing Station MPO fails to detect workpiece at conveyor entry",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Processing Station MPO fails to detect workpiece at conveyor entry"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem023",
       "label": "Processing Station MPO oven does not receive workpiece",
       "group": "Problem",
       "properties": [
@@ -2288,7 +2066,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem024",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem011",
       "label": "Processing Station MPO oven doors do not close",
       "group": "Problem",
       "properties": [
@@ -2299,18 +2077,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem025",
-      "label": "Processing Station MPO oven does not receive workpiece",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Processing Station MPO oven does not receive workpiece"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem026",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem012",
       "label": "Processing Station MPO workpiece not transferred from oven to turntable",
       "group": "Problem",
       "properties": [
@@ -2321,18 +2088,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem027",
-      "label": "Processing Station MPO workpiece not transferred from oven to turntable",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Processing Station MPO workpiece not transferred from oven to turntable"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem028",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem013",
       "label": "Processing Station MPO workpiece not ejected to conveyor",
       "group": "Problem",
       "properties": [
@@ -2343,18 +2099,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem029",
-      "label": "Processing Station MPO workpiece not ejected to conveyor",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Processing Station MPO workpiece not ejected to conveyor"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem030",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem014",
       "label": "Sorting Line SLD fails to detect incoming workpiece",
       "group": "Problem",
       "properties": [
@@ -2365,18 +2110,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem031",
-      "label": "Sorting Line SLD fails to detect incoming workpiece",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Sorting Line SLD fails to detect incoming workpiece"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem032",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem015",
       "label": "Sorting Line SLD incorrectly sorts workpiece color",
       "group": "Problem",
       "properties": [
@@ -2387,18 +2121,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem033",
-      "label": "Sorting Line SLD incorrectly sorts workpiece color",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Sorting Line SLD incorrectly sorts workpiece color"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem034",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem016",
       "label": "Sorting Line SLD fails to eject workpiece into correct bin",
       "group": "Problem",
       "properties": [
@@ -2409,18 +2132,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem035",
-      "label": "Sorting Line SLD fails to eject workpiece into correct bin",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Sorting Line SLD fails to eject workpiece into correct bin"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem036",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem017",
       "label": "Warehouse HBW picks wrong workpiece from storage",
       "group": "Problem",
       "properties": [
@@ -2431,18 +2143,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem037",
-      "label": "Warehouse HBW picks wrong workpiece from storage",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Warehouse HBW picks wrong workpiece from storage"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem038",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem018",
       "label": "Warehouse HBW fails to pick up carrier from rack",
       "group": "Problem",
       "properties": [
@@ -2453,18 +2154,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem039",
-      "label": "Warehouse HBW fails to pick up carrier from rack",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Warehouse HBW fails to pick up carrier from rack"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem040",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem019",
       "label": "Warehouse HBW causes collision with carrier",
       "group": "Problem",
       "properties": [
@@ -2475,18 +2165,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem041",
-      "label": "Warehouse HBW causes collision with carrier",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Warehouse HBW causes collision with carrier"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem042",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem020",
       "label": "Warehouse HBW pushes or damages structure during movement",
       "group": "Problem",
       "properties": [
@@ -2497,18 +2176,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem043",
-      "label": "Warehouse HBW pushes or damages structure during movement",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Warehouse HBW pushes or damages structure during movement"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem044",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem021",
       "label": "System wide intermittent failures across stations",
       "group": "Problem",
       "properties": [
@@ -2519,7 +2187,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem045",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem022",
       "label": "Robot XYZ fails to reach reference position during homing",
       "group": "Problem",
       "properties": [
@@ -2530,18 +2198,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem046",
-      "label": "Robot XYZ fails to reach reference position during homing",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "Robot XYZ fails to reach reference position during homing"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem047",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem023",
       "label": "System stops or does not continue production flow at any station",
       "group": "Problem",
       "properties": [
@@ -2552,18 +2209,7 @@
       ]
     },
     {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem048",
-      "label": "System stops or does not continue production flow at any station",
-      "group": "Problem",
-      "properties": [
-        {
-          "predicate": "label",
-          "value": "System stops or does not continue production flow at any station"
-        }
-      ]
-    },
-    {
-      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem049",
+      "id": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem024",
       "label": "System shows slow or inconsistent movement across stations",
       "group": "Problem",
       "properties": [
@@ -4790,6 +4436,36 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_%28MPO%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem009",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_%28MPO%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem010",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_%28MPO%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem011",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_%28MPO%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem012",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_%28MPO%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem013",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_%28MPO%29",
       "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Detect_workpiece",
       "label": "hasFunction",
       "predicate": "http://w3id.org/ZorroOntology/hasFunction"
@@ -4853,60 +4529,6 @@
       "to": "http://w3id.org/ZorroOntology/Assembly",
       "label": "type",
       "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_(MPO)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem021",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_(MPO)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem022",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_(MPO)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem023",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_(MPO)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem024",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_(MPO)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem025",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_(MPO)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem026",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_(MPO)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem027",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_(MPO)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem028",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Processing_Station_(MPO)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem029",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/REFERENCE_SWITCH",
@@ -5534,6 +5156,24 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_%28SLD%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem014",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_%28SLD%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem015",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_%28SLD%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem016",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_%28SLD%29",
       "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Detect_color",
       "label": "hasFunction",
       "predicate": "http://w3id.org/ZorroOntology/hasFunction"
@@ -5573,42 +5213,6 @@
       "to": "http://w3id.org/ZorroOntology/Assembly",
       "label": "type",
       "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_(SLD)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem030",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_(SLD)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem031",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_(SLD)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem032",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_(SLD)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem033",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_(SLD)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem034",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_Line_(SLD)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem035",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Sorting_conveyor_belt",
@@ -5666,25 +5270,19 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/System",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem044",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem021",
       "label": "failsVia",
       "predicate": "http://w3id.org/ZorroOntology/failsVia"
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/System",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem047",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem023",
       "label": "failsVia",
       "predicate": "http://w3id.org/ZorroOntology/failsVia"
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/System",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem048",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/System",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem049",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem024",
       "label": "failsVia",
       "predicate": "http://w3id.org/ZorroOntology/failsVia"
     },
@@ -6212,6 +5810,30 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_%28HBW%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem017",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_%28HBW%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem018",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_%28HBW%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem019",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_%28HBW%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem020",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_%28HBW%29",
       "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Move_conveyor_to_pickup_position",
       "label": "hasFunction",
       "predicate": "http://w3id.org/ZorroOntology/hasFunction"
@@ -6245,54 +5867,6 @@
       "to": "http://w3id.org/ZorroOntology/Assembly",
       "label": "type",
       "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_(HBW)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem036",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_(HBW)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem037",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_(HBW)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem038",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_(HBW)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem039",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_(HBW)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem040",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_(HBW)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem041",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_(HBW)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem042",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_(HBW)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem043",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Warehouse_conveyor",
@@ -6614,6 +6188,60 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_%28VGR%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem001",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_%28VGR%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem002",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_%28VGR%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem003",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_%28VGR%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem004",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_%28VGR%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem005",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_%28VGR%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem006",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_%28VGR%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem007",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_%28VGR%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem008",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_%28VGR%29",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem022",
+      "label": "failsVia",
+      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_%28VGR%29",
       "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/Handling",
       "label": "inSubsystem",
       "predicate": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/inSubsystem"
@@ -6625,140 +6253,14 @@
       "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
     },
     {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem001",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem002",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem003",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem004",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem005",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem006",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem007",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem008",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem009",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem010",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem011",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem012",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem013",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem014",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem015",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem016",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem017",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem018",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem019",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem020",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem045",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/XYZ_Robot_(VGR)",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem046",
-      "label": "failsVia",
-      "predicate": "http://w3id.org/ZorroOntology/failsVia"
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause001",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution001",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause001",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution001",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution005",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -6800,149 +6302,167 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause004",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause005",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution005",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause005",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause006",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution006",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause006",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause007",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution007",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause007",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause008",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution008",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause008",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause009",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution009",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause009",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause010",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution010",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause010",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause011",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution011",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause011",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause012",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution012",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause012",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause013",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution013",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause013",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause014",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution014",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause014",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause015",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution015",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause015",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause016",
       "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution016",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
     {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause004",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause005",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution006",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause005",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause006",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution007",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause006",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause007",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution008",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause007",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause008",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution009",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause008",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause009",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution010",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause009",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution012",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause009",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause010",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution011",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause010",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution013",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause010",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause011",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution014",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause011",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause012",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution015",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause012",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause013",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution017",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause013",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause014",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution018",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause014",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause015",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution019",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause015",
+      "to": "http://w3id.org/ZorroOntology/Cause",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause016",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution020",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause016",
       "to": "http://w3id.org/ZorroOntology/Cause",
       "label": "type",
@@ -6950,7 +6470,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause017",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution017",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution021",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -6962,7 +6482,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause018",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution018",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution022",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -6974,7 +6494,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause019",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution019",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution023",
+      "label": "hasSolution",
+      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause019",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution024",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -6986,7 +6512,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause020",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution020",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution025",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -6998,7 +6524,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause021",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution021",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution026",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7010,7 +6536,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause022",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution022",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution027",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7022,7 +6548,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause023",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution023",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution028",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7034,7 +6560,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause024",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution024",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution029",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7046,7 +6572,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause025",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution025",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution030",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7058,7 +6584,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause026",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution026",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution031",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7070,7 +6596,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause027",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution027",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution032",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7082,7 +6608,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause028",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution028",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution033",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7094,7 +6620,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause029",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution029",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution034",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7106,7 +6632,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause030",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution030",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution035",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7118,7 +6644,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause031",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution031",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution036",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7130,7 +6656,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause032",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution032",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution037",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7142,7 +6668,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause033",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution033",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution038",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7154,7 +6680,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause034",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution034",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution039",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7166,7 +6692,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause035",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution035",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution040",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7178,7 +6704,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause036",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution036",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution041",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7190,7 +6716,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause037",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution037",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution042",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7202,7 +6728,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause038",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution038",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution043",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7214,7 +6740,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause039",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution039",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution044",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7226,7 +6752,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause040",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution040",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution045",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7238,7 +6764,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause041",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution041",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution046",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7250,7 +6776,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause042",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution042",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution047",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7262,7 +6788,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause043",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution043",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution048",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
@@ -7274,72 +6800,12 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause044",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution044",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause044",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause045",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution045",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause045",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause046",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution046",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause046",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause047",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution047",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause047",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause048",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution048",
-      "label": "hasSolution",
-      "predicate": "http://w3id.org/ZorroOntology/hasSolution"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause048",
-      "to": "http://w3id.org/ZorroOntology/Cause",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause049",
       "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/solution049",
       "label": "hasSolution",
       "predicate": "http://w3id.org/ZorroOntology/hasSolution"
     },
     {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause049",
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause044",
       "to": "http://w3id.org/ZorroOntology/Cause",
       "label": "type",
       "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -7460,17 +6926,47 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem001",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem002",
       "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause002",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
     {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem001",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause003",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem001",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause004",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem001",
+      "to": "http://w3id.org/ZorroOntology/Problem",
+      "label": "type",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem002",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause001",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem002",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause005",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem002",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause006",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem002",
       "to": "http://w3id.org/ZorroOntology/Problem",
       "label": "type",
@@ -7478,7 +6974,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem003",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause003",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause007",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem003",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause008",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7490,7 +6992,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem004",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause004",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause009",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem004",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause010",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7502,7 +7010,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem005",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause005",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause009",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem005",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause010",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7514,7 +7028,19 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem006",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause006",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause004",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem006",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause011",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem006",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause012",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7526,7 +7052,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem007",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause007",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause013",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem007",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause014",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7538,7 +7070,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem008",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause008",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause015",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem008",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause016",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7550,7 +7088,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem009",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause009",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause017",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem009",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause018",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7562,7 +7106,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem010",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause010",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause019",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem010",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause020",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7574,7 +7124,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem011",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause011",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause019",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7586,7 +7136,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem012",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause012",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause021",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem012",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause022",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7598,7 +7154,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem013",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause013",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause023",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem013",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause024",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7610,7 +7172,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem014",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause014",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause025",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem014",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause026",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7622,7 +7190,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem015",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause015",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause027",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem015",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause028",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7634,7 +7208,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem016",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause016",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause029",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem016",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause030",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7646,7 +7226,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem017",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause017",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause031",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem017",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause032",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7658,7 +7244,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem018",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause018",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause033",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem018",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause034",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7670,7 +7262,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem019",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause019",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause035",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem019",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause036",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7682,7 +7280,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem020",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause020",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause037",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem020",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause038",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7694,7 +7298,7 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem021",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause021",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause039",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7706,7 +7310,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem022",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause022",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause040",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem022",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause041",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7718,7 +7328,13 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem023",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause023",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause042",
+      "label": "hasCause",
+      "predicate": "http://w3id.org/ZorroOntology/hasCause"
+    },
+    {
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem023",
+      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause043",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
@@ -7730,312 +7346,12 @@
     },
     {
       "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem024",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause024",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem024",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem025",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause025",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem025",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem026",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause026",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem026",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem027",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause027",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem027",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem028",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause028",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem028",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem029",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause029",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem029",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem030",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause030",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem030",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem031",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause031",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem031",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem032",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause032",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem032",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem033",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause033",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem033",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem034",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause034",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem034",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem035",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause035",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem035",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem036",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause036",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem036",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem037",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause037",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem037",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem038",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause038",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem038",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem039",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause039",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem039",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem040",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause040",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem040",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem041",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause041",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem041",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem042",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause042",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem042",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem043",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause043",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem043",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem044",
       "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause044",
       "label": "hasCause",
       "predicate": "http://w3id.org/ZorroOntology/hasCause"
     },
     {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem044",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem045",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause045",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem045",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem046",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause046",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem046",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem047",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause047",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem047",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem048",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause048",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem048",
-      "to": "http://w3id.org/ZorroOntology/Problem",
-      "label": "type",
-      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem049",
-      "to": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/cause049",
-      "label": "hasCause",
-      "predicate": "http://w3id.org/ZorroOntology/hasCause"
-    },
-    {
-      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem049",
+      "from": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/problem024",
       "to": "http://w3id.org/ZorroOntology/Problem",
       "label": "type",
       "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -8335,5 +7651,5 @@
       "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
     }
   ],
-  "triples": 1046
+  "triples": 961
 }
