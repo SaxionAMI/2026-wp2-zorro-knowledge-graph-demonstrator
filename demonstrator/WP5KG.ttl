@@ -153,16 +153,6 @@ demo:POWER-24V a zorro:Part ;
     demo:hasPartSpecification demo:24V_DC_power_system ;
     demo:hasPartType demo:POWER_SUPPLY .
 
-demo:Processing_Station_\(MPO\) zorro:failsVia demo:problem021,
-        demo:problem022,
-        demo:problem023,
-        demo:problem024,
-        demo:problem025,
-        demo:problem026,
-        demo:problem027,
-        demo:problem028,
-        demo:problem029 .
-
 demo:RFID_Station a zorro:Assembly ;
     zorro:hasFunction demo:Read_workpiece_data .
 
@@ -253,18 +243,10 @@ demo:SLD-WHITE-LB a zorro:Part ;
     demo:hasPartSpecification demo:White_bin_detection_sensor ;
     demo:hasPartType demo:LIGHT_SENSOR .
 
-demo:Sorting_Line_\(SLD\) zorro:failsVia demo:problem030,
-        demo:problem031,
-        demo:problem032,
-        demo:problem033,
-        demo:problem034,
-        demo:problem035 .
-
 demo:System a zorro:Assembly ;
-    zorro:failsVia demo:problem044,
-        demo:problem047,
-        demo:problem048,
-        demo:problem049 ;
+    zorro:failsVia demo:problem021,
+        demo:problem023,
+        demo:problem024 ;
     zorro:hasFunction demo:Cycle_complete .
 
 demo:WH-CANTILEVER-B a zorro:Part ;
@@ -342,15 +324,6 @@ demo:WH-REF-V a zorro:Part ;
     demo:hasPartSpecification demo:Vertical_reference_switch ;
     demo:hasPartType demo:REFERENCE_SWITCH .
 
-demo:Warehouse_\(HBW\) zorro:failsVia demo:problem036,
-        demo:problem037,
-        demo:problem038,
-        demo:problem039,
-        demo:problem040,
-        demo:problem041,
-        demo:problem042,
-        demo:problem043 .
-
 demo:XYZ-COMP a zorro:Part ;
     zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
     demo:hasPartSpecification demo:Pneumatic_vacuum_supply ;
@@ -410,29 +383,6 @@ demo:XYZ-VAC-VALVE a zorro:Part ;
     zorro:partOf demo:XYZ_Robot_%28VGR%29 ;
     demo:hasPartSpecification demo:Vacuum_control_valve ;
     demo:hasPartType demo:SOLENOID_VALVE .
-
-demo:XYZ_Robot_\(VGR\) zorro:failsVia demo:problem001,
-        demo:problem002,
-        demo:problem003,
-        demo:problem004,
-        demo:problem005,
-        demo:problem006,
-        demo:problem007,
-        demo:problem008,
-        demo:problem009,
-        demo:problem010,
-        demo:problem011,
-        demo:problem012,
-        demo:problem013,
-        demo:problem014,
-        demo:problem015,
-        demo:problem016,
-        demo:problem017,
-        demo:problem018,
-        demo:problem019,
-        demo:problem020,
-        demo:problem045,
-        demo:problem046 .
 
 demo:hasFunctionDescription a owl:DatatypeProperty ;
     rdfs:domain zorro:Function ;
@@ -752,10 +702,6 @@ demo:White_ejector_valve a demo:PartSpecification .
 
 demo:Workpiece_detection_sensor a demo:PartSpecification .
 
-demo:cause001 a zorro:Cause ;
-    rdfs:label "Robot arm miscalibration causing miss position" ;
-    zorro:hasSolution demo:solution001 .
-
 demo:cause002 a zorro:Cause ;
     rdfs:label "Vacuum leakage due to loose pneumatic tubes" ;
     zorro:hasSolution demo:solution002 .
@@ -764,385 +710,274 @@ demo:cause003 a zorro:Cause ;
     rdfs:label "Empty carrier present in warehouse" ;
     zorro:hasSolution demo:solution003 .
 
-demo:cause004 a zorro:Cause ;
-    rdfs:label "Loose gears causing inaccurate motion" ;
-    zorro:hasSolution demo:solution004 .
-
 demo:cause005 a zorro:Cause ;
-    rdfs:label "Robot arm miscalibration causing miss position" ;
-    zorro:hasSolution demo:solution005 .
-
-demo:cause006 a zorro:Cause ;
     rdfs:label "Vacuum leakage or insufficient suction" ;
     zorro:hasSolution demo:solution006 .
 
-demo:cause007 a zorro:Cause ;
+demo:cause006 a zorro:Cause ;
     rdfs:label "Loose gears causing inaccurate positioning" ;
     zorro:hasSolution demo:solution007 .
 
-demo:cause008 a zorro:Cause ;
+demo:cause007 a zorro:Cause ;
     rdfs:label "Workpiece misaligned on RFID sensor" ;
     zorro:hasSolution demo:solution008 .
 
-demo:cause009 a zorro:Cause ;
+demo:cause008 a zorro:Cause ;
     rdfs:label "Workpiece missing due to failed pickup" ;
     zorro:hasSolution demo:solution009 .
 
-demo:cause010 a zorro:Cause ;
-    rdfs:label "Suction loss during movement" ;
-    zorro:hasSolution demo:solution010 .
-
 demo:cause011 a zorro:Cause ;
-    rdfs:label "Loose pneumatic connections" ;
-    zorro:hasSolution demo:solution011 .
-
-demo:cause012 a zorro:Cause ;
-    rdfs:label "Suction loss during movement" ;
-    zorro:hasSolution demo:solution012 .
-
-demo:cause013 a zorro:Cause ;
-    rdfs:label "Loose pneumatic connections" ;
-    zorro:hasSolution demo:solution013 .
-
-demo:cause014 a zorro:Cause ;
     rdfs:label "Robot arm miscalibration causing incorrect placement" ;
     zorro:hasSolution demo:solution014 .
 
-demo:cause015 a zorro:Cause ;
+demo:cause012 a zorro:Cause ;
     rdfs:label "Friction or wear causing position drift" ;
     zorro:hasSolution demo:solution015 .
 
-demo:cause016 a zorro:Cause ;
-    rdfs:label "Loose gears causing inaccurate motion" ;
-    zorro:hasSolution demo:solution016 .
-
-demo:cause017 a zorro:Cause ;
+demo:cause013 a zorro:Cause ;
     rdfs:label "Robot arm miscalibration causing wrong placement" ;
     zorro:hasSolution demo:solution017 .
 
-demo:cause018 a zorro:Cause ;
+demo:cause014 a zorro:Cause ;
     rdfs:label "Loose gears affecting positioning accuracy" ;
     zorro:hasSolution demo:solution018 .
 
-demo:cause019 a zorro:Cause ;
+demo:cause015 a zorro:Cause ;
     rdfs:label "Robot arm miscalibration causing wrong position" ;
     zorro:hasSolution demo:solution019 .
 
-demo:cause020 a zorro:Cause ;
+demo:cause016 a zorro:Cause ;
     rdfs:label "Incorrect warehouse reference position" ;
     zorro:hasSolution demo:solution020 .
 
-demo:cause021 a zorro:Cause ;
+demo:cause017 a zorro:Cause ;
     rdfs:label "Light sensor misaligned or blocked by incorrect workpiece position" ;
     zorro:hasSolution demo:solution021 .
 
-demo:cause022 a zorro:Cause ;
+demo:cause018 a zorro:Cause ;
     rdfs:label "Workpiece missing due to upstream robot failure" ;
     zorro:hasSolution demo:solution022 .
 
-demo:cause023 a zorro:Cause ;
-    rdfs:label "Oven feeder cylinder not actuating" ;
-    zorro:hasSolution demo:solution023 .
-
-demo:cause024 a zorro:Cause ;
-    rdfs:label "Oven feeder cylinder not actuating" ;
-    zorro:hasSolution demo:solution024 .
-
-demo:cause025 a zorro:Cause ;
+demo:cause020 a zorro:Cause ;
     rdfs:label "Workpiece not delivered by robot" ;
     zorro:hasSolution demo:solution025 .
 
-demo:cause026 a zorro:Cause ;
+demo:cause021 a zorro:Cause ;
     rdfs:label "Suction system failure during pickup" ;
     zorro:hasSolution demo:solution026 .
 
-demo:cause027 a zorro:Cause ;
+demo:cause022 a zorro:Cause ;
     rdfs:label "Mechanical misalignment of feeder" ;
     zorro:hasSolution demo:solution027 .
 
-demo:cause028 a zorro:Cause ;
+demo:cause023 a zorro:Cause ;
     rdfs:label "Ejector cylinder failure" ;
     zorro:hasSolution demo:solution028 .
 
-demo:cause029 a zorro:Cause ;
+demo:cause024 a zorro:Cause ;
     rdfs:label "Insufficient air pressure" ;
     zorro:hasSolution demo:solution029 .
 
-demo:cause030 a zorro:Cause ;
+demo:cause025 a zorro:Cause ;
     rdfs:label "Workpiece misaligned relative to light sensor" ;
     zorro:hasSolution demo:solution030 .
 
-demo:cause031 a zorro:Cause ;
+demo:cause026 a zorro:Cause ;
     rdfs:label "Workpiece missing due to upstream failure" ;
     zorro:hasSolution demo:solution031 .
 
-demo:cause032 a zorro:Cause ;
+demo:cause027 a zorro:Cause ;
     rdfs:label "Incorrect color sensor calibration" ;
     zorro:hasSolution demo:solution032 .
 
-demo:cause033 a zorro:Cause ;
+demo:cause028 a zorro:Cause ;
     rdfs:label "Incorrect warehouse configuration of colors" ;
     zorro:hasSolution demo:solution033 .
 
-demo:cause034 a zorro:Cause ;
+demo:cause029 a zorro:Cause ;
     rdfs:label "Ejector cylinder not working" ;
     zorro:hasSolution demo:solution034 .
 
-demo:cause035 a zorro:Cause ;
+demo:cause030 a zorro:Cause ;
     rdfs:label "Incorrect timing in PLC control" ;
     zorro:hasSolution demo:solution035 .
 
-demo:cause036 a zorro:Cause ;
+demo:cause031 a zorro:Cause ;
     rdfs:label "Incorrect warehouse configuration" ;
     zorro:hasSolution demo:solution036 .
 
-demo:cause037 a zorro:Cause ;
+demo:cause032 a zorro:Cause ;
     rdfs:label "Incorrect internal PLC tracking state" ;
     zorro:hasSolution demo:solution037 .
 
-demo:cause038 a zorro:Cause ;
+demo:cause033 a zorro:Cause ;
     rdfs:label "Warehouse positioning miscalibration" ;
     zorro:hasSolution demo:solution038 .
 
-demo:cause039 a zorro:Cause ;
+demo:cause034 a zorro:Cause ;
     rdfs:label "Loose mechanical components in drive system" ;
     zorro:hasSolution demo:solution039 .
 
-demo:cause040 a zorro:Cause ;
+demo:cause035 a zorro:Cause ;
     rdfs:label "Carrier placed in wrong orientation" ;
     zorro:hasSolution demo:solution040 .
 
-demo:cause041 a zorro:Cause ;
+demo:cause036 a zorro:Cause ;
     rdfs:label "Loose or misaligned mechanical parts" ;
     zorro:hasSolution demo:solution041 .
 
-demo:cause042 a zorro:Cause ;
+demo:cause037 a zorro:Cause ;
     rdfs:label "Loose rails or structural components" ;
     zorro:hasSolution demo:solution042 .
 
-demo:cause043 a zorro:Cause ;
+demo:cause038 a zorro:Cause ;
     rdfs:label "Carrier incorrectly oriented" ;
     zorro:hasSolution demo:solution043 .
 
-demo:cause044 a zorro:Cause ;
+demo:cause039 a zorro:Cause ;
     rdfs:label "Loose electrical connectors" ;
     zorro:hasSolution demo:solution044 .
 
-demo:cause045 a zorro:Cause ;
+demo:cause040 a zorro:Cause ;
     rdfs:label "Reference switch not triggered" ;
     zorro:hasSolution demo:solution045 .
 
-demo:cause046 a zorro:Cause ;
+demo:cause041 a zorro:Cause ;
     rdfs:label "Mechanical obstruction or misalignment" ;
     zorro:hasSolution demo:solution046 .
 
-demo:cause047 a zorro:Cause ;
+demo:cause042 a zorro:Cause ;
     rdfs:label "Reference switch not triggered or misaligned" ;
     zorro:hasSolution demo:solution047 .
 
-demo:cause048 a zorro:Cause ;
+demo:cause043 a zorro:Cause ;
     rdfs:label "Loose mechanical components preventing reaching reference position" ;
     zorro:hasSolution demo:solution048 .
 
-demo:cause049 a zorro:Cause ;
+demo:cause044 a zorro:Cause ;
     rdfs:label "Insufficient lubrication of mechanical parts" ;
     zorro:hasSolution demo:solution049 .
 
 demo:problem001 a zorro:Problem ;
     rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
-    zorro:hasCause demo:cause001 .
+    zorro:hasCause demo:cause001,
+        demo:cause002,
+        demo:cause003,
+        demo:cause004 .
 
 demo:problem002 a zorro:Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
-    zorro:hasCause demo:cause002 .
+    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
+    zorro:hasCause demo:cause001,
+        demo:cause005,
+        demo:cause006 .
 
 demo:problem003 a zorro:Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
-    zorro:hasCause demo:cause003 .
+    rdfs:label "RFID station does not detect workpiece color" ;
+    zorro:hasCause demo:cause007,
+        demo:cause008 .
 
 demo:problem004 a zorro:Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at warehouse" ;
-    zorro:hasCause demo:cause004 .
+    rdfs:label "Robot XYZ drops workpiece during transport warehouse to RFID" ;
+    zorro:hasCause demo:cause009,
+        demo:cause010 .
 
 demo:problem005 a zorro:Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
-    zorro:hasCause demo:cause005 .
+    rdfs:label "Robot XYZ drops workpiece during transport RFID to processing station" ;
+    zorro:hasCause demo:cause009,
+        demo:cause010 .
 
 demo:problem006 a zorro:Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
-    zorro:hasCause demo:cause006 .
+    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
+    zorro:hasCause demo:cause004,
+        demo:cause011,
+        demo:cause012 .
 
 demo:problem007 a zorro:Problem ;
-    rdfs:label "Robot XYZ fails to pick workpiece at RFID station" ;
-    zorro:hasCause demo:cause007 .
+    rdfs:label "Robot XYZ places workpiece incorrectly in sorting line SLD" ;
+    zorro:hasCause demo:cause013,
+        demo:cause014 .
 
 demo:problem008 a zorro:Problem ;
-    rdfs:label "RFID station does not detect workpiece color" ;
-    zorro:hasCause demo:cause008 .
+    rdfs:label "Robot XYZ places red white or blue workpiece incorrectly into warehouse" ;
+    zorro:hasCause demo:cause015,
+        demo:cause016 .
 
 demo:problem009 a zorro:Problem ;
-    rdfs:label "RFID station does not detect workpiece color" ;
-    zorro:hasCause demo:cause009 .
+    rdfs:label "Processing Station MPO fails to detect workpiece at conveyor entry" ;
+    zorro:hasCause demo:cause017,
+        demo:cause018 .
 
 demo:problem010 a zorro:Problem ;
-    rdfs:label "Robot XYZ drops workpiece during transport warehouse to RFID" ;
-    zorro:hasCause demo:cause010 .
+    rdfs:label "Processing Station MPO oven does not receive workpiece" ;
+    zorro:hasCause demo:cause019,
+        demo:cause020 .
 
 demo:problem011 a zorro:Problem ;
-    rdfs:label "Robot XYZ drops workpiece during transport warehouse to RFID" ;
-    zorro:hasCause demo:cause011 .
-
-demo:problem012 a zorro:Problem ;
-    rdfs:label "Robot XYZ drops workpiece during transport RFID to processing station" ;
-    zorro:hasCause demo:cause012 .
-
-demo:problem013 a zorro:Problem ;
-    rdfs:label "Robot XYZ drops workpiece during transport RFID to processing station" ;
-    zorro:hasCause demo:cause013 .
-
-demo:problem014 a zorro:Problem ;
-    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
-    zorro:hasCause demo:cause014 .
-
-demo:problem015 a zorro:Problem ;
-    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
-    zorro:hasCause demo:cause015 .
-
-demo:problem016 a zorro:Problem ;
-    rdfs:label "Robot XYZ places workpiece incorrectly on processing station MPO" ;
-    zorro:hasCause demo:cause016 .
-
-demo:problem017 a zorro:Problem ;
-    rdfs:label "Robot XYZ places workpiece incorrectly in sorting line SLD" ;
-    zorro:hasCause demo:cause017 .
-
-demo:problem018 a zorro:Problem ;
-    rdfs:label "Robot XYZ places workpiece incorrectly in sorting line SLD" ;
-    zorro:hasCause demo:cause018 .
-
-demo:problem019 a zorro:Problem ;
-    rdfs:label "Robot XYZ places red white or blue workpiece incorrectly into warehouse" ;
+    rdfs:label "Processing Station MPO oven doors do not close" ;
     zorro:hasCause demo:cause019 .
 
+demo:problem012 a zorro:Problem ;
+    rdfs:label "Processing Station MPO workpiece not transferred from oven to turntable" ;
+    zorro:hasCause demo:cause021,
+        demo:cause022 .
+
+demo:problem013 a zorro:Problem ;
+    rdfs:label "Processing Station MPO workpiece not ejected to conveyor" ;
+    zorro:hasCause demo:cause023,
+        demo:cause024 .
+
+demo:problem014 a zorro:Problem ;
+    rdfs:label "Sorting Line SLD fails to detect incoming workpiece" ;
+    zorro:hasCause demo:cause025,
+        demo:cause026 .
+
+demo:problem015 a zorro:Problem ;
+    rdfs:label "Sorting Line SLD incorrectly sorts workpiece color" ;
+    zorro:hasCause demo:cause027,
+        demo:cause028 .
+
+demo:problem016 a zorro:Problem ;
+    rdfs:label "Sorting Line SLD fails to eject workpiece into correct bin" ;
+    zorro:hasCause demo:cause029,
+        demo:cause030 .
+
+demo:problem017 a zorro:Problem ;
+    rdfs:label "Warehouse HBW picks wrong workpiece from storage" ;
+    zorro:hasCause demo:cause031,
+        demo:cause032 .
+
+demo:problem018 a zorro:Problem ;
+    rdfs:label "Warehouse HBW fails to pick up carrier from rack" ;
+    zorro:hasCause demo:cause033,
+        demo:cause034 .
+
+demo:problem019 a zorro:Problem ;
+    rdfs:label "Warehouse HBW causes collision with carrier" ;
+    zorro:hasCause demo:cause035,
+        demo:cause036 .
+
 demo:problem020 a zorro:Problem ;
-    rdfs:label "Robot XYZ places red white or blue workpiece incorrectly into warehouse" ;
-    zorro:hasCause demo:cause020 .
+    rdfs:label "Warehouse HBW pushes or damages structure during movement" ;
+    zorro:hasCause demo:cause037,
+        demo:cause038 .
 
 demo:problem021 a zorro:Problem ;
-    rdfs:label "Processing Station MPO fails to detect workpiece at conveyor entry" ;
-    zorro:hasCause demo:cause021 .
-
-demo:problem022 a zorro:Problem ;
-    rdfs:label "Processing Station MPO fails to detect workpiece at conveyor entry" ;
-    zorro:hasCause demo:cause022 .
-
-demo:problem023 a zorro:Problem ;
-    rdfs:label "Processing Station MPO oven does not receive workpiece" ;
-    zorro:hasCause demo:cause023 .
-
-demo:problem024 a zorro:Problem ;
-    rdfs:label "Processing Station MPO oven doors do not close" ;
-    zorro:hasCause demo:cause024 .
-
-demo:problem025 a zorro:Problem ;
-    rdfs:label "Processing Station MPO oven does not receive workpiece" ;
-    zorro:hasCause demo:cause025 .
-
-demo:problem026 a zorro:Problem ;
-    rdfs:label "Processing Station MPO workpiece not transferred from oven to turntable" ;
-    zorro:hasCause demo:cause026 .
-
-demo:problem027 a zorro:Problem ;
-    rdfs:label "Processing Station MPO workpiece not transferred from oven to turntable" ;
-    zorro:hasCause demo:cause027 .
-
-demo:problem028 a zorro:Problem ;
-    rdfs:label "Processing Station MPO workpiece not ejected to conveyor" ;
-    zorro:hasCause demo:cause028 .
-
-demo:problem029 a zorro:Problem ;
-    rdfs:label "Processing Station MPO workpiece not ejected to conveyor" ;
-    zorro:hasCause demo:cause029 .
-
-demo:problem030 a zorro:Problem ;
-    rdfs:label "Sorting Line SLD fails to detect incoming workpiece" ;
-    zorro:hasCause demo:cause030 .
-
-demo:problem031 a zorro:Problem ;
-    rdfs:label "Sorting Line SLD fails to detect incoming workpiece" ;
-    zorro:hasCause demo:cause031 .
-
-demo:problem032 a zorro:Problem ;
-    rdfs:label "Sorting Line SLD incorrectly sorts workpiece color" ;
-    zorro:hasCause demo:cause032 .
-
-demo:problem033 a zorro:Problem ;
-    rdfs:label "Sorting Line SLD incorrectly sorts workpiece color" ;
-    zorro:hasCause demo:cause033 .
-
-demo:problem034 a zorro:Problem ;
-    rdfs:label "Sorting Line SLD fails to eject workpiece into correct bin" ;
-    zorro:hasCause demo:cause034 .
-
-demo:problem035 a zorro:Problem ;
-    rdfs:label "Sorting Line SLD fails to eject workpiece into correct bin" ;
-    zorro:hasCause demo:cause035 .
-
-demo:problem036 a zorro:Problem ;
-    rdfs:label "Warehouse HBW picks wrong workpiece from storage" ;
-    zorro:hasCause demo:cause036 .
-
-demo:problem037 a zorro:Problem ;
-    rdfs:label "Warehouse HBW picks wrong workpiece from storage" ;
-    zorro:hasCause demo:cause037 .
-
-demo:problem038 a zorro:Problem ;
-    rdfs:label "Warehouse HBW fails to pick up carrier from rack" ;
-    zorro:hasCause demo:cause038 .
-
-demo:problem039 a zorro:Problem ;
-    rdfs:label "Warehouse HBW fails to pick up carrier from rack" ;
+    rdfs:label "System wide intermittent failures across stations" ;
     zorro:hasCause demo:cause039 .
 
-demo:problem040 a zorro:Problem ;
-    rdfs:label "Warehouse HBW causes collision with carrier" ;
-    zorro:hasCause demo:cause040 .
-
-demo:problem041 a zorro:Problem ;
-    rdfs:label "Warehouse HBW causes collision with carrier" ;
-    zorro:hasCause demo:cause041 .
-
-demo:problem042 a zorro:Problem ;
-    rdfs:label "Warehouse HBW pushes or damages structure during movement" ;
-    zorro:hasCause demo:cause042 .
-
-demo:problem043 a zorro:Problem ;
-    rdfs:label "Warehouse HBW pushes or damages structure during movement" ;
-    zorro:hasCause demo:cause043 .
-
-demo:problem044 a zorro:Problem ;
-    rdfs:label "System wide intermittent failures across stations" ;
-    zorro:hasCause demo:cause044 .
-
-demo:problem045 a zorro:Problem ;
+demo:problem022 a zorro:Problem ;
     rdfs:label "Robot XYZ fails to reach reference position during homing" ;
-    zorro:hasCause demo:cause045 .
+    zorro:hasCause demo:cause040,
+        demo:cause041 .
 
-demo:problem046 a zorro:Problem ;
-    rdfs:label "Robot XYZ fails to reach reference position during homing" ;
-    zorro:hasCause demo:cause046 .
-
-demo:problem047 a zorro:Problem ;
+demo:problem023 a zorro:Problem ;
     rdfs:label "System stops or does not continue production flow at any station" ;
-    zorro:hasCause demo:cause047 .
+    zorro:hasCause demo:cause042,
+        demo:cause043 .
 
-demo:problem048 a zorro:Problem ;
-    rdfs:label "System stops or does not continue production flow at any station" ;
-    zorro:hasCause demo:cause048 .
-
-demo:problem049 a zorro:Problem ;
+demo:problem024 a zorro:Problem ;
     rdfs:label "System shows slow or inconsistent movement across stations" ;
-    zorro:hasCause demo:cause049 .
+    zorro:hasCause demo:cause044 .
 
 demo:solution001 a zorro:Solution ;
     rdfs:label "Recalibrate robot movement in PLC and adjust encoder motor parameters" .
@@ -1311,6 +1146,31 @@ demo:ROTARY_TABLE a demo:PartType .
 
 demo:Vertical_reference_switch a demo:PartSpecification .
 
+demo:cause001 a zorro:Cause ;
+    rdfs:label "Robot arm miscalibration causing miss position" ;
+    zorro:hasSolution demo:solution001,
+        demo:solution005 .
+
+demo:cause004 a zorro:Cause ;
+    rdfs:label "Loose gears causing inaccurate motion" ;
+    zorro:hasSolution demo:solution004,
+        demo:solution016 .
+
+demo:cause009 a zorro:Cause ;
+    rdfs:label "Suction loss during movement" ;
+    zorro:hasSolution demo:solution010,
+        demo:solution012 .
+
+demo:cause010 a zorro:Cause ;
+    rdfs:label "Loose pneumatic connections" ;
+    zorro:hasSolution demo:solution011,
+        demo:solution013 .
+
+demo:cause019 a zorro:Cause ;
+    rdfs:label "Oven feeder cylinder not actuating" ;
+    zorro:hasSolution demo:solution023,
+        demo:solution024 .
+
 zorro:Effect a owl:Class ;
     rdfs:comment "Effect is also a problem" ;
     owl:disjointWith zorro:Component,
@@ -1342,6 +1202,15 @@ zorro:Assembly a owl:Class ;
     rdfs:subClassOf zorro:Component .
 
 demo:XYZ_Robot_%28VGR%29 a zorro:Assembly ;
+    zorro:failsVia demo:problem001,
+        demo:problem002,
+        demo:problem003,
+        demo:problem004,
+        demo:problem005,
+        demo:problem006,
+        demo:problem007,
+        demo:problem008,
+        demo:problem022 ;
     demo:inSubsystem demo:Handling .
 
 demo:COMPRESSOR a demo:PartType .
@@ -1349,6 +1218,11 @@ demo:COMPRESSOR a demo:PartType .
 demo:LIGHT_SENSOR a demo:PartType .
 
 demo:Processing_Station_%28MPO%29 a zorro:Assembly ;
+    zorro:failsVia demo:problem009,
+        demo:problem010,
+        demo:problem011,
+        demo:problem012,
+        demo:problem013 ;
     zorro:hasFunction demo:Detect_workpiece,
         demo:Eject_workpiece,
         demo:Feed_into_oven,
@@ -1361,6 +1235,9 @@ demo:Processing_Station_%28MPO%29 a zorro:Assembly ;
     demo:inSubsystem demo:Processing .
 
 demo:Sorting_Line_%28SLD%29 a zorro:Assembly ;
+    zorro:failsVia demo:problem014,
+        demo:problem015,
+        demo:problem016 ;
     zorro:hasFunction demo:Detect_color,
         demo:Detect_incoming_workpiece,
         demo:Move_along_conveyor,
@@ -1369,6 +1246,10 @@ demo:Sorting_Line_%28SLD%29 a zorro:Assembly ;
     demo:inSubsystem demo:Sorting .
 
 demo:Warehouse_%28HBW%29 a zorro:Assembly ;
+    zorro:failsVia demo:problem017,
+        demo:problem018,
+        demo:problem019,
+        demo:problem020 ;
     zorro:hasFunction demo:Move_conveyor_to_pickup_position,
         demo:Move_conveyor_to_storage_position,
         demo:Select_carrier,
@@ -1382,6 +1263,11 @@ demo:MINI_MOTOR a demo:PartType .
 demo:CYLINDER a demo:PartType .
 
 demo:PartType a owl:Class .
+
+zorro:Problem a owl:Class ;
+    owl:disjointWith zorro:Component,
+        zorro:Function,
+        zorro:Solution .
 
 zorro:Function a owl:Class ;
     rdfs:comment "A function can be performed by one or several componenets" ;
@@ -1404,11 +1290,6 @@ zorro:Solution a owl:Class ;
         zorro:Effect,
         zorro:Function,
         zorro:Problem .
-
-zorro:Problem a owl:Class ;
-    owl:disjointWith zorro:Component,
-        zorro:Function,
-        zorro:Solution .
 
 demo:PartSpecification a owl:Class .
 

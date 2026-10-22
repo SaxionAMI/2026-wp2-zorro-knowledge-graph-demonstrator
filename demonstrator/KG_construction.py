@@ -34,36 +34,10 @@ catalog_data = csv.DictReader(open(catalog_file, encoding='utf-8'))
 process_flow_data = csv.DictReader(open(process_flow_file, encoding='utf-8'))
 
 
-# -----------------------------
-for i, line in enumerate(trouble_data, start=1):
-
-    problem = zorroDemo[f"problem{i:03d}"]
-    cause = zorroDemo[f"cause{i:03d}"]
-    solution = zorroDemo[f"solution{i:03d}"]
-    involved_assembly = zorroDemo[line['INVLOVED_PART'].strip().replace(
-        " ", "_")]
-
-    triples = [
-        (problem, rdflib.RDF.type, Zorro.Problem),
-        (cause, rdflib.RDF.type, Zorro.Cause),
-        (solution, rdflib.RDF.type, Zorro.Solution),
-
-        (problem, rdflib.RDFS.label, Literal(line['TROUBLE'].strip())),
-        (cause, rdflib.RDFS.label, Literal(line['PROBABLE CAUSE'].strip())),
-        (solution, rdflib.RDFS.label, Literal(line['REMEDY'].strip())),
-
-
-        (problem, Zorro.hasCause, cause),
-        (involved_assembly, Zorro.failsVia, problem),
-        (cause, Zorro.hasSolution, solution),
-    ]
-
-    for t in triples:
-        g.add(t)
-
-
+known_assemblies = set()
 for line in process_flow_data:
     assembly = zorroDemo[urllib.parse.quote(line['STATION'].replace(" ", "_"))]
+    known_assemblies.add(assembly)
     function = zorroDemo[urllib.parse.quote(
         line['FUNCTION'].replace(" ", "_"))]
     partTypes = line['MAIN PARTS INVOLVED'].split("+")
@@ -86,6 +60,57 @@ for line in process_flow_data:
 
     for triple in triples:
         g.add(triple)
+
+
+problem_map = {}
+cause_map = {}
+solution_map = {}
+
+for line in trouble_data:
+    problem = line['TROUBLE'].strip()
+    cause = line['PROBABLE CAUSE'].strip()
+    solution = line['REMEDY'].strip()
+    if problem not in problem_map:
+        problem_id = f"problem{len(problem_map) + 1:03d}"
+        problem_map[problem] = zorroDemo[problem_id]
+    problem = problem_map[problem]
+
+    if cause not in cause_map:
+        cause_id = f"cause{len(cause_map) + 1:03d}"
+        cause_map[cause] = zorroDemo[cause_id]
+    cause = cause_map[cause]
+
+    if solution not in solution_map:
+        solution_id = f"solution{len(solution_map) + 1:03d}"
+        solution_map[solution] = zorroDemo[solution_id]
+    solution = solution_map[solution]
+
+    def make_uri(text, namespace=zorroDemo):
+        clean_text = text.strip().replace(" ", "_")
+        return namespace[urllib.parse.quote(clean_text)]
+
+    involved_assembly = make_uri(line['INVLOVED_PART'])
+
+    if involved_assembly not in known_assemblies:
+        g.add((involved_assembly, rdflib.RDF.type, Zorro.Assembly))
+        known_assemblies.add(involved_assembly)
+
+    triples = [
+        (problem, rdflib.RDF.type, Zorro.Problem),
+        (cause, rdflib.RDF.type, Zorro.Cause),
+        (solution, rdflib.RDF.type, Zorro.Solution),
+
+        (problem, rdflib.RDFS.label, Literal(line['TROUBLE'].strip())),
+        (cause, rdflib.RDFS.label, Literal(line['PROBABLE CAUSE'].strip())),
+        (solution, rdflib.RDFS.label, Literal(line['REMEDY'].strip())),
+
+        (problem, Zorro.hasCause, cause),
+        (involved_assembly, Zorro.failsVia, problem),
+        (cause, Zorro.hasSolution, solution),
+    ]
+
+    for t in triples:
+        g.add(t)
 
 
 for line in catalog_data:
