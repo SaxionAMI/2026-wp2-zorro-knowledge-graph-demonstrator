@@ -1,12 +1,6 @@
 {
   "nodes": [
     {
-      "id": "hhttp://w3id.org/ZorroOntology/Solution",
-      "label": "Solution",
-      "group": "Resource",
-      "properties": []
-    },
-    {
       "id": "http://w3id.org/ZorroOntology/",
       "label": "ZorroOntology",
       "group": "Ontology",
@@ -3194,7 +3188,7 @@
     },
     {
       "from": "http://w3id.org/ZorroOntology/solves",
-      "to": "hhttp://w3id.org/ZorroOntology/Solution",
+      "to": "http://w3id.org/ZorroOntology/Solution",
       "label": "domain",
       "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
     },

@@ -64,8 +64,8 @@ The eight query bodies follow `Example_query2.docx` unchanged. Example 6 asks fo
 assemblies in Handling, rather than all assemblies. No reasoning or URI corrections
 are applied; identifiers and relationship directions remain as supplied.
 
-Existing source details are preserved: `solves` has a domain URI starting with
-`hhttp://`, so WebVOWL can show a second Solution node. The supplied extension
+The `solves` domain URI typo was corrected in `ZorroOntology.owl` and `WP5KG.ttl`
+to use `http://w3id.org/ZorroOntology/Solution`. The supplied extension
 uses `demo:hasSolution`, while the graph and examples use `zorro:hasSolution`;
 `PartOf` and `partOf` also differ in case. No equivalences or missing subclass
 axioms are invented to reconcile these differences.

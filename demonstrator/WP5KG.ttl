@@ -42,7 +42,7 @@ zorro:involves a owl:ObjectProperty ;
     rdfs:range zorro:Part .
 
 zorro:solves a owl:ObjectProperty ;
-    rdfs:domain <hhttp://w3id.org/ZorroOntology/Solution> ;
+    rdfs:domain <http://w3id.org/ZorroOntology/Solution> ;
     rdfs:range zorro:Problem .
 
 demo: a owl:Ontology ;
