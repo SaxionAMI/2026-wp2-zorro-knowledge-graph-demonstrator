@@ -44,6 +44,22 @@
     },
     {
       "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "10",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
       "type": "rdfs:Datatype"
     }
   ],
@@ -68,6 +84,24 @@
     },
     {
       "id": "2",
+      "iri": "http://w3id.org/ZorroOntology/Component",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Component"
+      },
+      "instances": 0
+    },
+    {
+      "id": "3",
+      "iri": "http://w3id.org/ZorroOntology/Effect",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Effect"
+      },
+      "instances": 0
+    },
+    {
+      "id": "4",
       "iri": "http://w3id.org/ZorroOntology/Function",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -76,7 +110,7 @@
       "instances": 0
     },
     {
-      "id": "3",
+      "id": "5",
       "iri": "http://w3id.org/ZorroOntology/Part",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -85,7 +119,16 @@
       "instances": 0
     },
     {
-      "id": "4",
+      "id": "6",
+      "iri": "http://w3id.org/ZorroOntology/Problem",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "Problem"
+      },
+      "instances": 0
+    },
+    {
+      "id": "7",
       "iri": "http://w3id.org/ZorroOntology/Solution",
       "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
@@ -94,7 +137,16 @@
       "instances": 0
     },
     {
-      "id": "5",
+      "id": "8",
+      "iri": "http://w3id.org/ZorroOntology/System",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "System"
+      },
+      "instances": 0
+    },
+    {
+      "id": "9",
       "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/PartSpecification",
       "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
       "label": {
@@ -103,7 +155,7 @@
       "instances": 0
     },
     {
-      "id": "6",
+      "id": "10",
       "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/PartType",
       "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
       "label": {
@@ -112,7 +164,7 @@
       "instances": 0
     },
     {
-      "id": "7",
+      "id": "11",
       "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/SubSystem",
       "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
       "label": {
@@ -121,7 +173,7 @@
       "instances": 0
     },
     {
-      "id": "8",
+      "id": "12",
       "iri": "http://www.w3.org/2001/XMLSchema#string",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -132,107 +184,629 @@
   ],
   "property": [
     {
-      "id": "9",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "10",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "11",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "12",
-      "type": "owl:objectProperty"
-    },
-    {
       "id": "13",
       "type": "owl:objectProperty"
     },
     {
       "id": "14",
       "type": "owl:objectProperty"
+    },
+    {
+      "id": "15",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "16",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "17",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "18",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "19",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "20",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "21",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "22",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "23",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "24",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "25",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "26",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "27",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "28",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "axiom-0",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "axiom-1",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "axiom-2",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "axiom-3",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-4",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-5",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-6",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-7",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-8",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-9",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-10",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-11",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-12",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-13",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-14",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-15",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-16",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-17",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-18",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-19",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-20",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-21",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-22",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-23",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-24",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-25",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "axiom-26",
+      "type": "owl:disjointWith"
     }
   ],
   "propertyAttribute": [
     {
-      "id": "9",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasFunctionDescription",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
+      "id": "13",
+      "iri": "http://w3id.org/ZorroOntology/PartOf",
+      "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
-        "IRI-based": "hasFunctionDescription"
+        "IRI-based": "PartOf"
       },
-      "domain": "2",
-      "range": "8",
-      "attributes": [
-        "datatype"
-      ]
-    },
-    {
-      "id": "10",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasPartSpecification",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
-      "label": {
-        "IRI-based": "hasPartSpecification"
-      },
-      "domain": "3",
-      "range": "5",
+      "domain": "5",
+      "range": "0",
       "attributes": [
         "object"
       ]
     },
     {
-      "id": "11",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasPartType",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
+      "id": "14",
+      "iri": "http://w3id.org/ZorroOntology/defines",
+      "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
-        "IRI-based": "hasPartType"
+        "IRI-based": "defines"
       },
-      "domain": "3",
+      "domain": "4",
       "range": "6",
       "attributes": [
         "object"
       ]
     },
     {
-      "id": "12",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasSolution",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
+      "id": "15",
+      "iri": "http://w3id.org/ZorroOntology/dependsOn",
+      "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
-        "IRI-based": "hasSolution"
+        "IRI-based": "dependsOn"
+      },
+      "domain": "4",
+      "range": "4",
+      "attributes": [
+        "object",
+        "transitive"
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "http://w3id.org/ZorroOntology/failsVia",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "failsVia"
+      },
+      "domain": "2",
+      "range": "6",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "http://w3id.org/ZorroOntology/hasCause",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "hasCause"
+      },
+      "domain": "6",
+      "range": "1",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "18",
+      "iri": "http://w3id.org/ZorroOntology/hasEffect",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "hasEffect"
       },
       "domain": "1",
+      "range": "3",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "http://w3id.org/ZorroOntology/hasFunction",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "hasFunction"
+      },
+      "domain": "2",
       "range": "4",
       "attributes": [
         "object"
       ]
     },
     {
-      "id": "13",
-      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/inSubsystem",
-      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
+      "id": "20",
+      "iri": "http://w3id.org/ZorroOntology/inSystem",
+      "baseIri": "http://w3id.org/ZorroOntology",
       "label": {
-        "IRI-based": "inSubsystem"
+        "IRI-based": "inSystem"
       },
       "domain": "0",
+      "range": "8",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "21",
+      "iri": "http://w3id.org/ZorroOntology/involves",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "involves"
+      },
+      "domain": "6",
+      "range": "5",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "22",
+      "iri": "http://w3id.org/ZorroOntology/solves",
+      "baseIri": "http://w3id.org/ZorroOntology",
+      "label": {
+        "IRI-based": "solves"
+      },
+      "domain": "7",
+      "range": "6",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasFunctionDescription",
+      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
+      "label": {
+        "IRI-based": "hasFunctionDescription"
+      },
+      "domain": "4",
+      "range": "12",
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "24",
+      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasPartSpecification",
+      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
+      "label": {
+        "IRI-based": "hasPartSpecification"
+      },
+      "domain": "5",
+      "range": "9",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "25",
+      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasPartType",
+      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
+      "label": {
+        "IRI-based": "hasPartType"
+      },
+      "domain": "5",
+      "range": "10",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "26",
+      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/hasSolution",
+      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
+      "label": {
+        "IRI-based": "hasSolution"
+      },
+      "domain": "1",
       "range": "7",
       "attributes": [
         "object"
       ]
     },
     {
-      "id": "14",
+      "id": "27",
+      "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/inSubsystem",
+      "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
+      "label": {
+        "IRI-based": "inSubsystem"
+      },
+      "domain": "0",
+      "range": "11",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "28",
       "iri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo/partTypeInvolvedInFunc",
       "baseIri": "http://www.semanticweb.org/ontologies/2026/ZorroDemo",
       "label": {
         "IRI-based": "partTypeInvolvedInFunc"
       },
+      "domain": "4",
+      "range": "10",
+      "attributes": [
+        "object"
+      ]
+    },
+    {
+      "id": "axiom-0",
+      "domain": "0",
+      "range": "2",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-1",
+      "domain": "5",
+      "range": "2",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-2",
+      "domain": "8",
+      "range": "2",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-3",
+      "domain": "1",
+      "range": "2",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-4",
+      "domain": "1",
+      "range": "4",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-5",
+      "domain": "1",
+      "range": "7",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-6",
+      "domain": "2",
+      "range": "1",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-7",
+      "domain": "2",
+      "range": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-8",
+      "domain": "2",
+      "range": "4",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-9",
       "domain": "2",
       "range": "6",
       "attributes": [
-        "object"
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-10",
+      "domain": "2",
+      "range": "7",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-11",
+      "domain": "3",
+      "range": "2",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-12",
+      "domain": "3",
+      "range": "4",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-13",
+      "domain": "3",
+      "range": "7",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-14",
+      "domain": "4",
+      "range": "1",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-15",
+      "domain": "4",
+      "range": "2",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-16",
+      "domain": "4",
+      "range": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-17",
+      "domain": "4",
+      "range": "6",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-18",
+      "domain": "4",
+      "range": "7",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-19",
+      "domain": "6",
+      "range": "2",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-20",
+      "domain": "6",
+      "range": "4",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-21",
+      "domain": "6",
+      "range": "7",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-22",
+      "domain": "7",
+      "range": "1",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-23",
+      "domain": "7",
+      "range": "2",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-24",
+      "domain": "7",
+      "range": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-25",
+      "domain": "7",
+      "range": "4",
+      "attributes": [
+        "object",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "axiom-26",
+      "domain": "7",
+      "range": "6",
+      "attributes": [
+        "object",
+        "anonymous"
       ]
     }
   ]

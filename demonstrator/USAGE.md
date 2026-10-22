@@ -31,7 +31,8 @@ Open the pages through HTTP rather than directly as local files.
   server or ontology inference is required.
 - **Ontology:** switch between standard ZORRO (`ZorroOntology.owl`) and Demo Extension
   (`ZorroDemo.owl`) in WebVOWL. Full screen and the OWL download follow the selected
-  view. There is no combined view.
+  view. Demo Extension includes the ZORRO definitions imported by `ZorroDemo.owl`,
+  resolved using the local `ZorroOntology.owl`. There is no separate combined tab.
 - **Knowledge graph:** every resource and resource relationship in `WP5KG.ttl` and
   the two updated OWL files; literal values appear in the resource details. Search and type
   filters include immediate neighbours to preserve context. Ontology/type links can

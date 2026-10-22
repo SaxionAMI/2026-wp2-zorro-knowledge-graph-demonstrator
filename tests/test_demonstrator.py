@@ -78,12 +78,23 @@ def test_viewer_excludes_extension_properties():
     assert declared.isdisjoint(extension_properties)
 
 
-def test_demo_view_contains_supplied_extension_properties():
-    graph = Graph().parse(ROOT / 'ZorroDemo.owl', format='xml')
+def test_demo_view_resolves_imported_upper_ontology():
+    graph = ontology()
     export = json.loads((ROOT / 'webvowl/data/demo.json').read_text())
     expected = {str(p) for kind in (OWL.ObjectProperty, OWL.DatatypeProperty)
                 for p in graph.subjects(RDF.type, kind)}
     assert {p['iri'] for p in export['propertyAttribute'] if 'iri' in p} == expected
+
+    nodes = {item['id']: item['iri'] for item in export['classAttribute']}
+    attributes = {item['id']: item for item in export['propertyAttribute']}
+    subclass_edges = {(nodes[attributes[p['id']]['domain']], nodes[attributes[p['id']]['range']])
+                      for p in export['property'] if p['type'] == 'rdfs:SubClassOf'}
+    assert ('http://w3id.org/ZorroOntology/Assembly',
+            'http://w3id.org/ZorroOntology/Component') in subclass_edges
+    by_iri = {item['iri']: item for item in export['propertyAttribute'] if 'iri' in item}
+    has_cause = by_iri['http://w3id.org/ZorroOntology/hasCause']
+    assert nodes[has_cause['domain']] == 'http://w3id.org/ZorroOntology/Problem'
+    assert nodes[has_cause['range']] == 'http://w3id.org/ZorroOntology/Cause'
 
 
 def test_renumbered_examples_keep_original_problem_and_cause_meaning():

@@ -73,7 +73,8 @@ def export_webvowl(ontology, filename="ontology", title="ZORRO", iri="http://w3i
 def build():
     ontology = load_ontology()
     export_webvowl(Graph().parse(ROOT / 'ZorroOntology.owl', format='xml'))
-    export_webvowl(Graph().parse(ROOT / 'ZorroDemo.owl', format='xml'), 'demo', 'Demo Extension',
+    # The extension imports ZORRO; resolve that import from the supplied local file.
+    export_webvowl(ontology, 'demo', 'Demo Extension',
                    'http://www.semanticweb.org/ontologies/2026/ZorroDemo/')
     graph = Graph().parse(ROOT / 'WP5KG.ttl') + ontology
 
