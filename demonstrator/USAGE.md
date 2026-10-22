@@ -60,7 +60,10 @@ ontology documentation and original research files remain available unchanged.
 supplied. It is not needed to serve the site. Reconstructing the research graph requires
 its input CSV files (`processed_troubleshooting.csv`, `InputCSVfiles/parts_catalog.csv`,
 `InputCSVfiles/process_flow.csv`) and dependencies; these CSVs were not supplied here.
-The eight query bodies follow `Example_query2.docx` unchanged. Example 6 asks for
+The eight queries are based on `Example_query2.docx`. After KG deduplication,
+the warehouse pickup, wrong-workpiece and reference-position examples were updated
+to `problem018`, `problem017` and `cause016` respectively, preserving their original
+meaning. Example 6 asks for
 assemblies in Handling, rather than all assemblies. No reasoning or URI corrections
 are applied; identifiers and relationship directions remain as supplied.
 

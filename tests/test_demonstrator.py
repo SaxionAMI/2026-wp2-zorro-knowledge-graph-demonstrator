@@ -4,7 +4,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 import zipfile
 
-from rdflib import Graph, Literal, RDF, RDFS, OWL
+from rdflib import Graph, Literal, Namespace, RDF, RDFS, OWL
 
 ROOT = Path(__file__).resolve().parents[1] / 'demonstrator'
 
@@ -27,7 +27,7 @@ def test_graph_export_includes_every_statement():
     assert sum(len(n['properties']) for n in export['nodes']) + len(export['edges']) == len(graph)
 
 
-def test_queries_match_researcher_document_and_return_results():
+def test_queries_preserve_document_examples_with_updated_ids():
     with zipfile.ZipFile(ROOT / 'Example_query2.docx') as archive:
         doc = ET.fromstring(archive.read('word/document.xml'))
     ns = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
@@ -43,7 +43,11 @@ def test_queries_match_researcher_document_and_return_results():
     graph = Graph().parse(ROOT / 'WP5KG.ttl')
     examples = json.loads((ROOT / 'examples.json').read_text())
     assert len(examples) == len(supplied) == 8
-    for example, source, count in zip(examples, supplied, [1, 49, 1, 6, 1, 1, 49, 1]):
+    # The deduplicated KG renumbered these resources; retain the original questions.
+    supplied[0] = supplied[0].replace('demo:problem038', 'demo:problem018')
+    supplied[4] = supplied[4].replace('demo:problem037', 'demo:problem017')
+    supplied[7] = supplied[7].replace('demo:cause020', 'demo:cause016')
+    for example, source, count in zip(examples, supplied, [2, 49, 1, 6, 1, 1, 49, 1]):
         text = (ROOT / example['file']).read_text()
         assert text == source
         assert len(list(graph.query(text))) == count
@@ -80,3 +84,18 @@ def test_demo_view_contains_supplied_extension_properties():
     expected = {str(p) for kind in (OWL.ObjectProperty, OWL.DatatypeProperty)
                 for p in graph.subjects(RDF.type, kind)}
     assert {p['iri'] for p in export['propertyAttribute'] if 'iri' in p} == expected
+
+
+def test_renumbered_examples_keep_original_problem_and_cause_meaning():
+    graph = Graph().parse(ROOT / 'WP5KG.ttl')
+    demo = Namespace('http://www.semanticweb.org/ontologies/2026/ZorroDemo/')
+    assert str(graph.value(demo.problem018, RDFS.label)) == 'Warehouse HBW fails to pick up carrier from rack'
+    assert str(graph.value(demo.problem017, RDFS.label)) == 'Warehouse HBW picks wrong workpiece from storage'
+    assert str(graph.value(demo.cause016, RDFS.label)) == 'Incorrect warehouse reference position'
+    causes = list(graph.query((ROOT / 'queries/01-problem-causes.rq').read_text()))
+    assert {str(row.label) for row in causes} == {
+        'Warehouse positioning miscalibration', 'Loose mechanical components in drive system'}
+    assemblies = list(graph.query((ROOT / 'queries/05-problem-assembly.rq').read_text()))
+    assert {str(row.assembly) for row in assemblies} == {str(demo['Warehouse_%28HBW%29'])}
+    solutions = list(graph.query((ROOT / 'queries/08-cause-solutions.rq').read_text()))
+    assert {str(row.solutionLabel) for row in solutions} == {'Verify and reset reference switches'}

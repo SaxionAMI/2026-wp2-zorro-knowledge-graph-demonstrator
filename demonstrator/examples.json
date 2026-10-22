@@ -7,7 +7,7 @@
       "image": "img/warehouse.png",
       "alt": "High-bay warehouse",
       "overview": "overview.html#warehouse",
-      "description": "This example asks for the cause linked to problem038: \u201cWarehouse HBW fails to pick up carrier from rack\u201d. The graph records \u201cWarehouse positioning miscalibration\u201d. The installation notes describe positioning problems, but do not independently confirm the cause of this individual graph entry."
+      "description": "This example asks for the causes linked to problem018: \u201cWarehouse HBW fails to pick up carrier from rack\u201d. The graph records warehouse positioning miscalibration and loose mechanical components in the drive system. The installation notes describe positioning and loose-part problems; they do not establish which cause applies to a particular incident."
     }
   },
   {
@@ -50,7 +50,7 @@
       "image": "img/warehouse.png",
       "alt": "High-bay warehouse",
       "overview": "overview.html#warehouse",
-      "description": "This example targets problem037: \u201cWarehouse HBW picks wrong workpiece from storage\u201d. It asks which assembly is involved. The installation notes describe incorrect colour arrangements as one real-world context; this query itself does not identify a cause."
+      "description": "This example targets problem017: \u201cWarehouse HBW picks wrong workpiece from storage\u201d. It returns the warehouse assembly linked through zorro:failsVia. The installation notes describe incorrect colour arrangements as one real-world context; this query itself does not identify a cause."
     }
   },
   {
@@ -83,7 +83,7 @@
       "image": "img/warehouse.png",
       "alt": "High-bay warehouse",
       "overview": "overview.html#reference-switch",
-      "description": "The query targets cause020, labelled \u201cIncorrect warehouse reference position\u201d. Its linked solution is \u201cVerify and reset reference switches\u201d. The installation notes explain why reaching a known reference position matters."
+      "description": "The query targets cause016, labelled \u201cIncorrect warehouse reference position\u201d. Its linked solution is \u201cVerify and reset reference switches\u201d. The installation notes explain why reaching a known reference position matters."
     }
   }
 ]

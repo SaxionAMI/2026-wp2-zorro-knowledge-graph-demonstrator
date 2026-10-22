@@ -7,5 +7,5 @@ PREFIX  zorro: <http://w3id.org/ZorroOntology/>
 
 select ?assembly
 where {
-?assembly zorro:failsVia demo:problem037.
+?assembly zorro:failsVia demo:problem017.
 }

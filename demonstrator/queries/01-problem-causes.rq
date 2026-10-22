@@ -7,6 +7,6 @@ PREFIX  zorro: <http://w3id.org/ZorroOntology/>
 
 select ?cause ?label
 where {
-demo:problem038 zorro:hasCause ?cause.
+demo:problem018 zorro:hasCause ?cause.
 ?cause rdfs:label ?label.
 }
