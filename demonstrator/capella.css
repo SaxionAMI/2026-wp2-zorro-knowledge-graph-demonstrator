@@ -25,3 +25,15 @@ header {
   border: 0;
   background: #fff;
 }
+
+.capella-citation {
+  flex: 0 0 auto;
+  padding: 8px 24px;
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+
+.capella-citation p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
