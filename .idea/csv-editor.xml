@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Fully-Annotated-Corpus/fully annotated maintenance logbook.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/log-extracted/Problem_extraction_NER.csv">
           <value>
             <Attribute>

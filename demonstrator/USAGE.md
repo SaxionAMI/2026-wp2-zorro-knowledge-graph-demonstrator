@@ -16,7 +16,7 @@ Open the pages through HTTP rather than directly as local files.
 - **Demonstrator:** module and part descriptions, supplied equipment images, manual page
   references. Distinguishes the local
   Turck/CODESYS setup from the standard manual.
-- **SPARQL queries:** eight examples extracted from `Example_query2.docx`, editable queries,
+- **SPARQL queries:** eight examples extracted from `../old/Example_query2.docx`, editable queries,
   SELECT tables with CSV downloads, ASK results, and CONSTRUCT/DESCRIBE output as Turtle.
   Examples are read-only until **Try it yourself** is selected. Resetting or selecting
   another example restores read-only mode. Ctrl/Cmd+Enter runs a query. Resource links open that resource in the graph explorer.
@@ -61,7 +61,7 @@ ontology documentation and original research files remain available unchanged.
 supplied. It is not needed to serve the site. Reconstructing the research graph requires
 its input CSV files (`processed_troubleshooting.csv`, `InputCSVfiles/parts_catalog.csv`,
 `InputCSVfiles/process_flow.csv`) and dependencies; these CSVs were not supplied here.
-The eight queries are based on `Example_query2.docx`. After KG deduplication,
+The eight queries are based on `../old/Example_query2.docx`. After KG deduplication,
 the warehouse pickup, wrong-workpiece and reference-position examples were updated
 to `problem018`, `problem017` and `cause016` respectively, preserving their original
 meaning. Example 6 asks for
