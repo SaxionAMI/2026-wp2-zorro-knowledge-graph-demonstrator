@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script>if(new URLSearchParams(location.search).get("pi")==="true"){document.querySelector('meta[name="viewport"]').setAttribute("content","width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no")}</script>
     <title>Query builder · ZORRO</title>
-    <link rel="stylesheet" href="style.css?v=7" />
-  </head>
+    <link rel="stylesheet" href="style.css?v=9" />
+  <script src="pi-mode.js"></script></head>
   <body>
     <header>
       <a class="brand" href="index.html">ZORRO</a>
-      <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="wp1.html">WP1 · Monitoring</a><a href="wp2.html">WP2 · Knowledge &amp; models</a><a href="wp3.html">WP3 · Diagnostics</a><a href="wp4.html">WP4 · Systems engineering</a><a href="wp5.html">WP5 · Demonstrator</a></nav>
+      <nav aria-label="Main navigation"><a class="nav-primary nav-home" href="index.html">Home</a><a class="nav-secondary" href="wp1.html">WP1 · Monitoring</a><a class="nav-primary nav-wp2" href="wp2.html">WP2 · Knowledge &amp; models</a><a class="nav-primary nav-wp3" href="wp3.html">WP3 · Diagnostics</a><a class="nav-secondary" href="wp4.html">WP4 · Systems engineering</a><a class="nav-secondary" href="wp5.html">WP5 · Demonstrator</a></nav>
     </header>
 <nav class="vu-subnav" aria-label="VU research demonstration"><a class="subnav-back" href="wp2.html">← Back to WP2</a><span>VU research demonstration</span><a href="wp2-vu.html">Overview</a><a href="ontology.html">Ontology</a><a href="graph.html">Knowledge graph</a><a href="query.html">SPARQL queries</a><a href="builder.html" aria-current="page">Query builder</a></nav>
     <main class="builder-page">

@@ -104,3 +104,7 @@ To export a different source directory, use `--model /path/to/model-directory`.
 
 Export tooling: https://github.com/eclipse-capella/capella-xhtml-docgen
 Native Capella export: https://github.com/eclipse-capella/capella
+
+## Touchscreen mode
+
+Append ?pi=true to any demonstrator page URL (for example http://localhost:8000/demonstrator/?pi=true) to enable larger controls, text and spacing for a 10-inch touchscreen. Touch mode disables text selection on the page while keeping query editors selectable. Pages can be scrolled normally; the query builder controls are enlarged and stacked for touch use.

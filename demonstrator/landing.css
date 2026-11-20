@@ -5,3 +5,9 @@
 
 .research-card .demonstration-button{display:block;width:100%;margin:22px 0;padding:15px 18px;text-align:center;font-size:1rem;font-weight:700}
 .research-card .research-lead{margin:16px 0;font-size:1.1rem;font-weight:700;color:#123c31}.research-lead span{display:block;margin-bottom:3px;color:#4b6368;font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+
+.site-header{position:relative;z-index:10;justify-content:flex-start;gap:30px}.brand-logo{display:block;flex:0 0 auto}.site-header .logo{width:210px;height:auto}.site-header nav{flex:1;justify-content:flex-end}
+.home-intro{max-width:1100px!important;margin:0 auto;padding:42px 30px!important;background:#eaf3f0;border:0!important;border-left:5px solid #087b43!important;border-radius:4px}
+.home-intro h1{font-size:2.6rem}.home-intro .lead{font-size:1.3rem}
+@media(max-width:800px){.site-header{flex-direction:column;gap:10px}.site-header nav{justify-content:flex-start}.site-header .logo{width:175px}}
+.home-factory-image{max-width:100%;max-height:390px;object-fit:cover;object-position:center;margin:28px 0 0;border-radius:6px}
